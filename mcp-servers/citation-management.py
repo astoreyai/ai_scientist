@@ -160,7 +160,8 @@ def check_retraction(doi: str) -> dict:
     try:
         result = crossref.works(ids=doi_clean)
 
-        if result and "message" in work := result["message"]:
+        if result and "message" in result:
+            work = result["message"]
             # Check for retraction notice
             retracted = False
             retraction_doi = None

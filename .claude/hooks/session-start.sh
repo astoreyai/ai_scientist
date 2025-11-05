@@ -38,7 +38,7 @@ load_protocols() {
     # Check for PRISMA 2020 checklist
     if [[ -f "$PROTOCOLS_DIR/prisma_2020_checklist.md" ]]; then
         log "Loaded: PRISMA 2020 checklist"
-        ((protocols_loaded++))
+        protocols_loaded=$((protocols_loaded + 1))
     else
         # Create default PRISMA checklist
         cat > "$PROTOCOLS_DIR/prisma_2020_checklist.md" << 'EOF'
@@ -87,13 +87,13 @@ load_protocols() {
 Target: ≥24/27 items for compliance
 EOF
         log "Created: Default PRISMA 2020 checklist"
-        ((protocols_loaded++))
+        protocols_loaded=$((protocols_loaded + 1))
     fi
 
     # Check for NIH rigor checklist
     if [[ -f "$PROTOCOLS_DIR/nih_rigor_checklist.md" ]]; then
         log "Loaded: NIH rigor checklist"
-        ((protocols_loaded++))
+        protocols_loaded=$((protocols_loaded + 1))
     else
         # Create default NIH rigor checklist
         cat > "$PROTOCOLS_DIR/nih_rigor_checklist.md" << 'EOF'
@@ -128,7 +128,7 @@ EOF
 Target: ≥90% compliance required
 EOF
         log "Created: Default NIH rigor checklist"
-        ((protocols_loaded++))
+        protocols_loaded=$((protocols_loaded + 1))
     fi
 
     log "Protocols loaded: $protocols_loaded"
