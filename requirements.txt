@@ -1,0 +1,201 @@
+# Production Research Assistant System - Python Dependencies
+# Phase 2: MCP Servers and Analysis Tools
+
+# ============================================
+# CORE DEPENDENCIES
+# ============================================
+
+# Claude/Anthropic
+anthropic>=0.18.0
+
+# MCP Server Framework
+mcp>=0.9.0
+
+# State Machine for Research Workflow
+python-statemachine>=2.1.0
+
+# ============================================
+# DATA SCIENCE & STATISTICS
+# ============================================
+
+# Core numerical computing
+numpy==1.26.4
+pandas==2.2.0
+scipy==1.12.0
+
+# Statistical analysis
+statsmodels==0.14.1
+scikit-learn==1.4.0
+pingouin==0.5.4              # Statistical tests and effect sizes
+
+# ============================================
+# LITERATURE SEARCH APIs
+# ============================================
+
+# OpenAlex API (free, comprehensive)
+pyalex>=0.13
+
+# arXiv API
+arxiv>=2.1.0
+
+# PubMed/NCBI API
+biopython>=1.83              # Includes Entrez for PubMed
+requests>=2.31.0
+
+# Web scraping (for preprint servers)
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+
+# ============================================
+# CITATION MANAGEMENT
+# ============================================
+
+# BibTeX parsing
+bibtexparser>=1.4.1
+
+# DOI resolution
+habanero>=1.2.6              # Crossref API client
+
+# Citation formatting
+pybtex>=0.24.0
+
+# ============================================
+# EXPERIMENT TRACKING & VERSIONING
+# ============================================
+
+# MLflow for experiment tracking
+mlflow>=2.10.0
+
+# DVC for data versioning
+dvc>=3.47.0
+dvc-s3>=3.2.0                # S3 backend (or dvc-gs, dvc-azure)
+
+# ============================================
+# DATABASE
+# ============================================
+
+# PostgreSQL for research database
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.25
+
+# SQLite (lightweight alternative)
+# Built into Python standard library
+
+# ============================================
+# DATA VALIDATION & QUALITY
+# ============================================
+
+# Data validation
+pydantic>=2.6.0
+jsonschema>=4.21.0
+
+# Missing data analysis
+missingno>=0.5.2
+
+# ============================================
+# VISUALIZATION
+# ============================================
+
+# Plotting
+matplotlib==3.8.2
+seaborn==0.13.2
+
+# Interactive plots (optional)
+plotly>=5.18.0
+
+# ============================================
+# REPRODUCIBILITY TOOLS
+# ============================================
+
+# Environment specification
+pipreqs>=0.5.0
+
+# Code quality
+black>=24.1.0
+mypy>=1.8.0
+ruff>=0.2.0
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0
+
+# ============================================
+# UTILITIES
+# ============================================
+
+# Date/time handling
+python-dateutil>=2.8.2
+
+# YAML configuration
+pyyaml>=6.0.1
+
+# Progress bars
+tqdm>=4.66.0
+
+# Logging
+loguru>=0.7.2
+
+# HTTP requests
+httpx>=0.26.0
+
+# ============================================
+# OPTIONAL: ADVANCED FEATURES
+# ============================================
+
+# Natural language processing (for text extraction)
+# spacy>=3.7.0
+# en_core_web_sm (install separately: python -m spacy download en_core_web_sm)
+
+# PDF extraction
+# PyPDF2>=3.0.0
+# pdfplumber>=0.10.0
+
+# Excel support (if needed for data collection)
+# openpyxl>=3.1.0
+
+# ============================================
+# INSTALLATION NOTES
+# ============================================
+
+# Install all dependencies:
+#   pip install -r requirements.txt
+
+# For MCP server development:
+#   npm install -g @modelcontextprotocol/server-*
+
+# For DVC with cloud storage:
+#   pip install 'dvc[s3]'      # AWS S3
+#   pip install 'dvc[gs]'      # Google Cloud Storage
+#   pip install 'dvc[azure]'   # Azure Blob Storage
+
+# For MLflow with cloud backend:
+#   # Configure MLflow to use PostgreSQL + S3:
+#   mlflow server --backend-store-uri postgresql://user:pass@host/mlflow \
+#                 --default-artifact-root s3://bucket/mlflow \
+#                 --host 0.0.0.0 --port 5000
+
+# ============================================
+# VERSION CONTROL STRATEGY
+# ============================================
+
+# All versions are pinned for reproducibility
+# Update strategy:
+# 1. Test updates in development environment
+# 2. Verify all analyses still reproduce
+# 3. Update pinned versions
+# 4. Re-run full test suite
+# 5. Commit updated requirements.txt
+
+# ============================================
+# DOCKER SUPPORT
+# ============================================
+
+# This requirements.txt works with Python 3.11+
+# Dockerfile example:
+#
+# FROM python:3.11-slim
+# WORKDIR /work
+# COPY requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
+# COPY . .
+# CMD ["python", "analysis/primary_analysis.py"]
