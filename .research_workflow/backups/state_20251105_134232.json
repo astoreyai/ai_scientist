@@ -1,0 +1,129 @@
+{
+  "workflow_id": "78476509-989e-4bb6-a939-fb9c1a7ea5e2",
+  "created_at": "2025-11-05T13:42:32.383809",
+  "updated_at": "2025-11-05T13:42:32.385153",
+  "mode": "assistant",
+  "current_phase": "problem_formulation",
+  "phase_history": [
+    {
+      "phase": "problem_formulation",
+      "entered_at": "2025-11-05T13:42:32.384353",
+      "exited_at": "2025-11-05T13:42:32.385147",
+      "validation_score": 0.9,
+      "outputs": [
+        "output.md"
+      ],
+      "agent_used": null,
+      "notes": ""
+    }
+  ],
+  "research_question": "Test",
+  "domain": "",
+  "resources": {},
+  "validation_results": {
+    "problem_formulation": {
+      "passed": true,
+      "score": 0.9,
+      "missing_items": [],
+      "warnings": [],
+      "blocking_issues": [],
+      "details": {}
+    }
+  },
+  "audit_trail": [
+    {
+      "timestamp": "2025-11-05T13:42:32.384273",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "__initial__"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.384360",
+      "action": "phase_started",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "agent": null
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.384374",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.384738",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.384764",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.384783",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.385110",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.385133",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "gap_analysis",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T13:42:32.385151",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    }
+  ],
+  "project_root": "/home/aaron/Desktop/ai_scientist"
+}

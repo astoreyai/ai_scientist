@@ -1,0 +1,160 @@
+{
+  "workflow_id": "e6e3e4d2-9440-4069-be8a-a3be63e17265",
+  "created_at": "2025-11-05T14:46:50.473432",
+  "updated_at": "2025-11-05T14:46:50.478307",
+  "mode": "autonomous",
+  "current_phase": "problem_formulation",
+  "phase_history": [
+    {
+      "phase": "problem_formulation",
+      "entered_at": "2025-11-05T14:46:50.474713",
+      "exited_at": "2025-11-05T14:46:50.478294",
+      "validation_score": 0.9,
+      "outputs": [
+        "output.md"
+      ],
+      "agent_used": null,
+      "notes": ""
+    }
+  ],
+  "research_question": "Test question",
+  "domain": "",
+  "resources": {},
+  "validation_results": {
+    "problem_formulation": {
+      "passed": true,
+      "score": 0.9,
+      "missing_items": [],
+      "warnings": [],
+      "blocking_issues": [],
+      "details": {}
+    }
+  },
+  "audit_trail": [
+    {
+      "timestamp": "2025-11-05T14:46:50.474515",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "__initial__"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.474725",
+      "action": "phase_started",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "agent": null
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.474779",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "problem.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.475684",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.475746",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.475842",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.476931",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.477004",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "gap_analysis",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.477067",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.478185",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "gap_analysis",
+        "event": "start_hypothesis_formation"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.478245",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "hypothesis_formation",
+        "event": "start_hypothesis_formation"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:46:50.478303",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    }
+  ],
+  "project_root": "/home/aaron/Desktop/ai_scientist"
+}
