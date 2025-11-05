@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-11-05T11:47:41.037395",
+  "tests": [
+    {
+      "name": "Literature Search Server - Startup",
+      "status": "PASS",
+      "details": "Server process started successfully",
+      "data_sample": null
+    },
+    {
+      "name": "Literature Search Server - Shutdown",
+      "status": "PASS",
+      "details": "Server terminated cleanly",
+      "data_sample": null
+    },
+    {
+      "name": "Citation Management Server - Startup",
+      "status": "PASS",
+      "details": "Server process started successfully",
+      "data_sample": null
+    },
+    {
+      "name": "Citation Management Server - Shutdown",
+      "status": "PASS",
+      "details": "Server terminated cleanly",
+      "data_sample": null
+    },
+    {
+      "name": "Research Database Server - Startup",
+      "status": "PASS",
+      "details": "Server process started successfully (requires PostgreSQL for full operation)",
+      "data_sample": null
+    },
+    {
+      "name": "Research Database Server - Shutdown",
+      "status": "PASS",
+      "details": "Server terminated cleanly",
+      "data_sample": null
+    },
+    {
+      "name": "MCP Server README",
+      "status": "PASS",
+      "details": "Documentation exists (9062 bytes)",
+      "data_sample": null
+    },
+    {
+      "name": "MCP Server Config Template",
+      "status": "PASS",
+      "details": "Configuration template exists",
+      "data_sample": null
+    },
+    {
+      "name": "Code Quality - literature-search.py",
+      "status": "PASS",
+      "details": "Valid Python syntax, 8 functions defined",
+      "data_sample": null
+    },
+    {
+      "name": "Code Quality - citation-management.py",
+      "status": "PASS",
+      "details": "Valid Python syntax, 12 functions defined",
+      "data_sample": null
+    },
+    {
+      "name": "Code Quality - research-database.py",
+      "status": "PASS",
+      "details": "Valid Python syntax, 9 functions defined",
+      "data_sample": null
+    },
+    {
+      "name": "Environment Variables - literature-search.py",
+      "status": "PASS",
+      "details": "Uses 3 environment variables: OPENALEX_EMAIL, PUBMED_EMAIL, PUBMED_API_KEY",
+      "data_sample": null
+    },
+    {
+      "name": "Environment Variables - citation-management.py",
+      "status": "PASS",
+      "details": "Uses 1 environment variables: OPENCITATIONS_TOKEN",
+      "data_sample": null
+    },
+    {
+      "name": "Environment Variables - research-database.py",
+      "status": "PASS",
+      "details": "Uses 5 environment variables: DB_HOST, DB_PORT, DB_NAME...",
+      "data_sample": null
+    }
+  ]
+}
