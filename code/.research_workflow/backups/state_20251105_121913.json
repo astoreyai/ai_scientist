@@ -1,0 +1,191 @@
+{
+  "workflow_id": "f58b91a4-844f-48c7-b17d-570d7dcb7c49",
+  "created_at": "2025-11-05T12:19:13.789520",
+  "updated_at": "2025-11-05T12:19:13.794698",
+  "mode": "assistant",
+  "current_phase": "problem_formulation",
+  "phase_history": [
+    {
+      "phase": "problem_formulation",
+      "entered_at": "2025-11-05T12:19:13.790748",
+      "exited_at": "2025-11-05T12:19:13.794695",
+      "validation_score": 0.95,
+      "outputs": [
+        "output_experimental_design.md"
+      ],
+      "agent_used": null,
+      "notes": ""
+    }
+  ],
+  "research_question": "Does exercise reduce depression in college students?",
+  "domain": "clinical psychology",
+  "resources": {},
+  "validation_results": {
+    "problem_formulation": {
+      "passed": true,
+      "score": 0.95,
+      "missing_items": [],
+      "warnings": [],
+      "blocking_issues": [],
+      "details": {}
+    }
+  },
+  "audit_trail": [
+    {
+      "timestamp": "2025-11-05T12:19:13.790670",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "__initial__"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.790752",
+      "action": "phase_started",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "agent": null
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.790874",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.95,
+        "passed": true,
+        "outputs": [
+          "output_problem_formulation.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.791249",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.791290",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.791325",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.95,
+        "passed": true,
+        "outputs": [
+          "output_literature_review.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.791611",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.791645",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "gap_analysis",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.791670",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.95,
+        "passed": true,
+        "outputs": [
+          "output_gap_analysis.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.794308",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "gap_analysis",
+        "event": "start_hypothesis_formation"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.794340",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "hypothesis_formation",
+        "event": "start_hypothesis_formation"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.794362",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.95,
+        "passed": true,
+        "outputs": [
+          "output_hypothesis_formation.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.794645",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "hypothesis_formation",
+        "event": "start_experimental_design"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.794676",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "experimental_design",
+        "event": "start_experimental_design"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T12:19:13.794697",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.95,
+        "passed": true,
+        "outputs": [
+          "output_experimental_design.md"
+        ]
+      }
+    }
+  ],
+  "project_root": "/home/aaron/Desktop/ai_scientist/code"
+}
