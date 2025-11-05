@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "literature": {
+      "command": "python",
+      "args": ["/absolute/path/to/ai_scientist/mcp-servers/literature-search.py"],
+      "env": {
+        "OPENALEX_EMAIL": "your-email@example.com",
+        "PUBMED_EMAIL": "your-email@example.com",
+        "PUBMED_API_KEY": "optional-api-key-for-higher-rate-limits"
+      }
+    },
+
+    "citations": {
+      "command": "python",
+      "args": ["/absolute/path/to/ai_scientist/mcp-servers/citation-management.py"],
+      "env": {
+        "OPENCITATIONS_TOKEN": "optional-token-for-opencitations"
+      }
+    },
+
+    "research_db": {
+      "command": "python",
+      "args": ["/absolute/path/to/ai_scientist/mcp-servers/research-database.py"],
+      "env": {
+        "DB_HOST": "localhost",
+        "DB_PORT": "5432",
+        "DB_NAME": "research_db",
+        "DB_USER": "postgres",
+        "DB_PASSWORD": "your-database-password"
+      }
+    },
+
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/absolute/path/to/ai_scientist"]
+    },
+
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git", "--repository", "/absolute/path/to/ai_scientist"]
+    },
+
+    "memory": {
+      "command": "npx",
+      "args": ["mcp-memory-keeper"]
+    }
+  }
+}
