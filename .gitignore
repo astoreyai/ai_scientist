@@ -4,16 +4,20 @@
 # CLAUDE CODE SYSTEM
 # ============================================
 
-# Claude Code backups and logs
+# Claude Code backups and logs (ignore these)
 .claude/backups/
 .claude/tool_log.db
 .claude/tmp/
 
-# Keep Claude Code configuration
+# Keep Claude Code configuration files (don't ignore these)
+!.claude/
 !.claude/settings.json
 !.claude/CLAUDE.md
-!.claude/agents/**
-!.claude/hooks/**
+!.claude/agents/
+!.claude/agents/*.md
+!.claude/hooks/
+!.claude/hooks/*.py
+!.claude/hooks/*.sh
 
 # ============================================
 # PERSONAL DISSERTATION CONTENT
