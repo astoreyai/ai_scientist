@@ -343,9 +343,16 @@ def track_experiment(experiment_name: Optional[str] = None):
 
         @wraps(func)
         def wrapper(*args, **kwargs):
-            manager = MLflowManager(experiment_name=experiment_name or func.__name__)
+            # Use current MLflow tracking URI (respects already-set URI)
+            current_uri = mlflow.get_tracking_uri()
 
-            with manager.start_run(run_name=func.__name__):
+            # Set experiment (will use current tracking URI)
+            if experiment_name:
+                mlflow.set_experiment(experiment_name)
+            else:
+                mlflow.set_experiment(func.__name__)
+
+            with mlflow.start_run(run_name=func.__name__):
                 # Log parameters
                 for key, value in kwargs.items():
                     mlflow.log_param(key, value)
@@ -360,7 +367,8 @@ def track_experiment(experiment_name: Optional[str] = None):
                         if isinstance(v, (int, float))
                     }
                     if metrics:
-                        manager.log_metrics(metrics)
+                        for k, v in metrics.items():
+                            mlflow.log_metric(k, v)
 
                 return result
 
