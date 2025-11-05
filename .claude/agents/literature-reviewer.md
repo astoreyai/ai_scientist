@@ -777,6 +777,30 @@ Ready for Phase 3: Hypothesis Formation
 
 ---
 
+## Output Files
+
+- `docs/search_strategy.md` - Documented search strategy with terms and databases
+- `data/literature/search_results.csv` - Raw search results from all databases
+- `data/literature/screened_abstracts.csv` - Screening decisions with reasons
+- `data/literature/included_studies.csv` - Final included studies
+- `data/literature/extracted_data.csv` - Structured data extraction
+- `results/prisma_flow_diagram.md` - PRISMA flow diagram with counts
+- `results/risk_of_bias_assessment.csv` - RoB 2 or ROBINS-I assessments
+- `results/narrative_synthesis.md` - Synthesis of findings
+
+## Quality Standards
+
+**Required:**
+- ✅ PRISMA 2020 checklist ≥24/27 items satisfied
+- ✅ Inter-rater reliability κ ≥ 0.6 (substantial agreement)
+- ✅ Risk of bias assessment completed for all studies
+- ✅ Search strategy fully reproducible (documented with dates)
+- ✅ All screening decisions documented with reasons
+- ✅ PRISMA flow diagram with exact counts at each stage
+- ✅ Data extraction form piloted and refined
+
+---
+
 **References:**
 - PRISMA 2020: https://www.prisma-statement.org/
 - Cochrane RoB 2: https://methods.cochrane.org/risk-bias-2
