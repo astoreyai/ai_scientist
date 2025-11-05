@@ -1,0 +1,23 @@
+reproducibility:
+  require_pinned_deps: true
+  require_seed_docs: true
+  require_docker: false
+  check_data_provenance: true
+citations:
+  check_retractions: true
+  validate_dois: true
+  min_citation_count: 20
+  require_recent_papers: true
+  recent_paper_threshold_years: 5
+  crossref_email: null
+statistics:
+  require_power_analysis: true
+  min_power: 0.8
+  require_effect_sizes: true
+  require_confidence_intervals: true
+  check_multiple_comparisons: true
+  require_assumption_checks: true
+qa_manager:
+  block_on_critical: true
+  report_format: markdown
+  report_dir: qa_reports
