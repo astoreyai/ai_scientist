@@ -1,0 +1,191 @@
+{
+  "workflow_id": "9f47a56b-4595-4ec9-84ba-d1c76cd00760",
+  "created_at": "2025-11-05T14:59:18.746767",
+  "updated_at": "2025-11-05T14:59:18.753613",
+  "mode": "autonomous",
+  "current_phase": "problem_formulation",
+  "phase_history": [
+    {
+      "phase": "problem_formulation",
+      "entered_at": "2025-11-05T14:59:18.748519",
+      "exited_at": "2025-11-05T14:59:18.753596",
+      "validation_score": 0.9,
+      "outputs": [
+        "design.md"
+      ],
+      "agent_used": null,
+      "notes": ""
+    }
+  ],
+  "research_question": "Computational study",
+  "domain": "",
+  "resources": {},
+  "validation_results": {
+    "problem_formulation": {
+      "passed": true,
+      "score": 0.9,
+      "missing_items": [],
+      "warnings": [],
+      "blocking_issues": [],
+      "details": {}
+    }
+  },
+  "audit_trail": [
+    {
+      "timestamp": "2025-11-05T14:59:18.748273",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "__initial__"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.748533",
+      "action": "phase_started",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "agent": null
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.748570",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.749645",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.749716",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_literature_review"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.749767",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.750838",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "literature_review",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.750905",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "gap_analysis",
+        "event": "start_gap_analysis"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.750951",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.752100",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "gap_analysis",
+        "event": "start_hypothesis_formation"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.752162",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "hypothesis_formation",
+        "event": "start_hypothesis_formation"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.752207",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "output.md"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.753473",
+      "action": "state_exited",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "hypothesis_formation",
+        "event": "start_experimental_design"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.753534",
+      "action": "state_entered",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "experimental_design",
+        "event": "start_experimental_design"
+      }
+    },
+    {
+      "timestamp": "2025-11-05T14:59:18.753606",
+      "action": "phase_completed",
+      "phase": "problem_formulation",
+      "details": {
+        "phase": "problem_formulation",
+        "validation_score": 0.9,
+        "passed": true,
+        "outputs": [
+          "design.md"
+        ]
+      }
+    }
+  ],
+  "project_root": "/home/aaron/Desktop/ai_scientist"
+}
