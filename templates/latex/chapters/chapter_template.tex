@@ -1,0 +1,87 @@
+% Chapter Template
+% Copy this file for each chapter: chapter01.tex, chapter02.tex, etc.
+
+\chapter{Chapter Title}
+\label{ch:chapterlabel}
+
+% Brief chapter introduction
+This chapter presents [what this chapter is about]. Section~\ref{sec:section1} discusses [topic 1], Section~\ref{sec:section2} covers [topic 2], and Section~\ref{sec:conclusion} concludes.
+
+% ============================================================================
+\section{First Section}
+\label{sec:section1}
+
+This section introduces [topic].
+
+% Subsection example
+\subsection{Subsection Example}
+\label{subsec:example}
+
+Content goes here with citations \cite{smith2023example}.
+
+% Equation example
+The key equation is:
+\begin{equation}
+\label{eq:example}
+    f(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+\end{equation}
+where $\mu$ is the mean and $\sigma$ is the standard deviation.
+
+As shown in Equation~\ref{eq:example}, [explain].
+
+% ============================================================================
+\section{Second Section}
+\label{sec:section2}
+
+This section covers [topic].
+
+% Figure example
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{example_figure.pdf}
+    \caption{Description of the figure. This should be self-contained.}
+    \label{fig:example}
+\end{figure}
+
+As shown in Figure~\ref{fig:example}, [describe what the figure shows].
+
+% Table example
+\begin{table}[htbp]
+    \centering
+    \caption{Results comparison. Tables should have captions above.}
+    \label{tab:results}
+    \begin{tabular}{lccc}
+        \toprule
+        Method & Metric 1 & Metric 2 & Metric 3 \\
+        \midrule
+        Baseline 1 & 85.3 & 72.1 & 68.9 \\
+        Baseline 2 & 87.2 & 74.5 & 70.3 \\
+        \textbf{Our Method} & \textbf{92.1} & \textbf{81.3} & \textbf{76.8} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Table~\ref{tab:results} shows that [describe results].
+
+% Algorithm example
+\begin{algorithm}
+    \caption{Algorithm Name}
+    \label{alg:example}
+    \begin{algorithmic}[1]
+        \REQUIRE Input: $x$
+        \ENSURE Output: $y$
+        \STATE Initialize $y \leftarrow 0$
+        \FOR{$i = 1$ to $n$}
+            \STATE $y \leftarrow y + f(x_i)$
+        \ENDFOR
+        \RETURN $y$
+    \end{algorithmic}
+\end{algorithm}
+
+Algorithm~\ref{alg:example} describes [what it does].
+
+% ============================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+This chapter presented [summary of contributions]. We showed [key findings]. The next chapter will [preview next chapter].

@@ -1,0 +1,252 @@
+\documentclass[12pt,oneside]{book}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+
+% Typography
+\usepackage{setspace}
+\doublespacing  % or \onehalfspacing depending on university requirements
+
+% Mathematics
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+
+% Figures and tables
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}  % Professional tables
+\usepackage{multirow}
+\usepackage{array}
+
+% Graphics path
+\graphicspath{{../figures/}}
+
+% Algorithms (choose one or both)
+\usepackage{algorithm}
+\usepackage{algorithmic}  % or algorithmicx
+
+% Code listings
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Code listing style
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red}
+}
+
+% Hyperlinks (load near end)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    pdftitle={Your Dissertation Title},
+    pdfauthor={Your Name}
+}
+
+% Bibliography
+\usepackage{cite}  % or natbib for author-year citations
+
+% Custom theorem environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+\newtheorem{example}{Example}[chapter]
+
+% ============================================================================
+% METADATA
+% ============================================================================
+
+\title{Your Dissertation Title Here}
+\author{Your Full Name}
+\date{\today}
+
+% ============================================================================
+% CUSTOM COMMANDS (Optional)
+% ============================================================================
+
+% Common abbreviations
+\newcommand{\eg}{e.g.,\xspace}
+\newcommand{\ie}{i.e.,\xspace}
+\newcommand{\etal}{et al.\xspace}
+
+% Math shortcuts (examples - customize for your work)
+\newcommand{\R}{\mathbb{R}}  % Real numbers
+\newcommand{\E}{\mathbb{E}}  % Expectation
+\newcommand{\Prob}{\mathbb{P}}  % Probability
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% ============================================================================
+% DOCUMENT
+% ============================================================================
+
+\begin{document}
+
+% ----------------------------------------------------------------------------
+% FRONT MATTER
+% ----------------------------------------------------------------------------
+
+\frontmatter
+
+% Title page
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+
+    {\LARGE\bfseries Your Dissertation Title\par}
+    \vspace{1cm}
+
+    {\Large by\par}
+    \vspace{0.5cm}
+
+    {\Large Your Full Name\par}
+    \vspace{2cm}
+
+    {A dissertation submitted in partial fulfillment\\
+    of the requirements for the degree of\par}
+    \vspace{0.5cm}
+
+    {\large Doctor of Philosophy\par}
+    \vspace{0.5cm}
+
+    {in\par}
+    \vspace{0.5cm}
+
+    {\large Computer Science\par}  % Adjust for your field
+    \vspace{2cm}
+
+    {\large Your University Name\\
+    Department of Computer Science\par}  % Adjust for your department
+    \vspace{1cm}
+
+    {\large Month Year\par}
+
+\end{titlepage}
+
+% Copyright page (optional)
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    Copyright \textcopyright\ Year Your Name\\
+    All rights reserved
+\end{center}
+\vspace*{\fill}
+
+% Committee approval page (format varies by university)
+\newpage
+\thispagestyle{empty}
+\noindent
+The dissertation of Your Name is approved by:\\
+
+\vspace{1cm}
+\noindent
+\rule{10cm}{0.4pt}\\
+Dr. Advisor Name, Chair\\
+
+\vspace{1cm}
+\noindent
+\rule{10cm}{0.4pt}\\
+Dr. Committee Member 1\\
+
+\vspace{1cm}
+\noindent
+\rule{10cm}{0.4pt}\\
+Dr. Committee Member 2\\
+
+\vspace{1cm}
+\noindent
+\rule{10cm}{0.4pt}\\
+Dr. Committee Member 3\\
+
+\vspace{2cm}
+\noindent
+Date: \rule{5cm}{0.4pt}
+
+% Abstract
+\newpage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+[Your abstract here - typically 250-350 words]
+
+This dissertation addresses [problem]. We propose [approach] which achieves [key result]. Our contributions include [list]. Experimental results demonstrate [findings].
+
+% Dedication (optional)
+\newpage
+\chapter*{Dedication}
+\addcontentsline{toc}{chapter}{Dedication}
+
+To [whoever you want to dedicate this to]...
+
+% Acknowledgments
+\newpage
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+I would like to thank my advisor, Dr. [Name], for [guidance]. I am grateful to my committee members, Dr. [Name], Dr. [Name], and Dr. [Name], for [feedback]...
+
+% Table of Contents
+\tableofcontents
+
+% List of Figures
+\listoffigures
+
+% List of Tables
+\listoftables
+
+% List of Algorithms (if applicable)
+% \listofalgorithms
+
+% ----------------------------------------------------------------------------
+% MAIN MATTER
+% ----------------------------------------------------------------------------
+
+\mainmatter
+
+% Include each chapter
+\include{chapters/chapter01}
+\include{chapters/chapter02}
+\include{chapters/chapter03}
+\include{chapters/chapter04}
+\include{chapters/chapter05}
+\include{chapters/chapter06}
+\include{chapters/chapter07}
+\include{chapters/chapter08}
+
+% ----------------------------------------------------------------------------
+% BACK MATTER
+% ----------------------------------------------------------------------------
+
+\backmatter
+
+% Bibliography
+\bibliographystyle{plain}  % or alpha, ieeetr, acm, apa, etc.
+\bibliography{../bibliography/references}
+
+% Appendices (if needed)
+\appendix
+% \include{chapters/appendixA}
+% \include{chapters/appendixB}
+
+\end{document}

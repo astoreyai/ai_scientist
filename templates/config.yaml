@@ -1,0 +1,355 @@
+# PhD Dissertation Configuration File
+
+# ==============================================================================
+# DISSERTATION METADATA
+# ==============================================================================
+
+title: "Falsifiable Attribution in Face Verification: A Counterfactual Framework for Validating Explanation Faithfulness"
+subtitle: "Establishing Reproducible Evaluation Standards for Explainable Biometric Systems"
+
+author:
+  name: "Aaron W. Storey"
+  email: "storeyaw@clarkson.edu"
+
+# ==============================================================================
+# ACADEMIC INFORMATION
+# ==============================================================================
+
+degree:
+  type: "Doctor of Philosophy"
+  abbreviation: "PhD"
+  field: "Computer Science"
+
+university:
+  name: "Clarkson University"
+  department: "Department of Computer Science"
+  location: "Potsdam, NY"
+
+committee:
+  advisor: "Dr. Masudul H. Imtiaz"
+  members:
+    - "Dr. Christopher Lynch"
+    - "Dr. Alexis Maciel"
+    - "Dr. Jeanna Matthews"
+    - "Dr. Stephanie Schuckers"
+
+# ==============================================================================
+# RESEARCH INFORMATION
+# ==============================================================================
+
+research:
+  topic_area: "Developing and validating methods to verify whether explanations for face verification AI decisions genuinely reflect model behavior through counterfactual score prediction"
+
+  keywords:
+    - "Explainable AI (XAI)"
+    - "Face Verification"
+    - "Attribution Faithfulness"
+    - "Counterfactual Validation"
+    - "Biometric Systems"
+    - "Falsifiability"
+    - "Reproducible AI"
+
+  type: "computational"
+
+  characteristics:
+    datasets: "public"  # IJB-B/C, LFW, CFP-FP, AgeDB-30
+    irb_required: false  # No human subjects, using existing datasets
+    industry_partners: false
+    human_subjects: false
+
+# ==============================================================================
+# TIMELINE (COMPRESSED 10 MONTHS)
+# ==============================================================================
+
+timeline:
+  start_date: "2025-10-01"
+  proposal_defense: "2026-01-15"
+  target_defense_date: "2026-08-01"
+  estimated_months: 10
+
+  milestones:
+    - name: "Literature Review Complete"
+      date: "2025-11-15"
+      status: "pending"
+
+    - name: "Research Questions Finalized"
+      date: "2025-12-01"
+      status: "pending"
+
+    - name: "Proposal Document Complete"
+      date: "2025-12-31"
+      status: "pending"
+
+    - name: "Proposal Defense"
+      date: "2026-01-15"
+      status: "pending"
+
+    - name: "Baseline System Operational"
+      date: "2026-02-15"
+      status: "pending"
+
+    - name: "Falsifiability Framework Implemented"
+      date: "2026-04-01"
+      status: "pending"
+
+    - name: "Experiments Complete"
+      date: "2026-05-15"
+      status: "pending"
+
+    - name: "Full Dissertation Draft"
+      date: "2026-06-30"
+      status: "pending"
+
+    - name: "Final Defense"
+      date: "2026-08-01"
+      status: "pending"
+
+# ==============================================================================
+# DISSERTATION STRUCTURE
+# ==============================================================================
+
+chapters:
+  - number: 1
+    title: "Introduction: The Falsifiability Crisis in Explainable Face Verification"
+    target_words: 5000
+    status: "pending"
+
+  - number: 2
+    title: "Literature Review: Attribution Methods and Evaluation Challenges"
+    target_words: 10000
+    status: "pending"
+
+  - number: 3
+    title: "Theoretical Foundation: Counterfactual Reasoning and Causal Attribution"
+    target_words: 7000
+    status: "pending"
+
+  - number: 4
+    title: "Methodology: Falsifiable Attribution Framework"
+    target_words: 8000
+    status: "pending"
+
+  - number: 5
+    title: "Implementation: Counterfactual Score Prediction System"
+    target_words: 7000
+    status: "pending"
+
+  - number: 6
+    title: "Experimental Validation and Results"
+    target_words: 10000
+    status: "pending"
+
+  - number: 7
+    title: "Discussion: Implications for Forensic and Legal Deployment"
+    target_words: 6000
+    status: "pending"
+
+  - number: 8
+    title: "Conclusion and Future Work"
+    target_words: 4000
+    status: "pending"
+
+total_target_words: 60000  # Focused dissertation given tight timeline
+
+# ==============================================================================
+# RESEARCH QUESTIONS
+# ==============================================================================
+
+research_questions:
+  - id: "RQ1"
+    question: "Can we develop attribution methods whose outputs satisfy formal falsifiability criteria through predictable counterfactual score changes?"
+    focus: "Mathematical framework for falsifiable attribution"
+    validation: "Systematic perturbation experiments measuring prediction accuracy of score changes"
+
+  - id: "RQ2"
+    question: "What are the theoretical and empirical limits of attribution faithfulness in face verification embedding spaces?"
+    focus: "Boundaries of explainability in high-dimensional face manifolds"
+    validation: "Analysis across different architectures (ArcFace, CosFace) and perturbation strategies"
+
+  - id: "RQ3"
+    question: "How do current attribution methods (Grad-CAM, Integrated Gradients, SHAP) perform under rigorous falsifiability testing?"
+    focus: "Systematic evaluation of existing XAI methods"
+    validation: "Counterfactual validation protocols with ground truth manipulations"
+
+  - id: "RQ4"
+    question: "What constitutes 'sufficient faithfulness' for legal/forensic deployment of explainable face verification?"
+    focus: "Practical thresholds for deployment"
+    validation: "Analysis of wrongful arrest cases and regulatory requirements (EU AI Act, GDPR)"
+
+# ==============================================================================
+# CONTRIBUTIONS
+# ==============================================================================
+
+contributions:
+  theoretical:
+    - "Formal mathematical framework for falsifiable attribution in pairwise verification tasks"
+    - "Information-theoretic bounds on explanation faithfulness in face embedding spaces"
+
+  algorithmic:
+    - "Counterfactual score prediction system with calibrated uncertainty quantification"
+    - "Perturbation strategies that maintain plausibility on face manifolds"
+
+  empirical:
+    - "Comprehensive evaluation revealing which attribution methods produce falsifiable explanations"
+    - "Benchmark suite with ground truth for face verification XAI evaluation"
+
+  applied:
+    - "Open-source evaluation framework for reproducible XAI assessment"
+    - "Guidelines for forensic/legal deployment based on faithfulness thresholds"
+
+# ==============================================================================
+# TECHNICAL DETAILS
+# ==============================================================================
+
+technical:
+  datasets:
+    - name: "IJB-B"
+      source: "NIST/IARPA Janus Benchmark"
+      size: "68,000 images, 1,845 subjects"
+      usage: "Primary evaluation benchmark"
+
+    - name: "IJB-C"
+      source: "NIST/IARPA Janus Benchmark"
+      size: "138,000 images, 3,531 subjects"
+      usage: "Extended evaluation and demographic analysis"
+
+    - name: "LFW (Labeled Faces in the Wild)"
+      source: "http://vis-www.cs.umass.edu/lfw/"
+      size: "13,233 images, 5,749 subjects"
+      usage: "Baseline verification performance"
+
+    - name: "CFP-FP (Celebrities in Frontal Profile)"
+      source: "http://cfpw.io/"
+      size: "7,000 images, 500 subjects"
+      usage: "Pose variation testing"
+
+    - name: "MS1MV3 (Pretrained)"
+      source: "InsightFace"
+      size: "5.2M images, 93K identities"
+      usage: "Pretrained model weights"
+
+  baselines:
+    - name: "ArcFace"
+      reference: "Deng et al., CVPR 2019"
+      implementation: "https://github.com/deepinsight/insightface"
+
+    - name: "Grad-CAM"
+      reference: "Selvaraju et al., ICCV 2017"
+      implementation: "PyTorch Captum"
+
+    - name: "Integrated Gradients"
+      reference: "Sundararajan et al., ICML 2017"
+      implementation: "PyTorch Captum"
+
+    - name: "SHAP"
+      reference: "Lundberg & Lee, NeurIPS 2017"
+      implementation: "https://github.com/shap/shap"
+
+  metrics:
+    - "Counterfactual Score Prediction Accuracy"
+    - "Insertion/Deletion AUC (with OOD corrections)"
+    - "Sufficiency/Necessity Scores"
+    - "Attribution Consistency"
+    - "TAR@FAR (1e-4, 1e-3)"
+    - "Demographic Parity Difference"
+
+  tools:
+    languages: ["Python 3.11"]
+    frameworks: ["PyTorch 2.0", "Captum", "InsightFace", "NumPy", "scikit-learn"]
+    hardware: "NVIDIA RTX 3090 (24GB VRAM)"
+    tracking: ["Weights & Biases", "Git/GitHub"]
+
+# ==============================================================================
+# PUBLICATIONS (Target)
+# ==============================================================================
+
+publications:
+  - title: "Falsifiable Attribution in Face Verification: A Counterfactual Framework"
+    authors: ["Aaron W. Storey", "Masudul H. Imtiaz"]
+    venue: "CVPR/ICCV/ECCV Workshop 2026"
+    year: 2026
+    status: "in_preparation"
+    url: ""
+
+  - title: "Evaluating Explanation Faithfulness in Biometric Systems: A Systematic Study"
+    authors: ["Aaron W. Storey", "Masudul H. Imtiaz", "Stephanie Schuckers"]
+    venue: "IEEE TIFS / Pattern Recognition"
+    year: 2026
+    status: "planned"
+    url: ""
+
+# ==============================================================================
+# COMPRESSED TIMELINE STRATEGY (10 MONTHS)
+# ==============================================================================
+
+compressed_strategy: |
+  Given 10-month timeline from start to defense:
+
+  PRE-PROPOSAL (Oct 2025 - Jan 2026):
+  - Month 1-1.5: Intensive literature review, identify specific gap
+  - Month 2: Finalize research questions, write proposal
+  - Month 2.5: Proposal prep and practice
+  - Month 3.5: PROPOSAL DEFENSE (Jan 15, 2026)
+
+  POST-PROPOSAL SPRINT (Jan-Aug 2026):
+  - Month 4-5: Baseline implementation using pretrained models
+  - Month 5-7: Core falsifiability framework development
+  - Month 7-8.5: Experiments and evaluation
+  - Month 8.5-9.5: Writing sprint (concurrent with final experiments)
+  - Month 10: Defense preparation
+
+  CRITICAL SUCCESS FACTORS:
+  1. Use ONLY pretrained models (no training from scratch)
+  2. Focus on ONE core contribution (falsifiability framework)
+  3. Leverage existing code (Captum, InsightFace)
+  4. Start writing EARLY (from Month 7)
+  5. Simple but rigorous experiments
+  6. No user studies (time constraint)
+
+# ==============================================================================
+# NOTES AND REMINDERS
+# ==============================================================================
+
+notes: |
+  CLARKSON-SPECIFIC CONSIDERATIONS:
+  - CITeR (Center for Identification Technology Research) connection through Dr. Schuckers
+  - Leverage existing biometrics expertise in department
+  - Strong committee with XAI (Imtiaz), Theory (Lynch/Maciel), Ethics (Matthews), Biometrics (Schuckers)
+
+  CRITICAL TIME MANAGEMENT (10 MONTHS):
+  - Week 1-2: Set up ALL infrastructure (GPU, datasets, baseline code)
+  - Daily progress commits to GitHub
+  - Weekly advisor meetings (non-negotiable)
+  - Bi-weekly committee updates after proposal
+  - Start writing at 50% experiments complete
+
+  SCOPE DISCIPLINE:
+  - NO training models from scratch
+  - NO user studies
+  - NO multiple architecture comparisons
+  - ONE dataset for main results (IJB-B)
+  - OTHER datasets only for validation
+
+  BACKUP PLANS:
+  - Cloud GPU access ready (Colab Pro+/Lambda)
+  - Simplified experiments if behind schedule
+  - Workshop paper if conference deadline missed
+
+  REMEMBER THE STAKES:
+  - 7+ wrongful arrests documented
+  - Real people harmed by unexplained AI
+  - Your work can prevent future injustices
+  - Focus on impact, not perfection
+
+# ==============================================================================
+# AUTOMATION SETTINGS
+# ==============================================================================
+
+automation:
+  auto_backup: true
+  backup_frequency_days: 1  # Daily given compressed timeline
+  word_count_tracking: true
+  progress_reports: true
+  gpu_usage_tracking: true
+  deadline_reminders: true
+  weekly_advisor_report: true

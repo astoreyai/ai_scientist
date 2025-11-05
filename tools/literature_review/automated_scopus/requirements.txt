@@ -1,0 +1,18 @@
+# Python Dependencies for Automated Scopus Pipeline
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+requests>=2.28.0        # HTTP requests for Scopus API
+pyyaml>=6.0            # YAML config file parsing
+
+# Optional but recommended
+python-Levenshtein>=0.21.0  # Faster fuzzy matching (optional)
+
+# Note: The following are built-in Python modules, no installation needed:
+# - json
+# - csv
+# - logging
+# - pathlib
+# - datetime
+# - argparse
+# - typing

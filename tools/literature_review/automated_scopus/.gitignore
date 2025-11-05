@@ -1,0 +1,37 @@
+# Gitignore for Automated Scopus Pipeline
+
+# API credentials (NEVER commit API keys!)
+config/scopus_config.yaml
+
+# Results and outputs (too large for git)
+results/
+exports/
+logs/
+reports/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep example/template files
+!config/*.template
+!config/*.example

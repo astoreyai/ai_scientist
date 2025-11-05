@@ -1,0 +1,288 @@
+# Production Research Assistant System - Git Ignore File
+
+# ============================================
+# CLAUDE CODE SYSTEM
+# ============================================
+
+# Claude Code backups and logs
+.claude/backups/
+.claude/tool_log.db
+.claude/tmp/
+
+# Keep Claude Code configuration
+!.claude/settings.json
+!.claude/CLAUDE.md
+!.claude/agents/**
+!.claude/hooks/**
+
+# ============================================
+# PERSONAL DISSERTATION CONTENT
+# ============================================
+# These should NOT be committed to the pipeline repository
+# (They belong in YOUR dissertation repository)
+
+# Dissertation working directories
+/MY_DISSERTATION/
+/*_dissertation/
+/dissertation_*/
+
+# Personal configuration
+config.yaml
+*.local
+
+# ============================================
+# LATEX BUILD FILES
+# ============================================
+
+## Core LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+
+## Bibliography
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build directories
+*.pdf
+!templates/**/*.pdf
+!examples/**/*.pdf
+
+## Intermediate files
+*.dvi
+*.ps
+
+## LaTeX cache
+*.nav
+*.snm
+*.vrb
+
+# ============================================
+# PYTHON
+# ============================================
+
+## Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+## Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+## Python cache
+.pytest_cache/
+*.cover
+.coverage
+htmlcov/
+
+## Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# ============================================
+# REFERENCE MANAGEMENT
+# ============================================
+
+## Zotero
+*.sqlite
+*.sqlite-journal
+storage/
+
+## Mendeley
+*.mendeley
+
+## EndNote
+*.enl
+*.Data/
+
+# ============================================
+# DATA FILES
+# ============================================
+
+## Large datasets
+*.csv
+*.tsv
+*.xlsx
+!templates/**/*.csv
+!examples/**/*.csv
+
+## Database files
+*.db
+*.sqlite3
+
+## Binary data
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.mat
+*.hdf5
+
+## Results
+results/
+output/
+experiments/results_*/
+!experiments/README.md
+
+# ============================================
+# EXPERIMENT TRACKING & DATA VERSIONING
+# ============================================
+
+## DVC (Data Version Control)
+/dvc.lock
+.dvc/tmp
+.dvc/cache
+
+# Keep DVC configuration
+!.dvc/.gitignore
+!.dvc/config
+!.dvc/plots
+!*.dvc
+
+## MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ============================================
+# BACKUP FILES
+# ============================================
+
+*~
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# ============================================
+# LOGS
+# ============================================
+
+*.log
+logs/
+*.out
+!tools/literature_review/automated_scopus/logs/*.md
+
+# ============================================
+# IDE / EDITOR
+# ============================================
+
+## VSCode
+.vscode/
+!.vscode/settings.json.example
+
+## PyCharm
+.idea/
+
+## Emacs
+\#*\#
+.\#*
+
+## Vim
+*.swp
+*.swo
+*~
+
+## Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# OS SPECIFIC
+# ============================================
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## Linux
+.directory
+
+# ============================================
+# CREDENTIALS & SECRETS
+# ============================================
+
+## API Keys
+*_api_key.txt
+*.key
+credentials.json
+secrets.yaml
+
+## Config with credentials
+*_config_local.yaml
+scopus_credentials.yaml
+
+# ============================================
+# TEMPORARY / CACHE
+# ============================================
+
+.cache/
+tmp/
+temp/
+*.cache
+
+# ============================================
+# SPECIFIC TOOLS
+# ============================================
+
+## Scopus automated search
+tools/literature_review/automated_scopus/results/*.csv
+tools/literature_review/automated_scopus/exports/*.bib
+!tools/literature_review/automated_scopus/results/README.md
+
+## Progress tracking (personal)
+progress/current_todo.md
+progress/weekly_log.md
+
+# ============================================
+# KEEP THESE
+# ============================================
+
+## Documentation
+!README.md
+!LICENSE.md
+!CHANGELOG.md
+!docs/*.md
+
+## Templates (keep all)
+!templates/**/*
+
+## Example files (keep all)
+!examples/**/*
+
+## Workflow files (keep all)
+!workflows/*.md
+
+## Tool documentation (keep all)
+!tools/**/README.md
+!tools/**/*.md
+
+## Scripts (keep all)
+!automation/**/*.sh
+!automation/**/*.py
