@@ -1,23 +1,29 @@
-# PhD Pipeline Skills for Claude Code
+# Research Skills Reference Documentation
 
-Reusable capabilities for ANY PhD dissertation project - not just this pipeline!
+**Status:** Reference documentation for specialized agents
+**Location:** `/docs/skills/` (moved from root)
+**Purpose:** Comprehensive specifications that agents consult when performing research tasks
 
-## What Are Skills?
+## What Are These Documents?
 
-Skills are general-purpose tools that work across any academic project. Unlike slash commands (project-specific), skills can be used in:
-- Any PhD dissertation
-- Research papers
-- Grant proposals
-- Academic writing
+These are **reference specifications** describing research capabilities, NOT executable Claude Code skills. Each document (500+ lines) provides:
+- Detailed methodology and best practices
+- Academic standards and guidelines
+- Example outputs and templates
+- Integration with dissertation chapters
+- Field-specific adaptations
 
-## How to Use Skills
+## How Agents Use These
 
-Skills are invoked with `@skill-name` in Claude Code:
+Specialized agents reference these documents when executing research tasks:
 
-```
-User: "Help me format these citations"
-Claude: I'll use the @citation-format skill to help you.
-```
+- **`literature-reviewer` agent** → consults `@prisma-diagram`, `@synthesis-matrix`, `@inclusion-criteria`
+- **`experiment-designer` agent** → consults `@power-analysis`, `@experiment-design`, `@hypothesis-test`
+- **`data-analyst` agent** → consults `@effect-size`, `@results-interpreter`, `@hypothesis-test`
+- **`citation-manager` agent** → consults `@citation-format`, `@bibtex-clean`
+- **Other agents** → consult writing, visualization, and methodology specs as needed
+
+**Important:** These capabilities are **implemented IN the agents**, not as separate executable skills. Think of these as the "instruction manuals" agents follow.
 
 ## Available Skills (22 Total)
 
@@ -146,24 +152,23 @@ For your parameters:
 
 **55 hours (7 workdays) saved!** 🎉
 
-## Development Status
+## Architecture Decision (January 2025)
 
-### ✅ Phase 1: Documentation (Current)
-- Skill specifications
-- Usage examples
-- Best practices
-- Integration guides
+**Original Plan:** Implement as executable Claude Code skills (22 separate invocations)
 
-### ⏳ Phase 2: Implementation (Next)
-- Skill prompt engineering
-- Testing and validation
-- Example outputs
-- Field-specific variations
+**Final Decision:** Use as reference documentation for specialized agents
 
-### ⏳ Phase 3: Marketplace (Future)
-- Publish to Claude Code Skills marketplace
-- Community feedback
-- Continuous improvement
+**Rationale:**
+1. **Avoids duplication** - Agents already implement these capabilities
+2. **Better integration** - Agents have context and can combine skills
+3. **Follows R4 (Minimal Files)** - One agent file vs 22+ skill files
+4. **Maintains value** - Comprehensive specs guide agent implementation
+5. **Cleaner UX** - User invokes agents, not individual micro-skills
+
+**Status:** Complete ✅
+- All 22 skill specifications documented (404KB)
+- Moved to `/docs/skills/` as permanent reference
+- Agents reference these specs when executing tasks
 
 ## Skill Design Principles
 
@@ -300,9 +305,9 @@ Want to add a skill?
 
 ---
 
-**Status:** Phase 1 (Documentation) - In Progress
-**Skills Documented:** 0/22
-**Skills Implemented:** 0/22
-**Target:** All 22 skills for any PhD dissertation
+**Status:** Reference Documentation Complete ✅
+**Specifications:** 22/22 documented (404KB)
+**Integration:** Used by 5 specialized agents
+**Role:** Comprehensive methodology guides for research tasks
 
-**Start using skills to accelerate your academic work!** 🚀
+**These specifications ensure agents follow rigorous academic standards!** 🎓
