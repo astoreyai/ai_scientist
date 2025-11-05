@@ -1,0 +1,246 @@
+{
+  "timestamp": "2025-11-05T11:37:33.028692",
+  "tests": [
+    {
+      "name": "OpenAlex Search",
+      "status": "PASS",
+      "details": "Retrieved 5 papers successfully",
+      "data_sample": {
+        "title": "Scikit-learn: Machine Learning in Python",
+        "authors": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5105141183",
+              "display_name": "Fabi\u00e1n Pedregosa",
+              "orcid": "https://orcid.org/0000-0003-4025-3953"
+            },
+            "institutions": [
+              {
+                "id": null,
+                "display_name": null,
+                "ror": null,
+                "country_code": null,
+                "type": null,
+                "lineage": []
+              },
+              {
+                "id": "https://openalex.org/I4210128565",
+                "display_name": "CEA Paris-Saclay",
+                "ror": "https://ror.org/03n15ch10",
+                "country_code": "FR",
+                "type": "government",
+                "lineage": [
+                  "https://openalex.org/I2738703131",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I4210128565"
+                ]
+              },
+              {
+                "id": "https://openalex.org/I2738703131",
+                "display_name": "Commissariat \u00e0 l'\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+                "ror": "https://ror.org/00jjx8s55",
+                "country_code": "FR",
+                "type": "government",
+                "lineage": [
+                  "https://openalex.org/I2738703131"
+                ]
+              }
+            ],
+            "countries": [
+              "FR"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Fabian Pedregosa",
+            "raw_affiliation_strings": [
+              "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e par Ordinateur (France)",
+              "PARIETAL - Modelling brain structure, function and variability based on high-field MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)"
+            ],
+            "affiliations": [
+              {
+                "raw_affiliation_string": "PARIETAL - Modelling brain structure, function and variability based on high-field MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)",
+                "institution_ids": [
+                  "https://openalex.org/I4210128565"
+                ]
+              },
+              {
+                "raw_affiliation_string": "PARIETAL - Modelling brain structure, function and variability based on high-field MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)",
+                "institution_ids": [
+                  "https://openalex.org/I2738703131"
+                ]
+              },
+              {
+                "raw_affiliation_string": "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e par Ordinateur (France)",
+                "institution_ids": [
+                  null
+                ]
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5074733625",
+              "display_name": "Ga\u00ebl Varoquaux",
+              "orcid": "https://orcid.org/0000-0003-1076-5122"
+            },
+            "institutions": [
+              {
+                "id": null,
+                "display_name": null,
+                "ror": null,
+                "country_code": null,
+                "type": null,
+                "lineage": []
+              },
+              {
+                "id": "https://openalex.org/I4210128565",
+                "display_name": "CEA Paris-Saclay",
+                "ror": "https://ror.org/03n15ch10",
+                "country_code": "FR",
+                "type": "government",
+                "lineage": [
+                  "https://openalex.org/I2738703131",
+                  "https://openalex.org/I277688954",
+                  "https://openalex.org/I4210128565"
+                ]
+              },
+              {
+                "id": "https://openalex.org/I2738703131",
+                "display_name": "Commissariat \u00e0 l'\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+                "ror": "https://ror.org/00jjx8s55",
+                "country_code": "FR",
+                "type": "government",
+                "lineage": [
+                  "https://openalex.org/I2738703131"
+                ]
+              }
+            ],
+            "countries": [
+              "FR"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Ga\u00ebl Varoquaux",
+            "raw_affiliation_strings": [
+              "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e par Ordinateur (France)",
+              "PARIETAL - Modelling brain structure, function and variability based on high-field MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)"
+            ],
+            "affiliations": [
+              {
+                "raw_affiliation_string": "PARIETAL - Modelling brain structure, function and variability based on high-field MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)",
+                "institution_ids": [
+                  "https://openalex.org/I2738703131"
+                ]
+              },
+              {
+                "raw_affiliation_string": "PARIETAL - Modelling brain structure, function and variability based on high-field MRI data (Neurospin, CEA Saclay, B\u00e2timent 145, 91191 Gif-sur-Yvette Cedex - France)",
+                "institution_ids": [
+                  "https://openalex.org/I4210128565"
+                ]
+              },
+              {
+                "raw_affiliation_string": "LNAO - Laboratoire de Neuroimagerie Assist\u00e9e par Ordinateur (France)",
+                "institution_ids": [
+                  null
+                ]
+              }
+            ]
+          }
+        ],
+        "year": 2022,
+        "cited_by_count": 62915,
+        "doi": "https://doi.org/10.48550/arxiv.1201.0490"
+      }
+    },
+    {
+      "name": "OpenAlex Rate Limiting",
+      "status": "PASS",
+      "details": "Rate limiting working - fetched 10 additional papers",
+      "data_sample": null
+    },
+    {
+      "name": "arXiv Search",
+      "status": "PASS",
+      "details": "Retrieved 5 preprints successfully",
+      "data_sample": {
+        "title": "Agent-Omni: Test-Time Multimodal Reasoning via Model Coordination for Understanding Anything",
+        "authors": [
+          "Huawei Lin",
+          "Yunzhi Shi"
+        ],
+        "published": "2025-11-04 18:59:09+00:00",
+        "arxiv_id": "http://arxiv.org/abs/2511.02834v1",
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG"
+        ]
+      }
+    },
+    {
+      "name": "arXiv PDF Access",
+      "status": "PASS",
+      "details": "PDF URL available: http://arxiv.org/pdf/2511.02834v1",
+      "data_sample": null
+    },
+    {
+      "name": "PubMed Search",
+      "status": "PASS",
+      "details": "Found 213298 papers, retrieved 5 PMIDs",
+      "data_sample": {
+        "total_results": "213298",
+        "pmids": [
+          "41190394",
+          "41190388",
+          "41190279"
+        ],
+        "first_abstract_preview": "1. Biomol Biomed. 2025 Nov 5. doi: 10.17305/bb.2025.13295. Online ahead of print.\n\nExosomes in cancer metabolism and drug resistance: A review.\n\nMohammed O(1), Ahmed Assaye M(2), Alemayehu E(3), Tufa ..."
+      }
+    },
+    {
+      "name": "Crossref DOI Resolution",
+      "status": "PASS",
+      "details": "Successfully resolved DOI metadata",
+      "data_sample": {
+        "title": "Nanometre-scale thermometry in a living cell",
+        "authors": [
+          {
+            "given": "G.",
+            "family": "Kucsko",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "P. C.",
+            "family": "Maurer",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              31
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "citations": 1677
+      }
+    },
+    {
+      "name": "Crossref Retraction Check",
+      "status": "PASS",
+      "details": "Retraction check complete - Updates found: False",
+      "data_sample": null
+    },
+    {
+      "name": "OpenCitations Query",
+      "status": "PASS",
+      "details": "Retrieved citation data - 1387 citations found",
+      "data_sample": null
+    }
+  ]
+}
