@@ -269,13 +269,16 @@ class StatisticalValidator(BaseValidator):
         files_with_problems = []
 
         for filename, content in code_contents:
+            # Skip validator files themselves (they contain detection patterns as strings)
+            is_validator = "quality_assurance" in filename and filename.endswith("_validator.py")
+
             has_pvalue = any(pattern.search(content) for pattern in pvalue_patterns)
             has_problem = any(pattern.search(content) for pattern in problematic_patterns)
 
             if has_pvalue:
                 files_with_pvalues.append(filename)
 
-            if has_problem:
+            if has_problem and not is_validator:
                 files_with_problems.append(filename)
 
         if files_with_problems:
