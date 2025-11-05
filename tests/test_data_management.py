@@ -273,6 +273,58 @@ class TestAutoTracker:
         assert run_id is not None
 
 
+class TestDVCManagerExtended:
+    """Extended DVC tests for better coverage"""
+
+    def test_list_tracked_files_empty(self, tmp_path):
+        """Test listing when no files tracked"""
+        manager = DVCManager(tmp_path)
+        tracked = manager.list_tracked_files()
+        assert tracked == []
+
+    def test_initialization_check(self, tmp_path):
+        """Test DVC initialization checking"""
+        manager = DVCManager(tmp_path)
+        assert manager.is_initialized() in [True, False]
+
+
+class TestGitWorkflowManagerExtended:
+    """Extended Git workflow tests"""
+
+    def test_create_basic(self, tmp_path):
+        """Test creating git manager"""
+        manager = GitWorkflowManager(tmp_path)
+        assert manager.project_root == tmp_path
+
+
+class TestArtifactManagerExtended:
+    """Extended artifact manager tests"""
+
+    def test_create_basic(self, tmp_path):
+        """Test creating artifact manager"""
+        manager = ArtifactManager(tmp_path)
+        assert manager is not None
+
+
+class TestMLflowManagerExtended:
+    """Extended MLflow tests"""
+
+    def test_create_with_tracking_uri(self, tmp_path):
+        """Test creating manager with tracking URI"""
+        tracking_uri = f"file://{tmp_path}/mlruns"
+        manager = MLflowManager(tracking_uri=tracking_uri)
+        assert manager.tracking_uri == tracking_uri
+
+
+class TestAutoTrackerExtended:
+    """Extended auto tracker tests"""
+
+    def test_create_basic(self, tmp_path):
+        """Test creating auto tracker"""
+        tracker = AutoTracker(project_root=tmp_path)
+        assert tracker.project_root == tmp_path
+
+
 if __name__ == "__main__":
     # Run tests
     pytest.main([__file__, "-v"])

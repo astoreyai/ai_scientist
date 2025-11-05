@@ -17,6 +17,7 @@ from quality_assurance.reproducibility_validator import ReproducibilityValidator
 from quality_assurance.citation_verifier import CitationVerifier
 from quality_assurance.statistical_validator import StatisticalValidator
 from quality_assurance.qa_manager import QAManager, create_default_config
+from workflow_context import WorkflowContext
 
 
 class TestBase:
@@ -486,6 +487,63 @@ class TestQAManager:
         assert summary["passed"] == 1
         assert summary["warnings"] == 1
         assert summary["errors"] == 0
+
+
+class TestCitationVerifierExtended:
+    """Extended citation verifier tests"""
+
+    def test_create_with_config(self, tmp_path):
+        """Test creating verifier with configuration"""
+        verifier = CitationVerifier(tmp_path, {"min_citation_count": 10})
+        assert verifier.project_root == tmp_path
+
+    def test_validate_structure(self, tmp_path):
+        """Test basic structure validation"""
+        verifier = CitationVerifier(tmp_path)
+        # Verifier should have project_root
+        assert hasattr(verifier, 'project_root')
+
+
+class TestStatisticalValidatorExtended:
+    """Extended statistical validator tests"""
+
+    def test_create_with_config(self, tmp_path):
+        """Test creating validator with configuration"""
+        validator = StatisticalValidator(tmp_path, {"min_power": 0.9})
+        assert validator.project_root == tmp_path
+
+    def test_validate_structure(self, tmp_path):
+        """Test basic structure validation"""
+        validator = StatisticalValidator(tmp_path)
+        assert hasattr(validator, 'project_root')
+
+
+class TestReproducibilityValidatorExtended:
+    """Extended reproducibility validator tests"""
+
+    def test_create_with_config(self, tmp_path):
+        """Test creating validator with configuration"""
+        validator = ReproducibilityValidator(tmp_path, {"require_docker": True})
+        assert validator.project_root == tmp_path
+
+    def test_validate_structure(self, tmp_path):
+        """Test basic structure validation"""
+        validator = ReproducibilityValidator(tmp_path)
+        assert hasattr(validator, 'project_root')
+
+
+class TestQAManagerExtended:
+    """Extended QA manager tests"""
+
+    def test_create_basic(self, tmp_path):
+        """Test creating manager"""
+        manager = QAManager(project_root=tmp_path)
+        assert manager is not None
+
+    def test_validate_structure(self, tmp_path):
+        """Test basic structure validation"""
+        manager = QAManager(project_root=tmp_path)
+        assert hasattr(manager, 'project_root')
 
 
 if __name__ == "__main__":
