@@ -8,6 +8,9 @@
 .claude/backups/
 .claude/tool_log.db
 .claude/tmp/
+.claude/*.log
+.research_workflow/
+.research_workflow/backups/
 
 # Keep Claude Code configuration files (don't ignore these)
 !.claude/
@@ -93,6 +96,8 @@ ENV/
 *.cover
 .coverage
 htmlcov/
+coverage.json
+pytest_html_report.html
 
 ## Distribution / packaging
 dist/
@@ -141,8 +146,13 @@ storage/
 ## Results
 results/
 output/
+output.json
 experiments/results_*/
 !experiments/README.md
+
+## QA Reports
+qa_reports/
+!qa_reports/README.md
 
 # ============================================
 # EXPERIMENT TRACKING & DATA VERSIONING

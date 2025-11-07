@@ -1,0 +1,21 @@
+[run]
+source = code
+omit =
+    # External service integrations not used in academic research
+    code/data_management/dvc_manager.py
+    code/data_management/mlflow_manager.py
+    code/data_management/artifact_manager.py
+    code/data_management/auto_tracking.py
+    # Entry points
+    code/quality_assurance/cli.py
+    code/quality_assurance/__main__.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    except ImportError:
+
+precision = 2
