@@ -1,0 +1,43 @@
+{
+  "name": "research-assistant-marketplace",
+  "owner": {
+    "name": "Aaron Storey",
+    "email": "aaron@astoreyai.com"
+  },
+  "metadata": {
+    "description": "Professional research tools for PhD students and academics",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "research-assistant",
+      "description": "Complete research workflow assistant with PRISMA 2020, NIH rigor standards, statistical analysis, and AI-detection capabilities",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ai-check",
+        "./skills/citation-format",
+        "./skills/power-analysis",
+        "./skills/effect-size",
+        "./skills/prisma-diagram",
+        "./skills/hypothesis-test",
+        "./skills/research-questions",
+        "./skills/literature-gap",
+        "./skills/synthesis-matrix",
+        "./skills/inclusion-criteria",
+        "./skills/experiment-design",
+        "./skills/data-visualization",
+        "./skills/results-interpretation",
+        "./skills/irb-protocol",
+        "./skills/pre-registration",
+        "./skills/randomization",
+        "./skills/blinding",
+        "./skills/risk-of-bias",
+        "./skills/meta-analysis",
+        "./skills/sensitivity-analysis",
+        "./skills/subgroup-analysis",
+        "./skills/publication-prep"
+      ]
+    }
+  ]
+}

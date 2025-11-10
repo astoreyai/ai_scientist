@@ -1,302 +1,110 @@
-# Production Research Assistant System - Git Ignore File
-
-# ============================================
-# CLAUDE CODE SYSTEM
-# ============================================
-
-# Claude Code backups and logs (ignore these)
-.claude/backups/
-.claude/tool_log.db
-.claude/tmp/
-.claude/*.log
-.research_workflow/
-.research_workflow/backups/
-
-# Keep Claude Code configuration files (don't ignore these)
-!.claude/
-!.claude/settings.json
-!.claude/CLAUDE.md
-!.claude/agents/
-!.claude/agents/*.md
-!.claude/hooks/
-!.claude/hooks/*.py
-!.claude/hooks/*.sh
-
-# ============================================
-# PERSONAL DISSERTATION CONTENT
-# ============================================
-# These should NOT be committed to the pipeline repository
-# (They belong in YOUR dissertation repository)
-
-# Dissertation working directories
-/MY_DISSERTATION/
-/*_dissertation/
-/dissertation_*/
-
-# Personal configuration
-config.yaml
-*.local
-
-# ============================================
-# LATEX BUILD FILES
-# ============================================
-
-## Core LaTeX
-*.aux
-*.log
-*.out
-*.toc
-*.lof
-*.lot
-*.fls
-*.fdb_latexmk
-*.synctex.gz
-*.synctex(busy)
-*.pdfsync
-
-## Bibliography
-*.bbl
-*.bcf
-*.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
-
-## Build directories
-*.pdf
-!templates/**/*.pdf
-!examples/**/*.pdf
-
-## Intermediate files
-*.dvi
-*.ps
-
-## LaTeX cache
-*.nav
-*.snm
-*.vrb
-
-# ============================================
-# PYTHON
-# ============================================
-
-## Byte-compiled / optimized
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-## Virtual environments
+# Virtual environments
 venv/
-env/
 ENV/
+env/
 .venv
 
-## Python cache
+# Testing
 .pytest_cache/
-*.cover
+.tox/
 .coverage
+.coverage.*
 htmlcov/
-coverage.json
-pytest_html_report.html
+.hypothesis/
+*.cover
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
 
-## Distribution / packaging
-dist/
-build/
-*.egg-info/
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 
-# ============================================
-# REFERENCE MANAGEMENT
-# ============================================
+# Research data (keep tracked with DVC)
+data/raw/
+data/processed/
+!data/.gitkeep
 
-## Zotero
-*.sqlite
-*.sqlite-journal
-storage/
+# Temporary files
+*.tmp
+*.bak
+*.log
+.temp/
 
-## Mendeley
-*.mendeley
+# Credentials and secrets
+.env
+.credentials.json
+*.pem
+*.key
+secrets/
 
-## EndNote
-*.enl
-*.Data/
+# Research workflow state
+.research_workflow/
+mlruns/
+.mlflow/
 
-# ============================================
-# DATA FILES
-# ============================================
+# DVC
+.dvc/cache/
 
-## Large datasets
-*.csv
-*.tsv
-*.xlsx
-!templates/**/*.csv
-!examples/**/*.csv
-
-## Database files
+# Database files
 *.db
+*.sqlite
 *.sqlite3
 
-## Binary data
-*.pkl
-*.pickle
-*.npy
-*.npz
-*.mat
-*.hdf5
-
-## Results
-results/
-output/
+# Output files
 output.json
-experiments/results_*/
-!experiments/README.md
-
-## QA Reports
+results/*.json
 qa_reports/
-!qa_reports/README.md
 
-# ============================================
-# EXPERIMENT TRACKING & DATA VERSIONING
-# ============================================
+# Documentation builds
+docs/_build/
+docs/.doctrees/
 
-## DVC (Data Version Control)
-/dvc.lock
-.dvc/tmp
-.dvc/cache
-
-# Keep DVC configuration
-!.dvc/.gitignore
-!.dvc/config
-!.dvc/plots
-!*.dvc
-
-## MLflow
-mlruns/
-mlartifacts/
-mlflow.db
-
-# ============================================
-# BACKUP FILES
-# ============================================
-
-*~
-*.bak
-*.swp
-*.swo
-*.tmp
-*.temp
-.DS_Store
-Thumbs.db
-
-# ============================================
-# LOGS
-# ============================================
-
-*.log
-logs/
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
 *.out
-!tools/literature_review/automated_scopus/logs/*.md
+*.toc
+*.synctex.gz
 
-# ============================================
-# IDE / EDITOR
-# ============================================
-
-## VSCode
-.vscode/
-!.vscode/settings.json.example
-
-## PyCharm
-.idea/
-
-## Emacs
-\#*\#
-.\#*
-
-## Vim
-*.swp
-*.swo
-*~
-
-## Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# ============================================
-# OS SPECIFIC
-# ============================================
-
-## macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-## Windows
+# OS files
 Thumbs.db
-ehthumbs.db
-Desktop.ini
+.DS_Store
 
-## Linux
-.directory
-
-# ============================================
-# CREDENTIALS & SECRETS
-# ============================================
-
-## API Keys
-*_api_key.txt
-*.key
-credentials.json
-secrets.yaml
-
-## Config with credentials
-*_config_local.yaml
-scopus_credentials.yaml
-
-# ============================================
-# TEMPORARY / CACHE
-# ============================================
-
-.cache/
-tmp/
-temp/
-*.cache
-
-# ============================================
-# SPECIFIC TOOLS
-# ============================================
-
-## Scopus automated search
-tools/literature_review/automated_scopus/results/*.csv
-tools/literature_review/automated_scopus/exports/*.bib
-!tools/literature_review/automated_scopus/results/README.md
-
-## Progress tracking (personal)
-progress/current_todo.md
-progress/weekly_log.md
-
-# ============================================
-# KEEP THESE
-# ============================================
-
-## Documentation
-!README.md
-!LICENSE.md
-!CHANGELOG.md
-!docs/*.md
-
-## Templates (keep all)
-!templates/**/*
-
-## Example files (keep all)
-!examples/**/*
-
-## Workflow files (keep all)
-!workflows/*.md
-
-## Tool documentation (keep all)
-!tools/**/README.md
-!tools/**/*.md
-
-## Scripts (keep all)
-!automation/**/*.sh
-!automation/**/*.py
+# Backup files
+.claude/settings.json.backup
+*.backup

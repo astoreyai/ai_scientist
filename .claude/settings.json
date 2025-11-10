@@ -35,16 +35,6 @@
             "description": "Security validation for bash commands"
           }
         ]
-      },
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 .claude/hooks/pre-tool-validate-path.py",
-            "description": "Validate file paths for safety"
-          }
-        ]
       }
     ],
     "PostToolUse": [
@@ -82,6 +72,11 @@
           }
         ]
       }
-    ]
+    ],
+    "gitPreCommit": {
+      "command": "python3 hooks/pre-commit-ai-check.py",
+      "enabled": true,
+      "description": "Check for AI-generated text patterns before commit"
+    }
   }
 }

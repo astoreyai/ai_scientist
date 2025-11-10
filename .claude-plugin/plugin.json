@@ -1,0 +1,25 @@
+{
+  "name": "research-assistant",
+  "version": "1.0.0",
+  "description": "Production research assistant for PhD students and academics. PRISMA 2020, NIH rigor, statistical analysis, literature reviews, and AI-detection capabilities.",
+  "author": {
+    "name": "Aaron Storey",
+    "email": "aaron@astoreyai.com",
+    "url": "https://github.com/astoreyai"
+  },
+  "homepage": "https://github.com/astoreyai/ai_scientist",
+  "repository": "https://github.com/astoreyai/ai_scientist",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "phd",
+    "prisma",
+    "nih",
+    "statistics",
+    "literature-review",
+    "ai-detection",
+    "academic-writing",
+    "systematic-review",
+    "experimental-design"
+  ]
+}

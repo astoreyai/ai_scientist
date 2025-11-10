@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "research-literature-search"
+version = "1.0.0"
+description = "MCP server for multi-database literature search (OpenAlex, arXiv, PubMed)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Aaron Storey", email = "aaron@astoreyai.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "pyalex>=0.13",
+    "arxiv>=2.1.0",
+    "biopython>=1.83",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[project.urls]
+Homepage = "https://github.com/astoreyai/ai_scientist"
+Repository = "https://github.com/astoreyai/ai_scientist"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/research_lit_search"]
