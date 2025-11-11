@@ -58,6 +58,40 @@ Transform academic research workflows with 22 specialized skills, 10 intelligent
 
 ***
 
+## Slash Commands
+
+Quick discovery and navigation commands for all resources:
+
+```bash
+/skills      # List all 22 research skills (categorized)
+/agents      # List all 10 specialized agents (by type)
+/templates   # List all 10 research templates (with standards)
+/tutorials   # List all 11 tutorials (with learning paths)
+```
+
+**What slash commands do:**
+- Provide instant access to available resources
+- Show categorized lists with descriptions
+- Include usage examples and recommendations
+- No need to read documentation first
+
+**Example workflow:**
+```bash
+# Discover what's available
+/skills          # Browse 22 research skills
+
+# See specialized agents
+/agents          # 10 agents for complex tasks
+
+# Find a template for your project
+/templates       # 10 templates with reporting standards
+
+# Learn step-by-step
+/tutorials       # 11 tutorials, 8 hours of content
+```
+
+***
+
 ## Core Features
 
 | Category | Skills | Capabilities |
@@ -301,7 +335,7 @@ research-assistant/
 
 **GitHub Issues**: [Report bugs or request features](https://github.com/astoreyai/ai_scientist/issues)
 
-**Email**: aaron@astoreyai.com
+**Email**: astoreyai@gmail.com
 
 **Documentation**: See `tutorials/` directory for 11 comprehensive guides
 
