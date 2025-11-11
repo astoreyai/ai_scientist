@@ -36,7 +36,17 @@ Before starting this tutorial, ensure you have:
 
 ## Installation
 
-### Step 1: Clone the Repository
+### Option 1: Claude Code Marketplace (Future)
+
+Once available on the marketplace:
+
+```
+/plugin install research-assistant
+```
+
+### Option 2: Manual Installation (Current Method)
+
+#### Step 1: Clone the Repository
 
 ```bash
 # Clone from GitHub
@@ -44,7 +54,38 @@ git clone https://github.com/astoreyai/ai_scientist.git
 cd ai_scientist
 ```
 
-### Step 2: Install Python Dependencies (Optional)
+#### Step 2: Open in Claude Code
+
+```bash
+# Open the directory in Claude Code
+claude-code .
+```
+
+Or open Claude Code and navigate to the `ai_scientist` directory using File > Open Folder.
+
+#### Step 3: Verify Plugin Configuration
+
+The plugin auto-loads from `.claude/settings.json`. To verify:
+
+```bash
+cat .claude/settings.json
+```
+
+You should see:
+```json
+{
+  "plugins": [
+    {
+      "source": "./",
+      "name": "research-assistant"
+    }
+  ]
+}
+```
+
+If this section is missing, the skills won't load. See Troubleshooting below.
+
+#### Step 4: Install Python Dependencies (Optional)
 
 For MCP servers and advanced features:
 
@@ -56,10 +97,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 ```
-
-### Step 3: Configure Claude Code
-
-The plugin should auto-load from the `.claude/settings.json` configuration. No additional setup required for basic usage.
 
 For MCP servers (optional), see `mcp-servers/README.md`.
 
@@ -85,10 +122,60 @@ First, let's confirm the plugin is properly installed.
 
 **Checkpoint**: If you see the skill list, the plugin is installed correctly.
 
-**Troubleshooting**: If skills don't appear:
-1. Check plugin installation: `/plugin list`
-2. Reinstall if needed: `/plugin install research-assistant@research-assistant-marketplace`
-3. Restart Claude Code
+### Troubleshooting
+
+**Skills not appearing:**
+
+1. **Verify plugin configuration in `.claude/settings.json`:**
+   ```bash
+   cat .claude/settings.json | grep -A 5 "plugins"
+   ```
+   Should show:
+   ```json
+   "plugins": [
+     {
+       "source": "./",
+       "name": "research-assistant"
+     }
+   ]
+   ```
+
+2. **If missing, add plugin configuration:**
+   Edit `.claude/settings.json` to include the plugins section above.
+
+3. **Restart Claude Code:**
+   Close and reopen Claude Code in the `ai_scientist` directory.
+
+4. **Verify directory structure:**
+   ```bash
+   ls -la skills/*/SKILL.md | wc -l  # Should show 22
+   ls -la .claude/agents/*.md | wc -l  # Should show 10
+   ```
+
+**Agents not appearing:**
+
+1. **Check agents directory:**
+   ```bash
+   ls .claude/agents/
+   ```
+   Should show 10 `.md` files.
+
+2. **Verify agent frontmatter:**
+   ```bash
+   head -10 .claude/agents/literature-reviewer.md
+   ```
+   Should start with `---` and contain `name:`, `description:`, `tools:`, etc.
+
+**Permission errors:**
+
+```bash
+# Fix permissions
+chmod -R u+rw .
+```
+
+**Still having issues?**
+
+Open an issue on GitHub: https://github.com/astoreyai/ai_scientist/issues
 
 ---
 

@@ -300,25 +300,108 @@ Detect AI-generated text patterns to ensure authentic academic writing:
 
 ## Installation
 
-### From GitHub
+### Option 1: Claude Code Marketplace (Recommended)
+
+Once available on the Claude Code marketplace:
+
+\`\`\`
+# In Claude Code
+/plugin install research-assistant
+\`\`\`
+
+### Option 2: Manual Installation from GitHub
+
+**Step 1: Clone the Repository**
 \`\`\`bash
-# Clone repository
+# Clone to your preferred location
 git clone https://github.com/astoreyai/ai_scientist.git
 cd ai_scientist
+\`\`\`
 
-# Optional: Set up Python environment for MCP servers
+**Step 2: Configure Claude Code Plugin**
+
+The plugin auto-loads from the `.claude/settings.json` configuration. To verify:
+
+\`\`\`bash
+# Check that .claude/settings.json contains plugin configuration
+cat .claude/settings.json
+\`\`\`
+
+You should see:
+\`\`\`json
+{
+  "plugins": [
+    {
+      "source": "./",
+      "name": "research-assistant"
+    }
+  ]
+}
+\`\`\`
+
+**Step 3: Open in Claude Code**
+
+\`\`\`bash
+# Open the directory in Claude Code
+claude-code .
+# Or navigate to the directory in Claude Code UI
+\`\`\`
+
+**Step 4: Verify Installation**
+
+In Claude Code, check that skills and agents are loaded:
+
+\`\`\`
+# List available skills
+/skill list
+
+# List available agents
+/agent list
+\`\`\`
+
+You should see 22 skills and 10 agents.
+
+**Step 5: Optional - Install Python Dependencies**
+
+For MCP servers and advanced features:
+
+\`\`\`bash
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 \`\`\`
 
-### MCP Servers
+### MCP Servers (Optional)
+
 Three MCP servers are included for enhanced functionality:
 - **literature-search** - Multi-database literature searches
 - **citation-manager** - BibTeX/Zotero integration, retraction checking
 - **research-db** - Structured data storage for systematic reviews
 
 See \`mcp-servers/README.md\` for installation instructions.
+
+### Troubleshooting
+
+**Skills not appearing:**
+1. Verify `.claude/settings.json` has plugin configuration
+2. Restart Claude Code
+3. Check plugin path is correct (use `./` for current directory)
+
+**Agents not appearing:**
+1. Check `.claude/agents/` directory exists
+2. Verify agent files have proper YAML frontmatter
+3. Restart Claude Code
+
+**MCP servers not working:**
+1. Ensure Python dependencies installed: `pip install -r requirements.txt`
+2. Check MCP server configuration in Claude Code settings
+3. See `mcp-servers/README.md` for detailed setup
+
+**Permission errors:**
+1. Ensure you have read/write access to the directory
+2. Check file permissions: `chmod -R u+rw .`
+
+For additional help, see [GitHub Issues](https://github.com/astoreyai/ai_scientist/issues).
 
 ---
 
