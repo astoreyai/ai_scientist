@@ -55,7 +55,7 @@ cd my_review
 python code/register_protocol.py
 ```
 
-**✓ Checkpoint**: You should see an interactive prompt asking for PICOS components.
+**Checkpoint**: You should see an interactive prompt asking for PICOS components.
 
 ---
 
@@ -95,7 +95,7 @@ Exclusion criteria:
 
 > In adolescents (ages 12-18) with diagnosed anxiety disorders, do mindfulness-based interventions (MBSR, MBCT) compared to usual care or active controls reduce anxiety symptoms as measured by validated scales?
 
-**✓ Checkpoint**: The tool generates a protocol file at `docs/protocol.md` with all PICOS components.
+**Checkpoint**: The tool generates a protocol file at `docs/protocol.md` with all PICOS components.
 
 ---
 
@@ -121,7 +121,7 @@ cat docs/protocol.md
 - Data synthesis approach
 - Timeline
 
-**✓ Checkpoint**: Protocol should be 3-5 pages with all required sections.
+**Checkpoint**: Protocol should be 3-5 pages with all required sections.
 
 ---
 
@@ -147,7 +147,7 @@ python code/register_protocol.py --export osf
 3. Upload generated registration form
 4. Receive registration ID (e.g., CRD42024123456)
 
-**✓ Checkpoint**: Add registration ID to `docs/protocol.md` header.
+**Checkpoint**: Add registration ID to `docs/protocol.md` header.
 
 ---
 
@@ -185,7 +185,7 @@ We'll start with PubMed, then translate to other databases.
 Final: #6
 ```
 
-**✓ Checkpoint**: Search strategy should combine all PICOS elements with Boolean logic.
+**Checkpoint**: Search strategy should combine all PICOS elements with Boolean logic.
 
 ---
 
@@ -203,7 +203,7 @@ Final: #6
 1. Click "Send to" → "File" → "Format: CSV"
 2. Save as `data/search_results/pubmed_results.csv`
 
-**✓ Checkpoint**: CSV file should have columns: PMID, Title, Authors, Journal, Year, Abstract
+**Checkpoint**: CSV file should have columns: PMID, Title, Authors, Journal, Year, Abstract
 
 ---
 
@@ -228,7 +228,7 @@ python code/search_translation.py \
 - `[pt]` → `:it` (publication type)
 - Adjusts Boolean operator syntax
 
-**✓ Checkpoint**: Generated Embase search at `data/search_strategies/embase_search.txt`
+**Checkpoint**: Generated Embase search at `data/search_strategies/embase_search.txt`
 
 ---
 
@@ -257,7 +257,7 @@ python code/search_translation.py \
   --output data/search_strategies/scopus_search.txt
 ```
 
-**✓ Checkpoint**: You should have 5 search strategy files (PubMed + 4 translations).
+**Checkpoint**: You should have 5 search strategy files (PubMed + 4 translations).
 
 ---
 
@@ -285,7 +285,7 @@ python code/search_translation.py \
    - Export as CSV
    - Save as `data/search_results/scopus_results.csv`
 
-**✓ Checkpoint**: You should have 5 result files in `data/search_results/`
+**Checkpoint**: You should have 5 result files in `data/search_results/`
 
 ---
 
@@ -304,7 +304,7 @@ Scopus,2024-11-10,203,scopus_search.txt,scopus_results.csv
 
 **Total Records**: 247 + 312 + 198 + 156 + 203 = **1,116 records**
 
-**✓ Checkpoint**: Search log documents all databases, dates, and record counts.
+**Checkpoint**: Search log documents all databases, dates, and record counts.
 
 ---
 
@@ -326,7 +326,7 @@ python code/deduplicate.py \
 - Extracts: Title, Authors, Year, DOI, Abstract, Source
 - Standardizes to common format
 
-**✓ Checkpoint**: `combined_results.csv` should have 1,116 rows.
+**Checkpoint**: `combined_results.csv` should have 1,116 rows.
 
 ---
 
@@ -346,7 +346,7 @@ python code/deduplicate.py \
 2. **Fuzzy title match** (Levenshtein distance < 0.9)
 3. **Author + year match** (same first author, same year)
 
-**✓ Checkpoint**: Check the deduplication report:
+**Checkpoint**: Check the deduplication report:
 
 ```bash
 cat data/search_results/deduplication_report.txt
@@ -371,7 +371,7 @@ Deduplication methods:
 Final dataset: data/search_results/deduplicated_results.csv
 ```
 
-**✓ Checkpoint**: Duplicates removed = ~30% (typical range 20-40%).
+**Checkpoint**: Duplicates removed = ~30% (typical range 20-40%).
 
 ---
 
@@ -397,7 +397,7 @@ id,title,abstract,year,authors,source,reviewer1_decision,reviewer1_reason,review
 ...
 ```
 
-**✓ Checkpoint**: CSV should have 774 rows with blank decision columns.
+**Checkpoint**: CSV should have 774 rows with blank decision columns.
 
 ---
 
@@ -434,7 +434,7 @@ I'll evaluate against your PICOS framework and provide:
 Please provide the first title and abstract.
 ```
 
-**✓ Checkpoint**: Agent should be ready to assist with screening decisions.
+**Checkpoint**: Agent should be ready to assist with screening decisions.
 
 ---
 
@@ -459,15 +459,15 @@ MBSR effective for adolescent anxiety."
 **Agent Assessment**:
 
 ```
-✅ INCLUDE - High Confidence
+INCLUDE - High Confidence
 
 Rationale:
-- Population: ✓ Adolescents ages 13-17 (within 12-18 range)
-- Condition: ✓ Diagnosed GAD (anxiety disorder)
-- Intervention: ✓ MBSR (mindfulness-based)
-- Comparison: ✓ Usual care control
-- Outcome: ✓ GAD-7 (validated anxiety measure)
-- Design: ✓ RCT (randomized controlled trial explicitly stated)
+- Population: Adolescents ages 13-17 (within 12-18 range)
+- Condition: Diagnosed GAD (anxiety disorder)
+- Intervention: MBSR (mindfulness-based)
+- Comparison: Usual care control
+- Outcome: GAD-7 (validated anxiety measure)
+- Design: RCT (randomized controlled trial explicitly stated)
 
 All inclusion criteria met. No exclusion criteria triggered.
 ```
@@ -495,13 +495,13 @@ reduction in intervention group (p=0.04)."
 **Agent Assessment**:
 
 ```
-❌ EXCLUDE - High Confidence
+EXCLUDE - High Confidence
 
 Rationale:
-- Population: ✓ Adolescents ages 15-18
+- Population: Adolescents ages 15-18
 - Condition: ✗ "Academic stress" - not diagnosed anxiety disorder
-- Intervention: ✓ Meditation component present
-- Comparison: ✓ No intervention control
+- Intervention: Meditation component present
+- Comparison: No intervention control
 - Outcome: ✗ Perceived Stress Scale - not anxiety-specific
 - Design: ✗ Quasi-experimental, not RCT (self-selection bias)
 
@@ -514,7 +514,7 @@ Fails 3 critical criteria: not diagnosed anxiety, not anxiety outcome, not RCT.
 2,"Meditation and Yoga for Stress...","...",2021,"Brown A",exclude,Non-RCT design; no diagnosed anxiety disorder; stress not anxiety outcome,,
 ```
 
-**✓ Checkpoint**: You should understand how to apply eligibility criteria systematically.
+**Checkpoint**: You should understand how to apply eligibility criteria systematically.
 
 ---
 
@@ -565,7 +565,7 @@ Interpretation: Substantial agreement (κ > 0.6 acceptable for systematic review
 Conflicts requiring resolution: 29 studies
 ```
 
-**✓ Checkpoint**: Cohen's κ should be > 0.6 (substantial agreement).
+**Checkpoint**: Cohen's κ should be > 0.6 (substantial agreement).
 
 ---
 
@@ -597,7 +597,7 @@ Here's a study where Reviewer 1 included but Reviewer 2 excluded:
 Please provide your independent assessment and final decision.
 ```
 
-**✓ Checkpoint**: All 774 studies should have final decisions (include/exclude).
+**Checkpoint**: All 774 studies should have final decisions (include/exclude).
 
 ---
 
@@ -608,7 +608,7 @@ Please provide your independent assessment and final decision.
 - Records excluded: 643
 - Records proceeding to full-text: 131
 
-**✓ Checkpoint**: ~15-20% inclusion rate is typical for title/abstract screening.
+**Checkpoint**: ~15-20% inclusion rate is typical for title/abstract screening.
 
 ---
 
@@ -637,7 +637,7 @@ id,title,retrieval_status,source,date_retrieved,pdf_file
 ...
 ```
 
-**✓ Checkpoint**: Retrieved at least 95% of full texts (125+ out of 131).
+**Checkpoint**: Retrieved at least 95% of full texts (125+ out of 131).
 
 ---
 
@@ -672,7 +672,7 @@ Reason: Data not reported separately for adolescent age group (12-18).
 - Full-text articles excluded: 88
 - Studies included in review: 43
 
-**✓ Checkpoint**: ~30-40% of full texts typically excluded.
+**Checkpoint**: ~30-40% of full texts typically excluded.
 
 ---
 
@@ -734,7 +734,7 @@ risk_of_bias:
   - selective_reporting
 ```
 
-**✓ Checkpoint**: Extraction form should capture all data needed for synthesis.
+**Checkpoint**: Extraction form should capture all data needed for synthesis.
 
 ---
 
@@ -795,7 +795,7 @@ Outcomes (Primary: GAD-7 at 8 weeks post-baseline):
 - p-value: <0.001
 ```
 
-**✓ Checkpoint**: Extracted data should be precise with page numbers for verification.
+**Checkpoint**: Extracted data should be precise with page numbers for verification.
 
 ---
 
@@ -813,7 +813,7 @@ python code/extract_data.py \
 
 **Final Dataset**: `data/extraction/extracted_data.csv` with 43 rows (one per study)
 
-**✓ Checkpoint**: All 43 studies should have complete data extraction.
+**Checkpoint**: All 43 studies should have complete data extraction.
 
 ---
 
@@ -882,7 +882,7 @@ OVERALL RISK OF BIAS: SOME CONCERNS
 (Due to inability to blind participants in behavioral intervention)
 ```
 
-**✓ Checkpoint**: All 43 studies assessed with domain-level ratings.
+**Checkpoint**: All 43 studies assessed with domain-level ratings.
 
 ---
 
@@ -934,7 +934,7 @@ Overall Risk of Bias:
   High risk:        2 (5%)
 ```
 
-**✓ Checkpoint**: Most studies should be "Low" or "Some concerns" (exclude "High risk" in sensitivity analysis).
+**Checkpoint**: Most studies should be "Low" or "Some concerns" (exclude "High risk" in sensitivity analysis).
 
 ---
 
@@ -986,11 +986,11 @@ INCLUDED:
 
 ═══════════════════════════════════════════════
 
-✓ PRISMA diagram saved: results/prisma_flow_diagram.png
-✓ PRISMA diagram saved (editable): results/prisma_flow_diagram.svg
+PRISMA diagram saved: results/prisma_flow_diagram.png
+PRISMA diagram saved (editable): results/prisma_flow_diagram.svg
 ```
 
-**✓ Checkpoint**: Check `results/prisma_flow_diagram.png` - should be publication-ready.
+**Checkpoint**: Check `results/prisma_flow_diagram.png` - should be publication-ready.
 
 ---
 
@@ -1012,28 +1012,28 @@ python code/prisma_checklist.py \
 PRISMA 2020 Checklist Compliance
 ═══════════════════════════════════════════════
 
-✅ Title (Item 1): Systematic review identified in title
-✅ Abstract (Item 2): Structured abstract following PRISMA format
-✅ Introduction - Rationale (Item 3): Background documented
-✅ Introduction - Objectives (Item 4): Research question with PICOS
-✅ Methods - Eligibility (Item 5): Inclusion/exclusion criteria specified
-✅ Methods - Information sources (Item 6): All databases documented with dates
-✅ Methods - Search strategy (Item 7): Full search strategy for ≥1 database
-✅ Methods - Selection process (Item 8): 2 independent reviewers, κ=0.82
-✅ Methods - Data collection (Item 9): Extraction form provided
-✅ Methods - Data items (Item 10): All variables defined
-✅ Methods - Risk of bias (Item 11): RoB 2 tool applied
-✅ Methods - Synthesis (Item 12): Meta-analysis plan specified
-✅ Results - Study selection (Item 13): PRISMA flow diagram included
-✅ Results - Study characteristics (Item 14): Characteristics table complete
-✅ Results - Risk of bias (Item 15): RoB summary table included
-✅ Results - Results of syntheses (Item 16): Effect estimates with CI
+Title (Item 1): Systematic review identified in title
+Abstract (Item 2): Structured abstract following PRISMA format
+Introduction - Rationale (Item 3): Background documented
+Introduction - Objectives (Item 4): Research question with PICOS
+Methods - Eligibility (Item 5): Inclusion/exclusion criteria specified
+Methods - Information sources (Item 6): All databases documented with dates
+Methods - Search strategy (Item 7): Full search strategy for ≥1 database
+Methods - Selection process (Item 8): 2 independent reviewers, κ=0.82
+Methods - Data collection (Item 9): Extraction form provided
+Methods - Data items (Item 10): All variables defined
+Methods - Risk of bias (Item 11): RoB 2 tool applied
+Methods - Synthesis (Item 12): Meta-analysis plan specified
+Results - Study selection (Item 13): PRISMA flow diagram included
+Results - Study characteristics (Item 14): Characteristics table complete
+Results - Risk of bias (Item 15): RoB summary table included
+Results - Results of syntheses (Item 16): Effect estimates with CI
 ... [Items 17-27 would be completed after meta-analysis]
 
 Current Compliance: 27/27 items (100%)
 ```
 
-**✓ Checkpoint**: Should have 27/27 items addressed.
+**Checkpoint**: Should have 27/27 items addressed.
 
 ---
 
@@ -1042,16 +1042,16 @@ Current Compliance: 27/27 items (100%)
 ### What You've Learned
 
 **Completed**:
-- ✅ Protocol registration with PICOS framework
-- ✅ Multi-database search strategy development
-- ✅ Automated search translation across databases
-- ✅ Systematic deduplication (1,116 → 774 records)
-- ✅ Two-reviewer screening with inter-rater reliability (κ=0.82)
-- ✅ Full-text screening (131 → 43 studies)
-- ✅ Structured data extraction (43 studies)
-- ✅ Risk of bias assessment (RoB 2 tool)
-- ✅ PRISMA flow diagram generation
-- ✅ Full PRISMA 2020 compliance verification
+- Protocol registration with PICOS framework
+- Multi-database search strategy development
+- Automated search translation across databases
+- Systematic deduplication (1,116 → 774 records)
+- Two-reviewer screening with inter-rater reliability (κ=0.82)
+- Full-text screening (131 → 43 studies)
+- Structured data extraction (43 studies)
+- Risk of bias assessment (RoB 2 tool)
+- PRISMA flow diagram generation
+- Full PRISMA 2020 compliance verification
 
 **Key Files Generated**:
 ```

@@ -115,7 +115,7 @@ Total Sentences: 4
 OVERALL ASSESSMENT
 ───────────────────────────────────────────────────────────────
 
-Confidence: 82% (HIGH) 🚫
+Confidence: 82% (HIGH) 
 Verdict: LIKELY AI-GENERATED
 
 This text exhibits multiple AI-typical patterns and should be 
@@ -125,19 +125,19 @@ revised before submission.
 DETECTION BREAKDOWN
 ───────────────────────────────────────────────────────────────
 
-Grammar Perfection:        95% ⚠️
-Sentence Uniformity:       88% ⚠️
-Paragraph Structure:       75% ⚠️
-AI-Word Frequency:         92% 🚫
-Punctuation Patterns:      70% ⚠️
+Grammar Perfection:        95% 
+Sentence Uniformity:       88% 
+Paragraph Structure:       75% 
+AI-Word Frequency:         92% 
+Punctuation Patterns:      70% 
 
-Language Model:            78% 🚫
+Language Model:            78% 
   ├─ Bigram anomalies:     65%
   ├─ Trigram anomalies:    72%
   ├─ Transition score:     85%
   └─ Repetition score:     68%
 
-Complexity Analysis:       81% 🚫
+Complexity Analysis:       81% 
   ├─ Flesch-Kincaid:       12.4 (college level)
   ├─ Gunning-Fog:          12.6 (college level)
   ├─ Uniformity score:     89%
@@ -149,7 +149,7 @@ Citation Patterns:         N/A (no citations found)
 ISSUES DETECTED
 ───────────────────────────────────────────────────────────────
 
-❌ CRITICAL ISSUES (must fix):
+CRITICAL ISSUES (must fix):
 
 1. Excessive AI-typical words (12 instances):
    • "Furthermore" (1)
@@ -173,7 +173,7 @@ ISSUES DETECTED
 3. Very low complexity variance (1.8):
    Human writing typically shows variance of 3-8
 
-⚠️  WARNINGS:
+ WARNINGS:
 
 4. Perfect grammar throughout (no natural errors)
 
@@ -238,7 +238,7 @@ RECOMMENDED NEXT STEPS
 
 ───────────────────────────────────────────────────────────────
 
-Legend: 🚫 Critical (>70%)  |  ⚠️ Warning (30-70%)  |  ✅ Good (<30%)
+Legend: Critical (>70%)  |  Warning (30-70%)  |  Good (<30%)
 ```
 
 ---
@@ -344,7 +344,7 @@ git commit -m "Add methodology section"
 **Expected**: Hook blocks commit
 
 ```
-🚫 AI-GENERATED TEXT DETECTED
+AI-GENERATED TEXT DETECTED
 
 The following files exceeded AI confidence threshold (70%):
 
@@ -381,7 +381,7 @@ git commit -m "Add methodology section"
 **Expected**: Hook allows commit (or warns if 30-70%)
 
 ```
-✅ AI-check passed (confidence: 22%)
+AI-check passed (confidence: 22%)
 
 [main abc1234] Add methodology section
  1 file changed, 1 insertion(+)
@@ -461,7 +461,7 @@ Personalized Thresholds:
   Block threshold:  75% (default: 70%)
   Warn threshold:   35% (default: 30%)
 
-Profile Status: ✅ ACTIVE (30+ samples)
+Profile Status: ACTIVE (30+ samples)
 Estimated false positive rate: 3% (vs 15% default)
 ```
 
@@ -560,19 +560,19 @@ python tools/ai_check.py --update-profile manuscript.tex
 
 ### DO:
 
-✅ Run AI-check on all manuscript drafts before sharing  
-✅ Build your writing profile with authentic work  
-✅ Apply suggested improvements iteratively  
-✅ Use pre-commit hooks for automatic checking  
-✅ Review flagged sections carefully (AI-check isn't perfect)
+Run AI-check on all manuscript drafts before sharing  
+Build your writing profile with authentic work  
+Apply suggested improvements iteratively  
+Use pre-commit hooks for automatic checking  
+Review flagged sections carefully (AI-check isn't perfect)
 
 ### DON'T:
 
-❌ Bypass the hook with `--no-verify` unless absolutely necessary  
-❌ Ignore warnings (30-70% confidence still needs review)  
-❌ Submit flagged text to journals without revision  
-❌ Use AI-check as the sole authenticity measure  
-❌ Forget that AI-check is a tool, not a judge
+Bypass the hook with `--no-verify` unless absolutely necessary  
+Ignore warnings (30-70% confidence still needs review)  
+Submit flagged text to journals without revision  
+Use AI-check as the sole authenticity measure  
+Forget that AI-check is a tool, not a judge
 
 ---
 
@@ -626,14 +626,14 @@ cp ai-check-report.pdf submission_records/
 
 You've mastered the AI-check system! You can now:
 
-✅ Understand all 9 detection methods  
-✅ Run standalone AI-checks  
-✅ Interpret complex results  
-✅ Apply suggestions effectively  
-✅ Use pre-commit hooks  
-✅ Build personalized writing profiles  
-✅ Configure advanced settings  
-✅ Integrate into your research workflow
+Understand all 9 detection methods  
+Run standalone AI-checks  
+Interpret complex results  
+Apply suggestions effectively  
+Use pre-commit hooks  
+Build personalized writing profiles  
+Configure advanced settings  
+Integrate into your research workflow
 
 **Next Tutorial**: [Complete Workflow](../05_complete_workflow/README.md) - Put everything together
 
@@ -670,9 +670,9 @@ python tools/ai_check.py chapter_*.tex
 - `.claude/hooks/pre-commit-ai-check.py` - Pre-commit hook
 
 **Key Metrics**:
-- < 30%: Likely human ✅
-- 30-70%: Possible AI ⚠️
-- > 70%: Likely AI 🚫
+- < 30%: Likely human 
+- 30-70%: Possible AI 
+- > 70%: Likely AI 
 
 ---
 

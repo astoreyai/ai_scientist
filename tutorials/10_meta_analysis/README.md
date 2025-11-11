@@ -39,13 +39,13 @@ This tutorial demonstrates **meta-analysis** - quantitatively synthesizing evide
 **Meta-Analysis is Appropriate When**:
 
 ```
-✓ PICO similarity: Studies address same question
-✓ Outcome similarity: Same or comparable outcomes measured
-✓ Design similarity: Similar study designs (RCTs with RCTs)
-✓ Sufficient studies: At least 3-4 studies (more is better)
-✓ Data availability: Effect sizes and variance reported
+PICO similarity: Studies address same question
+Outcome similarity: Same or comparable outcomes measured
+Design similarity: Similar study designs (RCTs with RCTs)
+Sufficient studies: At least 3-4 studies (more is better)
+Data availability: Effect sizes and variance reported
 
-❌ DO NOT meta-analyze when:
+DO NOT meta-analyze when:
 ✗ Apples and oranges: Studies too heterogeneous
 ✗ Poor quality: Studies have fatal flaws
 ✗ Inappropriate comparison: Different interventions/populations
@@ -57,7 +57,7 @@ This tutorial demonstrates **meta-analysis** - quantitatively synthesizing evide
 - Outcome: Anxiety reduction (various scales, convertible to SMD)
 - **Decision**: Meta-analysis appropriate ✓
 
-**✓ Checkpoint**: Confirmed meta-analysis is suitable.
+**Checkpoint**: Confirmed meta-analysis is suitable.
 
 ---
 
@@ -98,7 +98,7 @@ Our Choice: SMD (Standardized Mean Difference)
 Reason: Studies use different anxiety scales (GAD-7, SCARED, STAI-C)
 ```
 
-**✓ Checkpoint**: Effect size metric chosen (SMD).
+**Checkpoint**: Effect size metric chosen (SMD).
 
 ---
 
@@ -115,8 +115,8 @@ FIXED EFFECT MODEL
 Assumption: One true effect size, variation is sampling error only
 
 When to use:
-  ✓ Studies very similar (same population, intervention, setting)
-  ✓ Low heterogeneity (I² < 25%)
+  Studies very similar (same population, intervention, setting)
+  Low heterogeneity (I² < 25%)
   
 Interpretation: "The effect in THESE specific studies is..."
 
@@ -129,9 +129,9 @@ RANDOM EFFECTS MODEL
 Assumption: True effect varies across studies (distribution of effects)
 
 When to use:
-  ✓ Studies differ in populations, interventions, or settings
-  ✓ Moderate-high heterogeneity (I² > 25%)
-  ✓ Most systematic reviews (safer assumption)
+  Studies differ in populations, interventions, or settings
+  Moderate-high heterogeneity (I² > 25%)
+  Most systematic reviews (safer assumption)
   
 Interpretation: "The average effect across similar studies is..."
 
@@ -165,7 +165,7 @@ Random Effects: Studies sample from a DISTRIBUTION of effects
 - 43 RCTs across different countries, age ranges, interventions
 - **Model**: Random effects (studies heterogeneous)
 
-**✓ Checkpoint**: Random effects model selected.
+**Checkpoint**: Random effects model selected.
 
 ---
 
@@ -228,7 +228,7 @@ Our SMD = -0.42 → Between small and medium (closer to medium)
 Negative = favors mindfulness (anxiety reduction)
 ```
 
-**✓ Checkpoint**: Pooled effect calculated, statistically significant.
+**Checkpoint**: Pooled effect calculated, statistically significant.
 
 ---
 
@@ -287,7 +287,7 @@ Key Elements:
 ● Diamond not crossing 0 = overall effect significant
 ```
 
-**✓ Checkpoint**: Forest plot visually summarizes all studies.
+**Checkpoint**: Forest plot visually summarizes all studies.
 
 ---
 
@@ -321,7 +321,7 @@ Key Elements:
    Our plot: Chen 2023 (SMD = -0.68) larger than others → Investigate
 ```
 
-**✓ Checkpoint**: Forest plot interpreted correctly.
+**Checkpoint**: Forest plot interpreted correctly.
 
 ---
 
@@ -387,7 +387,7 @@ Is I² > 50%?
               └─ Consider NOT pooling if I² > 75% and unexplained
 ```
 
-**✓ Checkpoint**: Substantial heterogeneity detected, requires exploration.
+**Checkpoint**: Substantial heterogeneity detected, requires exploration.
 
 ---
 
@@ -444,7 +444,7 @@ R²: 12% of between-study variance explained by age
 Residual I²: 57% (heterogeneity partially explained)
 ```
 
-**✓ Checkpoint**: Identified delivery format as moderator.
+**Checkpoint**: Identified delivery format as moderator.
 
 ---
 
@@ -487,7 +487,7 @@ Precision
 
 Interpretation:
 ─────────────────────────────────────────────────
-✓ SYMMETRIC funnel: No obvious publication bias
+SYMMETRIC funnel: No obvious publication bias
   - Studies distributed evenly on both sides
   - Smaller studies (bottom) show wider spread (expected)
 
@@ -499,7 +499,7 @@ Our plot: Slight asymmetry (fewer small studies on right)
   → Possible publication bias (small negative studies published more than small null)
 ```
 
-**✓ Checkpoint**: Visual inspection suggests possible publication bias.
+**Checkpoint**: Visual inspection suggests possible publication bias.
 
 ---
 
@@ -548,7 +548,7 @@ Interpretation: After imputing missing studies, effect remains significant
                 doesn't change overall conclusion)
 ```
 
-**✓ Checkpoint**: Publication bias detected but effect remains robust.
+**Checkpoint**: Publication bias detected but effect remains robust.
 
 ---
 
@@ -594,7 +594,7 @@ Remove each study sequentially, recalculate pooled effect:
 Conclusion: No single study drives the overall effect ✓
 ```
 
-**✓ Checkpoint**: Results robust across sensitivity analyses.
+**Checkpoint**: Results robust across sensitivity analyses.
 
 ---
 
@@ -611,16 +611,16 @@ Conclusion: No single study drives the overall effect ✓
 
 Beyond standard PRISMA 2020, report:
 
-✓ Effect Size Metric: Standardized mean difference (Hedges' g)
-✓ Meta-Analysis Model: Random effects (REML estimator)
-✓ Weighting: Inverse variance
-✓ Heterogeneity Statistics: Q, I², τ²
-✓ Subgroup Analyses: Delivery format, age (pre-specified)
-✓ Meta-Regression: Age as moderator
-✓ Publication Bias: Funnel plot, Egger's test, trim-and-fill
-✓ Sensitivity Analyses: Quality, outliers, model choice, leave-one-out
-✓ Software: R metafor package v3.8-1
-✓ Data Availability: Effect sizes and code on OSF (DOI: 10.17605/OSF.IO/ABC123)
+Effect Size Metric: Standardized mean difference (Hedges' g)
+Meta-Analysis Model: Random effects (REML estimator)
+Weighting: Inverse variance
+Heterogeneity Statistics: Q, I², τ²
+Subgroup Analyses: Delivery format, age (pre-specified)
+Meta-Regression: Age as moderator
+Publication Bias: Funnel plot, Egger's test, trim-and-fill
+Sensitivity Analyses: Quality, outliers, model choice, leave-one-out
+Software: R metafor package v3.8-1
+Data Availability: Effect sizes and code on OSF (DOI: 10.17605/OSF.IO/ABC123)
 
 Forest Plot: Figure 2
 Funnel Plot: Figure 3
@@ -631,26 +631,26 @@ Subgroup Forest Plots: Supplemental Figures S1-S3
 
 ```
 Abstract:
-  ✓ Number of studies and participants
-  ✓ Pooled effect with 95% CI
-  ✓ Heterogeneity (I²)
-  ✓ Key moderator
+  Number of studies and participants
+  Pooled effect with 95% CI
+  Heterogeneity (I²)
+  Key moderator
 
 Results Section:
-  ✓ Forest plot (main analysis)
-  ✓ Heterogeneity statistics table
-  ✓ Subgroup analysis table
-  ✓ Funnel plot
-  ✓ Sensitivity analysis table
+  Forest plot (main analysis)
+  Heterogeneity statistics table
+  Subgroup analysis table
+  Funnel plot
+  Sensitivity analysis table
 
 Discussion:
-  ✓ Interpret pooled effect (clinical significance)
-  ✓ Explain heterogeneity (moderators identified)
-  ✓ Address publication bias (limitations)
-  ✓ Implications for practice
+  Interpret pooled effect (clinical significance)
+  Explain heterogeneity (moderators identified)
+  Address publication bias (limitations)
+  Implications for practice
 ```
 
-**✓ Checkpoint**: PRISMA-MA compliance ensured.
+**Checkpoint**: PRISMA-MA compliance ensured.
 
 ---
 
@@ -659,16 +659,16 @@ Discussion:
 ### What You've Learned
 
 **Meta-Analysis Essentials**:
-- ✅ Determined appropriateness (PICO similarity, sufficient studies)
-- ✅ Chose effect size metric (SMD for different scales)
-- ✅ Selected model (random effects for heterogeneous studies)
-- ✅ Calculated pooled effect (SMD = -0.42, p < 0.001)
-- ✅ Created forest plot (visual summary of 43 studies)
-- ✅ Assessed heterogeneity (I² = 64%, substantial)
-- ✅ Explored moderators (subgroup analysis, meta-regression)
-- ✅ Detected publication bias (Egger's test, trim-and-fill)
-- ✅ Conducted sensitivity analyses (robust results)
-- ✅ Reported per PRISMA-MA guidelines
+- Determined appropriateness (PICO similarity, sufficient studies)
+- Chose effect size metric (SMD for different scales)
+- Selected model (random effects for heterogeneous studies)
+- Calculated pooled effect (SMD = -0.42, p < 0.001)
+- Created forest plot (visual summary of 43 studies)
+- Assessed heterogeneity (I² = 64%, substantial)
+- Explored moderators (subgroup analysis, meta-regression)
+- Detected publication bias (Egger's test, trim-and-fill)
+- Conducted sensitivity analyses (robust results)
+- Reported per PRISMA-MA guidelines
 
 **Key Insights**:
 - Random effects model safer for heterogeneous studies

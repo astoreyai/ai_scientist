@@ -1056,12 +1056,12 @@ Clinician-Level Penetration:
   - 12 clinicians using TF-CBT for >40% of caseload ("high penetrators")
 
 System-Level Penetration Indicators:
-  ✓ TF-CBT in clinical pathways (yes - added to trauma care pathway)
-  ✓ TF-CBT in EHR treatment menu (yes)
-  ✓ TF-CBT in quality metrics (yes - % of trauma cases receiving EBP)
+  TF-CBT in clinical pathways (yes - added to trauma care pathway)
+  TF-CBT in EHR treatment menu (yes)
+  TF-CBT in quality metrics (yes - % of trauma cases receiving EBP)
   ✗ TF-CBT in payer contracts (no - not yet)
-  ✓ TF-CBT in job descriptions (yes - added to new therapist postings)
-  ✓ TF-CBT in orientation (yes - mentioned in new hire training)
+  TF-CBT in job descriptions (yes - added to new therapist postings)
+  TF-CBT in orientation (yes - mentioned in new hire training)
 ```
 
 **8. SUSTAINABILITY** (See Part 1 for full details)
@@ -1333,7 +1333,7 @@ Question 3: If adaptable component modified, does it maintain DOSE/INTENSITY?
             └─ NO → NEEDS REVIEW
 
             Example: 12 × 60min = 720min total
-                     16 × 45min = 720min total ✓ (maintained)
+                     16 × 45min = 720min total (maintained)
                      8 × 60min = 480min total ✗ (reduced dose)
 ```
 

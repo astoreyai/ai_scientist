@@ -47,35 +47,35 @@ students compared to a wait-list control?"
 
 FINER Assessment:
 ─────────────────────────────────────────────────
-✓ Feasible: Yes
+Feasible: Yes
   - Online delivery (scalable)
   - College population (accessible at university)
   - 8 weeks (manageable duration for students)
   - Wait-list control (ethical - all participants eventually receive intervention)
 
-✓ Interesting: Yes
+Interesting: Yes
   - Depression is leading cause of disability in college students
   - Online interventions could increase access to treatment
   - Mindfulness shows promise but evidence in students is limited
 
-✓ Novel: Yes
+Novel: Yes
   - Most MBCT studies focus on adults with recurrent depression
   - Few RCTs of online MBCT specifically for college students
   - Gap identified from Tutorial 2 systematic review
 
-✓ Ethical: Yes
+Ethical: Yes
   - Low-risk behavioral intervention
   - Wait-list control ensures all receive treatment
   - Screening for suicidal ideation with safety protocol
   - IRB approval feasible
 
-✓ Relevant: Yes
+Relevant: Yes
   - College mental health crisis (25% prevalence)
   - Scalable intervention addresses treatment access barriers
   - Informs university counseling services
 ```
 
-**✓ Checkpoint**: All FINER criteria should be met before proceeding.
+**Checkpoint**: All FINER criteria should be met before proceeding.
 
 ---
 
@@ -107,7 +107,7 @@ S - Study design: Parallel-group randomized controlled trial
                   - Assessments: Baseline, 8 weeks (primary), 16 weeks (follow-up)
 ```
 
-**✓ Checkpoint**: PICOS should be specific enough to calculate sample size.
+**Checkpoint**: PICOS should be specific enough to calculate sample size.
 
 ---
 
@@ -219,11 +219,11 @@ Sensitivity Analysis:
 Even with higher attrition (30%), power remains acceptable (75%). If the true
 effect is larger (d = 0.50), power exceeds 90%.
 
-✓ Power analysis report saved: docs/power_analysis_report.pdf
-✓ NIH biosketches justification: docs/nih_sample_size_justification.docx
+Power analysis report saved: docs/power_analysis_report.pdf
+NIH biosketches justification: docs/nih_sample_size_justification.docx
 ```
 
-**✓ Checkpoint**: Sample size justified with documented assumptions.
+**Checkpoint**: Sample size justified with documented assumptions.
 
 ---
 
@@ -260,7 +260,7 @@ print(f"Total to recruit: {total_n}")
 # Output: 250
 ```
 
-**✓ Checkpoint**: Manually verified calculation matches tool output.
+**Checkpoint**: Manually verified calculation matches tool output.
 
 ---
 
@@ -271,16 +271,16 @@ print(f"Total to recruit: {total_n}")
 **Options**:
 
 1. **Simple Randomization** (flip a coin for each participant)
-   - ✓ Easy to implement
+   - Easy to implement
    - ✗ Risk of imbalance in small samples
    
 2. **Block Randomization** (ensure balance in blocks)
-   - ✓ Guarantees balance throughout recruitment
-   - ✓ Useful for sequential enrollment
-   - ✓ RECOMMENDED for most RCTs
+   - Guarantees balance throughout recruitment
+   - Useful for sequential enrollment
+   - RECOMMENDED for most RCTs
 
 3. **Stratified Randomization** (balance within subgroups)
-   - ✓ Ensures balance on important covariates
+   - Ensures balance on important covariates
    - ✗ More complex
    - Use if strong prognostic factors known
 
@@ -334,9 +334,9 @@ First block (4 participants):
 
 Verification:
 ─────────────────────────────────────────────────
-✓ Total MBCT: 125 (50.0%)
-✓ Total WaitList: 125 (50.0%)
-✓ Balance achieved
+Total MBCT: 125 (50.0%)
+Total WaitList: 125 (50.0%)
+Balance achieved
 
 Allocation Concealment:
 ─────────────────────────────────────────────────
@@ -347,13 +347,13 @@ Sequence saved in SEALED format:
 
 Randomization Log:
 ─────────────────────────────────────────────────
-✓ Sequence generation documented: docs/randomization_protocol.pdf
-✓ CONSORT flow diagram template: docs/consort_flow_template.md
+Sequence generation documented: docs/randomization_protocol.pdf
+CONSORT flow diagram template: docs/consort_flow_template.md
 
 ═══════════════════════════════════════════════
 ```
 
-**✓ Checkpoint**: Randomization sequence generated and concealed.
+**Checkpoint**: Randomization sequence generated and concealed.
 
 ---
 
@@ -402,7 +402,7 @@ safeguards:
   - Cannot skip or reverse assignments
 ```
 
-**✓ Checkpoint**: Allocation concealment method documented.
+**Checkpoint**: Allocation concealment method documented.
 
 ---
 
@@ -427,11 +427,11 @@ Intervention Providers: ✗ NO (but N/A for online self-guided)
   - No live providers in this study
   - Automated online modules
 
-Outcome Assessors: ✓ YES
+Outcome Assessors: YES
   - Outcome is self-report questionnaires
   - Can blind data analysts to group assignment
 
-Data Analysts: ✓ YES
+Data Analysts: YES
   - Code groups as "Group A" and "Group B" during analysis
   - Reveal assignment only after analysis complete
 ```
@@ -445,22 +445,22 @@ Data Analysts: ✓ YES
 When blinding is impossible, use these strategies:
 
 1. **Objective Outcomes** (less susceptible to bias)
-   - ✓ PHQ-9 is validated self-report (objective scoring)
-   - ✓ Not subject to assessor interpretation
+   - PHQ-9 is validated self-report (objective scoring)
+   - Not subject to assessor interpretation
 
 2. **Automated Data Collection**
-   - ✓ Online surveys (no assessor interaction)
-   - ✓ Participants complete independently
+   - Online surveys (no assessor interaction)
+   - Participants complete independently
 
 3. **Blinded Statistical Analysis**
-   - ✓ Statistician analyzes "Group A vs. Group B"
-   - ✓ Code broken only after results finalized
+   - Statistician analyzes "Group A vs. Group B"
+   - Code broken only after results finalized
 
 4. **Pre-Registration** (prevents outcome switching)
-   - ✓ All outcomes and analyses pre-specified
-   - ✓ Reduces opportunity for bias
+   - All outcomes and analyses pre-specified
+   - Reduces opportunity for bias
 
-**✓ Checkpoint**: Blinding plan documented with risk mitigation strategies.
+**Checkpoint**: Blinding plan documented with risk mitigation strategies.
 
 ---
 
@@ -540,7 +540,7 @@ python code/generate_protocol.py \
     - Data sharing plan (de-identified data on OSF after publication)
 ```
 
-**✓ Checkpoint**: Protocol should be 25-30 pages, ready for IRB submission.
+**Checkpoint**: Protocol should be 25-30 pages, ready for IRB submission.
 
 ---
 
@@ -587,7 +587,7 @@ sex_consideration:
     interaction analysis.
 ```
 
-**✓ Checkpoint**: SABV addressed per NIH policy.
+**Checkpoint**: SABV addressed per NIH policy.
 
 ---
 
@@ -687,7 +687,7 @@ sex_consideration:
 20. Target Sample Size: 250
 ```
 
-**✓ Checkpoint**: Trial registered on ClinicalTrials.gov with NCT number received.
+**Checkpoint**: Trial registered on ClinicalTrials.gov with NCT number received.
 
 ---
 
@@ -745,7 +745,7 @@ deviations_from_plan:
   - Protocol amendments will be uploaded to ClinicalTrials.gov
 ```
 
-**✓ Checkpoint**: Analysis plan registered on OSF before data collection begins.
+**Checkpoint**: Analysis plan registered on OSF before data collection begins.
 
 ---
 
@@ -786,36 +786,36 @@ Revision Needed: MINOR (see recommendations)
 
 POWER ANALYSIS ✓
 ─────────────────────────────────────────────────
-✓ Sample size justified with power calculation
-✓ Effect size based on prior evidence (conservative)
-✓ Attrition accounted for (20%)
-✓ Sensitivity analysis provided
+Sample size justified with power calculation
+Effect size based on prior evidence (conservative)
+Attrition accounted for (20%)
+Sensitivity analysis provided
 
 Recommendation: Consider adding stopping rule for futility (e.g., interim
 analysis at n=125 to assess if continuing is warranted).
 
 RANDOMIZATION ✓
 ─────────────────────────────────────────────────
-✓ Method clearly specified (block randomization, block size 4)
-✓ Random seed documented (20241110)
-✓ Allocation ratio justified (1:1)
-✓ Sequence generation reproducible
+Method clearly specified (block randomization, block size 4)
+Random seed documented (20241110)
+Allocation ratio justified (1:1)
+Sequence generation reproducible
 
 No changes needed.
 
 ALLOCATION CONCEALMENT ✓
 ─────────────────────────────────────────────────
-✓ Central randomization via REDCap
-✓ Sequence concealed until enrollment
-✓ Study coordinator cannot predict assignments
+Central randomization via REDCap
+Sequence concealed until enrollment
+Study coordinator cannot predict assignments
 
 No changes needed.
 
-BLINDING ⚠️
+BLINDING 
 ─────────────────────────────────────────────────
-✓ Appropriate for behavioral intervention (single-blind)
-✓ Outcome assessors blinded (automated self-report)
-✓ Data analysts blinded during analysis
+Appropriate for behavioral intervention (single-blind)
+Outcome assessors blinded (automated self-report)
+Data analysts blinded during analysis
 
 Recommendation: Specify in protocol how you will assess success of blinding
 (e.g., ask participants at end of study what group they think they were in,
@@ -823,29 +823,29 @@ though this may not be feasible for MBCT vs. wait-list given obvious difference)
 
 SEX AS BIOLOGICAL VARIABLE (SABV) ✓
 ─────────────────────────────────────────────────
-✓ Both sexes enrolled
-✓ Enrollment targets justified (60F/40M reflects prevalence)
-✓ Analysis plan includes exploratory sex interaction
-✓ Acknowledges underpowered for subgroup analysis
+Both sexes enrolled
+Enrollment targets justified (60F/40M reflects prevalence)
+Analysis plan includes exploratory sex interaction
+Acknowledges underpowered for subgroup analysis
 
 Excellent. Consider adding language about potential sex differences in help-
 seeking behavior that might affect recruitment.
 
 PRE-REGISTRATION ✓
 ─────────────────────────────────────────────────
-✓ Registered on ClinicalTrials.gov
-✓ WHO 20-item dataset complete
-✓ Statistical analysis plan pre-registered (OSF)
-✓ All outcomes and analyses pre-specified
+Registered on ClinicalTrials.gov
+WHO 20-item dataset complete
+Statistical analysis plan pre-registered (OSF)
+All outcomes and analyses pre-specified
 
 No changes needed.
 
 ADDITIONAL NIH REQUIREMENTS ✓
 ─────────────────────────────────────────────────
-✓ Outcome measures validated
-✓ Data sharing plan specified (de-identified data on OSF)
-✓ Timeline realistic
-✓ Rigor and reproducibility addressed throughout
+Outcome measures validated
+Data sharing plan specified (de-identified data on OSF)
+Timeline realistic
+Rigor and reproducibility addressed throughout
 
 Recommendation: Add data monitoring plan (even though low-risk study, specify
 interim safety reviews).
@@ -865,7 +865,7 @@ Optional Enhancements:
 This protocol demonstrates excellent rigor and would score highly in NIH review.
 ```
 
-**✓ Checkpoint**: Agent review complete with recommendations.
+**Checkpoint**: Agent review complete with recommendations.
 
 ---
 
@@ -910,7 +910,7 @@ Interim Analysis (Optional):
 - Decision made by independent statistician (not study team)
 ```
 
-**✓ Checkpoint**: Protocol updated to v1.1 incorporating all feedback.
+**Checkpoint**: Protocol updated to v1.1 incorporating all feedback.
 
 ---
 
@@ -979,7 +979,7 @@ INTENTION-TO-TREAT
 Primary analysis includes all randomized participants (n = 250)
 ```
 
-**✓ Checkpoint**: CONSORT template ready for completion during trial.
+**Checkpoint**: CONSORT template ready for completion during trial.
 
 ---
 
@@ -994,21 +994,21 @@ python code/consort_checklist.py --generate-template
 **Key Items to Address in Protocol**:
 
 ```
-✓ Item 1: Title - "Randomized Controlled Trial" in title
-✓ Item 2: Abstract - Structured abstract with trial design
-✓ Item 3: Trial design - Parallel-group, 1:1 allocation
-✓ Item 4: Participants - Eligibility criteria clearly defined
-✓ Item 5: Interventions - Detailed description of MBCT and wait-list
-✓ Item 6: Outcomes - Primary (PHQ-9) and secondary outcomes specified
-✓ Item 7: Sample size - Power analysis documented
-✓ Item 8: Randomization - Sequence generation and allocation concealment
-✓ Item 9: Blinding - Who is blinded, how maintained
-✓ Item 10: Statistical methods - ANCOVA, ITT, missing data handling
+Item 1: Title - "Randomized Controlled Trial" in title
+Item 2: Abstract - Structured abstract with trial design
+Item 3: Trial design - Parallel-group, 1:1 allocation
+Item 4: Participants - Eligibility criteria clearly defined
+Item 5: Interventions - Detailed description of MBCT and wait-list
+Item 6: Outcomes - Primary (PHQ-9) and secondary outcomes specified
+Item 7: Sample size - Power analysis documented
+Item 8: Randomization - Sequence generation and allocation concealment
+Item 9: Blinding - Who is blinded, how maintained
+Item 10: Statistical methods - ANCOVA, ITT, missing data handling
 
 ... [Items 11-30 will be completed after trial completion] ...
 ```
 
-**✓ Checkpoint**: Protocol addresses all applicable CONSORT items for planning.
+**Checkpoint**: Protocol addresses all applicable CONSORT items for planning.
 
 ---
 
@@ -1017,17 +1017,17 @@ python code/consort_checklist.py --generate-template
 ### What You've Learned
 
 **Completed RCT Design**:
-- ✅ Formulated testable research question (FINER criteria)
-- ✅ Converted to PICOS format
-- ✅ Conducted NIH-compliant power analysis (n=250)
-- ✅ Generated reproducible randomization sequence (block randomization)
-- ✅ Implemented allocation concealment (REDCap central randomization)
-- ✅ Planned blinding procedures (single-blind, outcome assessors)
-- ✅ Wrote CONSORT-compliant protocol (30 pages)
-- ✅ Addressed sex as biological variable (SABV)
-- ✅ Pre-registered on ClinicalTrials.gov and OSF
-- ✅ Used experiment-designer agent for rigor review
-- ✅ Planned CONSORT flow diagram and checklist compliance
+- Formulated testable research question (FINER criteria)
+- Converted to PICOS format
+- Conducted NIH-compliant power analysis (n=250)
+- Generated reproducible randomization sequence (block randomization)
+- Implemented allocation concealment (REDCap central randomization)
+- Planned blinding procedures (single-blind, outcome assessors)
+- Wrote CONSORT-compliant protocol (30 pages)
+- Addressed sex as biological variable (SABV)
+- Pre-registered on ClinicalTrials.gov and OSF
+- Used experiment-designer agent for rigor review
+- Planned CONSORT flow diagram and checklist compliance
 
 **Key Files Generated**:
 ```
@@ -1055,12 +1055,12 @@ my_mbct_trial/
          NIH RIGOR CHECKLIST - FINAL
 ═══════════════════════════════════════════════
 
-✅ Scientific Premise: Gap identified from systematic review (Tutorial 2)
-✅ Rigorous Experimental Design: RCT with proper randomization and blinding
-✅ Consideration of Sex: SABV plan addresses enrollment and analysis
-✅ Authentication of Key Resources: Validated outcome measures (PHQ-9, GAD-7)
-✅ Transparent Reporting: Pre-registered, CONSORT compliance planned
-✅ Statistical Analysis: Pre-specified, power justified, missing data handled
+Scientific Premise: Gap identified from systematic review (Tutorial 2)
+Rigorous Experimental Design: RCT with proper randomization and blinding
+Consideration of Sex: SABV plan addresses enrollment and analysis
+Authentication of Key Resources: Validated outcome measures (PHQ-9, GAD-7)
+Transparent Reporting: Pre-registered, CONSORT compliance planned
+Statistical Analysis: Pre-specified, power justified, missing data handled
 
 RIGOR SCORE: EXCELLENT
 Ready for NIH grant submission or IRB approval.

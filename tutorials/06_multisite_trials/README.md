@@ -76,7 +76,7 @@ Site 5: Academic Medical Institute
 Total Target Enrollment: 400 participants across 5 sites
 ```
 
-**✓ Checkpoint**: Sites selected with complementary strengths and adequate enrollment capacity.
+**Checkpoint**: Sites selected with complementary strengths and adequate enrollment capacity.
 
 ---
 
@@ -140,7 +140,7 @@ publications_committee:
   guidelines: CRediT taxonomy, ICMJE criteria
 ```
 
-**✓ Checkpoint**: Governance structure documented with clear roles and decision-making processes.
+**Checkpoint**: Governance structure documented with clear roles and decision-making processes.
 
 ---
 
@@ -199,7 +199,7 @@ python code/generate_mou.py \
    - Early termination requires 90-day notice
 ```
 
-**✓ Checkpoint**: MOU signed by all 5 site PIs and institutional officials.
+**Checkpoint**: MOU signed by all 5 site PIs and institutional officials.
 
 ---
 
@@ -279,7 +279,7 @@ usual_care_control:
     - Report in paper: "Usual care ranged from..."
 ```
 
-**✓ Checkpoint**: Master protocol allows necessary site flexibility while maintaining core standardization.
+**Checkpoint**: Master protocol allows necessary site flexibility while maintaining core standardization.
 
 ---
 
@@ -320,7 +320,7 @@ Fidelity Monitoring Plan:
 - Therapists scoring <6/10 require remediation
 ```
 
-**✓ Checkpoint**: All sites trained and certified before enrollment begins.
+**Checkpoint**: All sites trained and certified before enrollment begins.
 
 ---
 
@@ -390,7 +390,7 @@ automated_alerts:
   - Email to all if serious adverse event (SAE) reported (immediate)
 ```
 
-**✓ Checkpoint**: REDCap configured with appropriate access controls and automated workflows.
+**Checkpoint**: REDCap configured with appropriate access controls and automated workflows.
 
 ---
 
@@ -427,7 +427,7 @@ Step 7: Automated Email Sent:
 Step 8: Coordinator Informs Participant of Assignment
 ```
 
-**✓ Checkpoint**: Central randomization ensures allocation concealment across all sites.
+**Checkpoint**: Central randomization ensures allocation concealment across all sites.
 
 ---
 
@@ -493,7 +493,7 @@ Site         Enrolled  Target  %Target  Missing  Deviations  Flag
 ──────────────────────────────────────────────────────────────────────
 Site 1       87        100     87%      3.2%     2           OK
 Site 2       78        80      98%      5.1%     1           OK
-Site 3       45        60      75%      8.7%     3           ENROLLMENT BEHIND ⚠️
+Site 3       45        60      75%      8.7%     3           ENROLLMENT BEHIND 
 Site 4       58        60      97%      4.3%     0           OK
 Site 5       95        100     95%      2.8%     1           OK
 ──────────────────────────────────────────────────────────────────────
@@ -505,7 +505,7 @@ Actions Needed:
 """
 ```
 
-**✓ Checkpoint**: Real-time monitoring identifies issues before they compound.
+**Checkpoint**: Real-time monitoring identifies issues before they compound.
 
 ---
 
@@ -517,16 +517,16 @@ Actions Needed:
 
 1. **Site-Specific IRBs** (traditional)
    - Each site submits to own IRB
-   - ✓ Sites familiar with own IRB
+   - Sites familiar with own IRB
    - ✗ 5 separate submissions
    - ✗ Inconsistent requirements
    - ✗ Slow (sequential approvals)
 
 2. **Single IRB (sIRB)** - RECOMMENDED for NIH-funded
    - Lead site IRB reviews for all sites
-   - ✓ NIH mandate for multi-site trials (2018)
-   - ✓ Faster approval
-   - ✓ Harmonized protocol
+   - NIH mandate for multi-site trials (2018)
+   - Faster approval
+   - Harmonized protocol
    - ✗ Sites must cede authority
 
 **Our Choice**: **Single IRB (sIRB) at Lead Site**
@@ -582,7 +582,7 @@ sIRB Application Package:
 8. Letters of support from site administrators
 ```
 
-**✓ Checkpoint**: sIRB approval obtained in 7 weeks, all sites activated simultaneously.
+**Checkpoint**: sIRB approval obtained in 7 weeks, all sites activated simultaneously.
 
 ---
 
@@ -646,7 +646,7 @@ termination:
   - Lead site cannot terminate without Steering Committee approval
 ```
 
-**✓ Checkpoint**: DUA protects data while enabling collaborative science.
+**Checkpoint**: DUA protects data while enabling collaborative science.
 
 ---
 
@@ -750,7 +750,7 @@ Conclusion: CBT effective across all 5 sites with minimal heterogeneity.
 """
 ```
 
-**✓ Checkpoint**: IPD meta-analysis leverages full power of multi-site data.
+**Checkpoint**: IPD meta-analysis leverages full power of multi-site data.
 
 ---
 
@@ -820,7 +820,7 @@ author_disputes:
     - Academic misconduct findings
 ```
 
-**✓ Checkpoint**: Clear authorship guidelines prevent disputes.
+**Checkpoint**: Clear authorship guidelines prevent disputes.
 
 ---
 
@@ -865,7 +865,7 @@ Month 25: Public Data Release
   └─ External researchers can request access
 ```
 
-**✓ Checkpoint**: Coordinated timeline ensures fair credit and maximum impact.
+**Checkpoint**: Coordinated timeline ensures fair credit and maximum impact.
 
 ---
 
@@ -934,21 +934,21 @@ Outcome: Recovered 8% (down to 7% missing), imputed rest
 ### Multi-Site Best Practices
 
 **Do's**:
-- ✅ Invest in thorough training upfront (saves problems later)
-- ✅ Centralize randomization and data management
-- ✅ Monitor enrollment and quality in real-time (weekly reports)
-- ✅ Communicate frequently (monthly steering committee calls)
-- ✅ Build in flexibility for site-specific adaptations
-- ✅ Celebrate milestones (enrollment targets, publication acceptance)
-- ✅ Use single IRB (faster, more efficient)
+- Invest in thorough training upfront (saves problems later)
+- Centralize randomization and data management
+- Monitor enrollment and quality in real-time (weekly reports)
+- Communicate frequently (monthly steering committee calls)
+- Build in flexibility for site-specific adaptations
+- Celebrate milestones (enrollment targets, publication acceptance)
+- Use single IRB (faster, more efficient)
 
 **Don'ts**:
-- ❌ Assume all sites have same resources/infrastructure
-- ❌ Allow sites to modify protocol without steering committee approval
-- ❌ Wait until end to address enrollment or quality issues
-- ❌ Neglect site-specific barriers (language, transportation, stigma)
-- ❌ Rush training (quality suffers)
-- ❌ Forget to recognize site coordinator contributions (acknowledge in papers)
+- Assume all sites have same resources/infrastructure
+- Allow sites to modify protocol without steering committee approval
+- Wait until end to address enrollment or quality issues
+- Neglect site-specific barriers (language, transportation, stigma)
+- Rush training (quality suffers)
+- Forget to recognize site coordinator contributions (acknowledge in papers)
 
 ---
 
@@ -957,14 +957,14 @@ Outcome: Recovered 8% (down to 7% missing), imputed rest
 ### What You've Learned
 
 **Multi-Site Coordination**:
-- ✅ Formed 5-site research consortium with governance structure
-- ✅ Harmonized protocol with acceptable site variations
-- ✅ Established central randomization and data management
-- ✅ Navigated single IRB review (7 weeks vs. 12-20 weeks)
-- ✅ Implemented data sharing agreements (DUA, MTA)
-- ✅ Conducted individual participant data (IPD) meta-analysis
-- ✅ Applied consortium authorship guidelines (CRediT taxonomy)
-- ✅ Coordinated publication timeline
+- Formed 5-site research consortium with governance structure
+- Harmonized protocol with acceptable site variations
+- Established central randomization and data management
+- Navigated single IRB review (7 weeks vs. 12-20 weeks)
+- Implemented data sharing agreements (DUA, MTA)
+- Conducted individual participant data (IPD) meta-analysis
+- Applied consortium authorship guidelines (CRediT taxonomy)
+- Coordinated publication timeline
 
 **Advantages of Multi-Site**:
 - Faster recruitment (5 sites enrolling simultaneously)

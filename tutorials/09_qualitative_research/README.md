@@ -84,7 +84,7 @@ Example: "What is the culture of an inpatient psychiatric unit from patients' pe
 - Generates actionable theory
 - Iterative design allows emergence
 
-**✓ Checkpoint**: Methodology matches research question.
+**Checkpoint**: Methodology matches research question.
 
 ---
 
@@ -94,13 +94,13 @@ Example: "What is the culture of an inpatient psychiatric unit from patients' pe
 
 ```
 QUANTITATIVE (wrong for qualitative):
-❌ "Does therapy reduce depression symptoms?" (yes/no, measure)
-❌ "What percentage of patients recover?" (number)
+"Does therapy reduce depression symptoms?" (yes/no, measure)
+"What percentage of patients recover?" (number)
 
 QUALITATIVE (open-ended, exploratory):
-✓ "What does recovery mean to patients with depression?"
-✓ "How do patients experience the recovery process?"
-✓ "What facilitates or hinders recovery from depression?"
+"What does recovery mean to patients with depression?"
+"How do patients experience the recovery process?"
+"What facilitates or hinders recovery from depression?"
 ```
 
 **Our Research Question**:
@@ -113,7 +113,7 @@ QUALITATIVE (open-ended, exploratory):
 3. What factors facilitate or hinder recovery?
 4. How do individuals navigate setbacks during recovery?
 
-**✓ Checkpoint**: Open-ended question suitable for theory generation.
+**Checkpoint**: Open-ended question suitable for theory generation.
 
 ---
 
@@ -168,7 +168,7 @@ Strategy: Sample to saturation
 Our study: Recruited 18 participants, saturation at interview 15
 ```
 
-**✓ Checkpoint**: Purposive sampling ensures information-rich participants.
+**Checkpoint**: Purposive sampling ensures information-rich participants.
 
 ---
 
@@ -205,7 +205,7 @@ Timeline: 9 months (iterative data collection + analysis)
 - Interviews 9-15: Sought participants with different relationships to acceptance
 - Interviews 16-18: Confirmed saturation (no new facets of acceptance)
 
-**✓ Checkpoint**: Theoretical sampling strengthens theory development.
+**Checkpoint**: Theoretical sampling strengthens theory development.
 
 ---
 
@@ -328,7 +328,7 @@ Probes:
 [Stop recording]
 ```
 
-**✓ Checkpoint**: Interview guide balances structure with flexibility.
+**Checkpoint**: Interview guide balances structure with flexibility.
 
 ---
 
@@ -343,11 +343,11 @@ Location: Participant's choice (ensure privacy)
 Duration: 60-90 minutes (median: 75 minutes)
 
 Interviewer skills:
-  ✓ Active listening (not just waiting to ask next question)
-  ✓ Comfortable with silence (let participant think)
-  ✓ Follow participant's lead (diverge from guide if interesting)
-  ✓ Non-judgmental presence
-  ✓ Empathy without over-identifying
+  Active listening (not just waiting to ask next question)
+  Comfortable with silence (let participant think)
+  Follow participant's lead (diverge from guide if interesting)
+  Non-judgmental presence
+  Empathy without over-identifying
 
 Recording:
   - Audio only (less intrusive than video)
@@ -390,7 +390,7 @@ NEXT STEPS:
 - Theoretical sampling: seek people who recovered WITHOUT acceptance?
 ```
 
-**✓ Checkpoint**: Reflective interviewing enhances data quality.
+**Checkpoint**: Reflective interviewing enhances data quality.
 
 ---
 
@@ -459,7 +459,7 @@ CORE CATEGORY: "Paradoxical Letting Go"
   - Not giving up, but changing relationship to depression
 ```
 
-**✓ Checkpoint**: Systematic coding generates theory from data.
+**Checkpoint**: Systematic coding generates theory from data.
 
 ---
 
@@ -508,7 +508,7 @@ Interpretation: Acceptance is closely linked to turning points and
 involves self-compassion and releasing control efforts.
 ```
 
-**✓ Checkpoint**: NVivo organizes complex data for theory building.
+**Checkpoint**: NVivo organizes complex data for theory building.
 
 ---
 
@@ -520,11 +520,11 @@ involves self-compassion and releasing control efforts.
 Saturation Checklist:
 ═══════════════════════════════════════════════
 
-✓ No new categories emerging (last 3 interviews)
-✓ No new properties of existing categories
-✓ Relationships between categories well-established
-✓ Categories well-developed with multiple examples
-✓ Negative cases explored (examples that don't fit)
+No new categories emerging (last 3 interviews)
+No new properties of existing categories
+Relationships between categories well-established
+Categories well-developed with multiple examples
+Negative cases explored (examples that don't fit)
 
 Our Study:
   Interview 15: No new concepts
@@ -536,7 +536,7 @@ Our Study:
 DECISION: Stop data collection at 18 participants
 ```
 
-**✓ Checkpoint**: Saturation ensures theoretical adequacy.
+**Checkpoint**: Saturation ensures theoretical adequacy.
 
 ---
 
@@ -555,38 +555,38 @@ DECISION: Stop data collection at 18 participants
    Definition: Are findings believable?
    
    Strategies we used:
-   ✓ Prolonged engagement (9-month study)
-   ✓ Persistent observation (multiple interviews per participant available)
-   ✓ Triangulation (multiple data sources: interviews + field notes + memos)
-   ✓ Member checking (shared findings with 12 participants, 11 confirmed resonance)
-   ✓ Peer debriefing (research team meetings, external qualitative expert consulted)
+   Prolonged engagement (9-month study)
+   Persistent observation (multiple interviews per participant available)
+   Triangulation (multiple data sources: interviews + field notes + memos)
+   Member checking (shared findings with 12 participants, 11 confirmed resonance)
+   Peer debriefing (research team meetings, external qualitative expert consulted)
 
 2. TRANSFERABILITY (parallel to external validity/generalizability)
    Definition: Can findings apply to other contexts?
    
    Strategies:
-   ✓ Thick description (rich detail allows readers to judge transferability)
-   ✓ Maximum variation sampling (diverse participants increase transferability)
-   ✓ Clear context description (U.S., English-speaking, middle-class sample)
+   Thick description (rich detail allows readers to judge transferability)
+   Maximum variation sampling (diverse participants increase transferability)
+   Clear context description (U.S., English-speaking, middle-class sample)
 
 3. DEPENDABILITY (parallel to reliability)
    Definition: Would study produce consistent findings if repeated?
    
    Strategies:
-   ✓ Audit trail (all decisions documented: sampling, coding, analysis)
-   ✓ Reflexivity (researcher biases acknowledged)
-   ✓ External audit (qualitative methodologist reviewed process)
+   Audit trail (all decisions documented: sampling, coding, analysis)
+   Reflexivity (researcher biases acknowledged)
+   External audit (qualitative methodologist reviewed process)
 
 4. CONFIRMABILITY (parallel to objectivity)
    Definition: Are findings grounded in data, not researcher bias?
    
    Strategies:
-   ✓ Audit trail (clear link from data to findings)
-   ✓ Reflexivity journal (researcher examined own assumptions)
-   ✓ Negative case analysis (explained cases that didn't fit)
+   Audit trail (clear link from data to findings)
+   Reflexivity journal (researcher examined own assumptions)
+   Negative case analysis (explained cases that didn't fit)
 ```
 
-**✓ Checkpoint**: Trustworthiness strategies enhance rigor.
+**Checkpoint**: Trustworthiness strategies enhance rigor.
 
 ---
 
@@ -642,7 +642,7 @@ reflective probes ("tell me more about that") which maintained empathy while
 reducing directiveness.
 ```
 
-**✓ Checkpoint**: Reflexivity demonstrates methodological rigor.
+**Checkpoint**: Reflexivity demonstrates methodological rigor.
 
 ---
 
@@ -660,60 +660,60 @@ reducing directiveness.
 DOMAIN 1: Research Team and Reflexivity (8 items)
 ─────────────────────────────────────────────────
 Personal Characteristics:
-✓ 1. Interviewer identified (Dr. Jane Doe, clinical psychologist)
-✓ 2. Credentials (PhD in Clinical Psychology)
-✓ 3. Occupation (Assistant Professor, therapist)
-✓ 4. Gender (Female)
-✓ 5. Experience/training (Qualitative methods course, supervised by expert)
+1. Interviewer identified (Dr. Jane Doe, clinical psychologist)
+2. Credentials (PhD in Clinical Psychology)
+3. Occupation (Assistant Professor, therapist)
+4. Gender (Female)
+5. Experience/training (Qualitative methods course, supervised by expert)
 
 Relationship with Participants:
-✓ 6. Prior relationship (None - no participants were former patients)
-✓ 7. Participant knowledge of interviewer (Knew researcher was psychologist 
+6. Prior relationship (None - no participants were former patients)
+7. Participant knowledge of interviewer (Knew researcher was psychologist 
      studying recovery)
-✓ 8. Interviewer characteristics (See reflexivity statement)
+8. Interviewer characteristics (See reflexivity statement)
 
 DOMAIN 2: Study Design (15 items)
 ─────────────────────────────────────────────────
 Theoretical Framework:
-✓ 9. Methodological orientation (Constructivist grounded theory, Charmaz 2006)
-✓ 10. Sampling (Purposive, then theoretical sampling)
-✓ 11. Method of approach (Email invitation via mental health organizations)
-✓ 12. Sample size (18 participants)
-✓ 13. Non-participation (23 invited, 18 agreed, 5 declined - no reason given)
+9. Methodological orientation (Constructivist grounded theory, Charmaz 2006)
+10. Sampling (Purposive, then theoretical sampling)
+11. Method of approach (Email invitation via mental health organizations)
+12. Sample size (18 participants)
+13. Non-participation (23 invited, 18 agreed, 5 declined - no reason given)
 
 Setting:
-✓ 14. Setting of data collection (Zoom or private office, participant choice)
-✓ 15. Presence of non-participants (None)
-✓ 16. Description of sample (See Table 1: demographics)
+14. Setting of data collection (Zoom or private office, participant choice)
+15. Presence of non-participants (None)
+16. Description of sample (See Table 1: demographics)
 
 Data Collection:
-✓ 17. Interview guide (Yes, semi-structured; provided in appendix)
-✓ 18. Repeat interviews (No)
-✓ 19. Audio/visual recording (Audio only)
-✓ 20. Field notes (Yes, reflexive journaling)
-✓ 21. Duration (60-90 minutes, median 75)
-✓ 22. Data saturation (Yes, at interview 15, confirmed with 3 more)
-✓ 23. Transcripts returned (No, but findings shared for member checking)
+17. Interview guide (Yes, semi-structured; provided in appendix)
+18. Repeat interviews (No)
+19. Audio/visual recording (Audio only)
+20. Field notes (Yes, reflexive journaling)
+21. Duration (60-90 minutes, median 75)
+22. Data saturation (Yes, at interview 15, confirmed with 3 more)
+23. Transcripts returned (No, but findings shared for member checking)
 
 DOMAIN 3: Analysis and Findings (9 items)
 ─────────────────────────────────────────────────
 Data Analysis:
-✓ 24. Number of coders (2 - primary researcher + trained research assistant)
-✓ 25. Description of coding tree (See Figure 1: category development)
-✓ 26. Derivation of themes (Grounded theory constant comparison)
-✓ 27. Software (NVivo 12)
-✓ 28. Participant checking (Yes, 12/18 reviewed findings, 11 confirmed resonance)
+24. Number of coders (2 - primary researcher + trained research assistant)
+25. Description of coding tree (See Figure 1: category development)
+26. Derivation of themes (Grounded theory constant comparison)
+27. Software (NVivo 12)
+28. Participant checking (Yes, 12/18 reviewed findings, 11 confirmed resonance)
 
 Reporting:
-✓ 29. Quotations presented (Yes, with participant IDs)
-✓ 30. Data/findings consistent (Audit trail confirms)
-✓ 31. Clarity of major themes (4 major categories, 12 subcategories)
-✓ 32. Clarity of minor themes (Variations and negative cases described)
+29. Quotations presented (Yes, with participant IDs)
+30. Data/findings consistent (Audit trail confirms)
+31. Clarity of major themes (4 major categories, 12 subcategories)
+32. Clarity of minor themes (Variations and negative cases described)
 
 COREQ COMPLIANCE: 32/32 items (100%) ✓
 ```
 
-**✓ Checkpoint**: COREQ ensures transparent reporting.
+**Checkpoint**: COREQ ensures transparent reporting.
 
 ---
 
@@ -783,7 +783,7 @@ DISCUSSION (5 pages)
 Target Journal: Qualitative Health Research or Journal of Clinical Psychology
 ```
 
-**✓ Checkpoint**: Manuscript centers participant voice and theory.
+**Checkpoint**: Manuscript centers participant voice and theory.
 
 ---
 
@@ -792,16 +792,16 @@ Target Journal: Qualitative Health Research or Journal of Clinical Psychology
 ### What You've Learned
 
 **Qualitative Research Essentials**:
-- ✅ Chose grounded theory methodology (theory generation)
-- ✅ Formulated open-ended research questions
-- ✅ Used purposive and theoretical sampling (n=18, saturation)
-- ✅ Conducted in-depth semi-structured interviews (75 minutes)
-- ✅ Performed constant comparison analysis (open → axial → selective coding)
-- ✅ Used NVivo for systematic coding (167 codes → 4 categories)
-- ✅ Ensured trustworthiness (credibility, transferability, dependability, confirmability)
-- ✅ Practiced reflexivity (acknowledged biases, documented evolution)
-- ✅ Member checked findings (11/12 participants confirmed)
-- ✅ Reported per COREQ guidelines (32/32 items)
+- Chose grounded theory methodology (theory generation)
+- Formulated open-ended research questions
+- Used purposive and theoretical sampling (n=18, saturation)
+- Conducted in-depth semi-structured interviews (75 minutes)
+- Performed constant comparison analysis (open → axial → selective coding)
+- Used NVivo for systematic coding (167 codes → 4 categories)
+- Ensured trustworthiness (credibility, transferability, dependability, confirmability)
+- Practiced reflexivity (acknowledged biases, documented evolution)
+- Member checked findings (11/12 participants confirmed)
+- Reported per COREQ guidelines (32/32 items)
 
 **Key Insights**:
 - Qualitative research generates theory, not tests it

@@ -61,7 +61,7 @@ Conclusion: Mindfulness-based interventions are moderately effective for
 reducing anxiety symptoms in adolescents.
 ```
 
-**✓ Checkpoint**: We have strong evidence that mindfulness works for adolescents.
+**Checkpoint**: We have strong evidence that mindfulness works for adolescents.
 
 ---
 
@@ -124,7 +124,7 @@ Test of Moderation: Q = 4.87, p = 0.03
 Interpretation: Larger effects for severe symptoms (floor effects for mild)
 ```
 
-**✓ Checkpoint**: Multiple gaps identified - we'll focus on online delivery for college students.
+**Checkpoint**: Multiple gaps identified - we'll focus on online delivery for college students.
 
 ---
 
@@ -145,7 +145,7 @@ Interpretation: Larger effects for severe symptoms (floor effects for mild)
 3. **Outcome**: Depression (comorbid with anxiety, high prevalence)
 4. **Design**: RCT (gold standard)
 
-**✓ Checkpoint**: Research question directly addresses identified gap from systematic review.
+**Checkpoint**: Research question directly addresses identified gap from systematic review.
 
 ---
 
@@ -165,11 +165,11 @@ bash workflow/design_rct.sh
 ```
 
 **Workflow Executes**:
-1. ✅ Power analysis (n=250, d=0.40, power=0.80)
-2. ✅ Randomization sequence (block randomization, size 4)
-3. ✅ Protocol generation (30-page CONSORT-compliant)
-4. ✅ SABV plan (60% female, 40% male enrollment)
-5. ✅ Pre-registration forms (ClinicalTrials.gov + OSF)
+1. Power analysis (n=250, d=0.40, power=0.80)
+2. Randomization sequence (block randomization, size 4)
+3. Protocol generation (30-page CONSORT-compliant)
+4. SABV plan (60% female, 40% male enrollment)
+5. Pre-registration forms (ClinicalTrials.gov + OSF)
 
 **Generated Files**:
 - `docs/trial_protocol_v1.0.docx` (IRB-ready)
@@ -177,7 +177,7 @@ bash workflow/design_rct.sh
 - `data/randomization_sequence_SEALED.csv`
 - `docs/clinicaltrials_registration.xml`
 
-**✓ Checkpoint**: Complete RCT design ready for IRB submission (from Tutorial 3).
+**Checkpoint**: Complete RCT design ready for IRB submission (from Tutorial 3).
 
 ---
 
@@ -202,7 +202,7 @@ Registration Date: 2024-01-15
 First Posted: 2024-01-18
 ```
 
-**✓ Checkpoint**: IRB approved, trial registered before enrolling first participant.
+**Checkpoint**: IRB approved, trial registered before enrolling first participant.
 
 ---
 
@@ -246,8 +246,8 @@ Randomized:
   └─ Wait-List: 134 (50%)
 
 Sex Distribution:
-  ├─ Female: 162 (60%) ✓ On target
-  └─ Male: 106 (40%)   ✓ On target
+  ├─ Female: 162 (60%) On target
+  └─ Male: 106 (40%)   On target
 
 Timeline:
   ├─ Target enrollment: 250
@@ -257,10 +257,10 @@ Timeline:
 Projected Final N (accounting for 20% attrition):
   ├─ MBCT: 107 completers
   ├─ Wait-List: 107 completers
-  └─ Total: 214 (85% retention) ✓ Adequate power
+  └─ Total: 214 (85% retention) Adequate power
 ```
 
-**✓ Checkpoint**: Enrollment on track, randomization balanced, sex distribution as planned.
+**Checkpoint**: Enrollment on track, randomization balanced, sex distribution as planned.
 
 ---
 
@@ -294,22 +294,22 @@ Out-of-Range Values:
   └─ Age (18-25): 0 out-of-range ✓
 
 Missing Data Patterns:
-  ├─ Random missingness: Yes ✓ (Little's MCAR test p=0.42)
-  ├─ Differential attrition: No ✓ (MBCT 17%, Wait-List 18%, p=0.85)
+  ├─ Random missingness: Yes (Little's MCAR test p=0.42)
+  ├─ Differential attrition: No (MBCT 17%, Wait-List 18%, p=0.85)
   └─ Predictors of missingness: Baseline severity (OR=1.08, p=0.34)
 
 Protocol Deviations:
   ├─ Randomization errors: 0 ✓
   ├─ Allocation concealment breaches: 0 ✓
-  └─ Ineligible participants enrolled: 1 ⚠️
+  └─ Ineligible participants enrolled: 1 
       (PHQ-9=9 at screen, 11 at baseline - retained per protocol)
 
 Action Items:
-  ✓ No critical issues
-  ✓ Continue standard monitoring
+  No critical issues
+  Continue standard monitoring
 ```
 
-**✓ Checkpoint**: Data quality excellent, no protocol violations.
+**Checkpoint**: Data quality excellent, no protocol violations.
 
 ---
 
@@ -390,7 +390,7 @@ Effect Size Realized: d = 0.68 (expected d = 0.40)
 Study was OVERPOWERED - actual power achieved = 0.96
 ```
 
-**✓ Checkpoint**: Primary outcome shows statistically and clinically significant benefit.
+**Checkpoint**: Primary outcome shows statistically and clinically significant benefit.
 
 ---
 
@@ -421,7 +421,7 @@ Multiple Comparisons Adjustment (Holm-Bonferroni):
 All secondary outcomes remain significant after adjustment.
 ```
 
-**✓ Checkpoint**: All secondary outcomes favor MBCT.
+**Checkpoint**: All secondary outcomes favor MBCT.
 
 ---
 
@@ -475,7 +475,7 @@ CONCLUSION: Results are ROBUST across all sensitivity analyses.
 ═══════════════════════════════════════════════
 ```
 
-**✓ Checkpoint**: All sensitivity analyses confirm primary finding.
+**Checkpoint**: All sensitivity analyses confirm primary finding.
 
 ---
 
@@ -541,10 +541,10 @@ UPDATED (9 studies, with our RCT):
   I² = 58% (reduced heterogeneity)
 
 Impact of Our Study:
-  ✓ Online delivery NOW SHOWS SIGNIFICANT BENEFIT
-  ✓ Confidence interval no longer crosses zero
-  ✓ Heterogeneity reduced (more consistent findings)
-  ✓ GAP FILLED
+  Online delivery NOW SHOWS SIGNIFICANT BENEFIT
+  Confidence interval no longer crosses zero
+  Heterogeneity reduced (more consistent findings)
+  GAP FILLED
 
 Test of Moderation (In-Person vs. Online):
 ─────────────────────────────────────────────────
@@ -559,7 +559,7 @@ CONCLUSION: Our RCT provides evidence that online delivery is comparably
             effective to in-person delivery.
 ```
 
-**✓ Checkpoint**: Our RCT filled the identified gap and changed the meta-analytic conclusion.
+**Checkpoint**: Our RCT filled the identified gap and changed the meta-analytic conclusion.
 
 ---
 
@@ -610,7 +610,7 @@ Heterogeneity: I² = 58%, Q = 19.2, p = 0.01
 - Pulls overall estimate toward stronger benefit
 - Reduced heterogeneity by providing clearer signal
 
-**✓ Checkpoint**: Forest plot ready for manuscript Figure 1.
+**Checkpoint**: Forest plot ready for manuscript Figure 1.
 
 ---
 
@@ -693,7 +693,7 @@ online MBCT as a scalable intervention for college mental health services.
 [Methods, Results, Discussion sections follow with full CONSORT compliance...]
 ```
 
-**✓ Checkpoint**: Draft manuscript generated by agent (3,487 words, within limit).
+**Checkpoint**: Draft manuscript generated by agent (3,487 words, within limit).
 
 ---
 
@@ -738,7 +738,7 @@ Results: 4% AI confidence ✓
   - Data-driven content (naturally structured)
   - Statistical reporting (standard format)
 
-Discussion: 18% AI confidence ⚠️
+Discussion: 18% AI confidence 
   - Some generic phrases detected:
     • "these findings suggest" (line 287)
     • "importantly, this study demonstrates" (line 314)
@@ -763,7 +763,7 @@ Please revise the Discussion section to address these AI-check flagged phrases:
 [Paste AI-check suggestions]
 ```
 
-**✓ Checkpoint**: Manuscript revised, AI-check confidence now 8% (excellent).
+**Checkpoint**: Manuscript revised, AI-check confidence now 8% (excellent).
 
 ---
 
@@ -792,7 +792,7 @@ phq9_baseline,PHQ-9 score at baseline,continuous,0-27,higher=more depressed
 phq9_8wk,PHQ-9 score at 8 weeks,continuous,0-27,higher=more depressed
 ```
 
-**✓ Checkpoint**: De-identified data and dictionary ready for public sharing.
+**Checkpoint**: De-identified data and dictionary ready for public sharing.
 
 ---
 
@@ -842,7 +842,7 @@ https://osf.io/abc123/
 License: CC-BY 4.0 (all materials open access)
 ```
 
-**✓ Checkpoint**: All materials publicly available on OSF.
+**Checkpoint**: All materials publicly available on OSF.
 
 ---
 
@@ -867,7 +867,7 @@ This DOI can now be cited in your manuscript's Data Availability statement:
 available at https://doi.org/10.17605/OSF.IO/ABC123"
 ```
 
-**✓ Checkpoint**: DOI minted, data permanently archived.
+**Checkpoint**: DOI minted, data permanently archived.
 
 ---
 
@@ -891,39 +891,39 @@ python code/consort_checklist.py \
     CONSORT 2010 CHECKLIST - FINAL MANUSCRIPT
 ═══════════════════════════════════════════════
 
-✅ Item 1a: Title - "Randomized Clinical Trial" in title
-✅ Item 1b: Abstract - Structured abstract with CONSORT elements
-✅ Item 2a: Introduction - Background and rationale
-✅ Item 2b: Objectives - Specific hypothesis stated
-✅ Item 3a: Trial design - Parallel-group RCT clearly stated
-✅ Item 3b: Important changes - Protocol v1.0 → v1.1 documented
-✅ Item 4a: Participants - Eligibility criteria specified
-✅ Item 4b: Settings and locations - University setting described
-✅ Item 5: Interventions - MBCT and wait-list described in detail
-✅ Item 6a: Outcomes - Primary and secondary outcomes defined
-✅ Item 6b: Changes to outcomes - No changes (pre-registered)
-✅ Item 7a: Sample size - Power analysis justification provided
-✅ Item 7b: Interim analyses - None conducted (as pre-specified)
-✅ Item 8a: Randomization - Sequence generation method described
-✅ Item 8b: Allocation concealment - REDCap central randomization
-✅ Item 9: Implementation - Who generated, enrolled, assigned
-✅ Item 10: Blinding - Single-blind (outcome assessors)
-✅ Item 11a: Statistical methods - ANCOVA pre-specified
-✅ Item 11b: Subgroup analyses - Sex interaction (exploratory)
-✅ Item 12a: Participant flow - CONSORT diagram included (Figure 1)
-✅ Item 12b: Losses and exclusions - All documented with reasons
-✅ Item 13a: Baseline characteristics - Table 1 provided
-✅ Item 13b: Numbers analyzed - ITT analysis (all 268 randomized)
-✅ Item 14a: Outcomes - All pre-specified outcomes reported
-✅ Item 14b: Binary outcomes - N/A (continuous outcomes)
-✅ Item 15: Ancillary analyses - Sensitivity analyses reported
-✅ Item 16: Harms - Adverse events monitored (Table S2)
-✅ Item 17a: Interpretation - Consistent with results
-✅ Item 17b: Generalizability - External validity discussed
-✅ Item 18: Limitations - Addressed in Discussion
-✅ Item 19: Trial registration - NCT05234567 provided
-✅ Item 20: Protocol access - Available on OSF
-✅ Item 21: Funding - NIMH grant acknowledged
+Item 1a: Title - "Randomized Clinical Trial" in title
+Item 1b: Abstract - Structured abstract with CONSORT elements
+Item 2a: Introduction - Background and rationale
+Item 2b: Objectives - Specific hypothesis stated
+Item 3a: Trial design - Parallel-group RCT clearly stated
+Item 3b: Important changes - Protocol v1.0 → v1.1 documented
+Item 4a: Participants - Eligibility criteria specified
+Item 4b: Settings and locations - University setting described
+Item 5: Interventions - MBCT and wait-list described in detail
+Item 6a: Outcomes - Primary and secondary outcomes defined
+Item 6b: Changes to outcomes - No changes (pre-registered)
+Item 7a: Sample size - Power analysis justification provided
+Item 7b: Interim analyses - None conducted (as pre-specified)
+Item 8a: Randomization - Sequence generation method described
+Item 8b: Allocation concealment - REDCap central randomization
+Item 9: Implementation - Who generated, enrolled, assigned
+Item 10: Blinding - Single-blind (outcome assessors)
+Item 11a: Statistical methods - ANCOVA pre-specified
+Item 11b: Subgroup analyses - Sex interaction (exploratory)
+Item 12a: Participant flow - CONSORT diagram included (Figure 1)
+Item 12b: Losses and exclusions - All documented with reasons
+Item 13a: Baseline characteristics - Table 1 provided
+Item 13b: Numbers analyzed - ITT analysis (all 268 randomized)
+Item 14a: Outcomes - All pre-specified outcomes reported
+Item 14b: Binary outcomes - N/A (continuous outcomes)
+Item 15: Ancillary analyses - Sensitivity analyses reported
+Item 16: Harms - Adverse events monitored (Table S2)
+Item 17a: Interpretation - Consistent with results
+Item 17b: Generalizability - External validity discussed
+Item 18: Limitations - Addressed in Discussion
+Item 19: Trial registration - NCT05234567 provided
+Item 20: Protocol access - Available on OSF
+Item 21: Funding - NIMH grant acknowledged
 
 ═══════════════════════════════════════════════
 CONSORT COMPLIANCE: 25/25 items (100%) ✓
@@ -931,7 +931,7 @@ READY FOR SUBMISSION
 ═══════════════════════════════════════════════
 ```
 
-**✓ Checkpoint**: Full CONSORT compliance verified.
+**Checkpoint**: Full CONSORT compliance verified.
 
 ---
 
@@ -976,7 +976,7 @@ available indefinitely beginning upon publication. Additional information can be
 obtained by contacting the corresponding author.
 ```
 
-**✓ Checkpoint**: Submitted to JAMA Psychiatry on 2024-11-10.
+**Checkpoint**: Submitted to JAMA Psychiatry on 2024-11-10.
 
 ---
 
@@ -985,50 +985,50 @@ obtained by contacting the corresponding author.
 ### What You've Accomplished (60 Minutes)
 
 **Phase 1: Gap Identification (Months 1-6)**
-- ✅ Conducted PRISMA 2020 systematic review (Tutorial 2)
-- ✅ Identified research gap (online delivery for college students)
-- ✅ Formulated research question filling that gap
+- Conducted PRISMA 2020 systematic review (Tutorial 2)
+- Identified research gap (online delivery for college students)
+- Formulated research question filling that gap
 
 **Phase 2: Study Design (Months 7-9)**
-- ✅ Designed rigorous RCT (Tutorial 3)
-- ✅ Conducted NIH-compliant power analysis (n=250)
-- ✅ Generated reproducible randomization sequence
-- ✅ Wrote CONSORT-compliant protocol
-- ✅ Pre-registered on ClinicalTrials.gov and OSF
+- Designed rigorous RCT (Tutorial 3)
+- Conducted NIH-compliant power analysis (n=250)
+- Generated reproducible randomization sequence
+- Wrote CONSORT-compliant protocol
+- Pre-registered on ClinicalTrials.gov and OSF
 
 **Phase 3: Ethical Approval (Months 10-11)**
-- ✅ Submitted to IRB
-- ✅ Obtained approval
-- ✅ Registered trial publicly
+- Submitted to IRB
+- Obtained approval
+- Registered trial publicly
 
 **Phase 4: Data Collection (Months 12-18)**
-- ✅ Enrolled 268 participants (107% of target)
-- ✅ Maintained 1:1 allocation balance
-- ✅ Achieved 60F/40M sex distribution (SABV)
-- ✅ Monitored data quality in real-time
-- ✅ Achieved 80% retention (214/268)
+- Enrolled 268 participants (107% of target)
+- Maintained 1:1 allocation balance
+- Achieved 60F/40M sex distribution (SABV)
+- Monitored data quality in real-time
+- Achieved 80% retention (214/268)
 
 **Phase 5: Data Analysis (Month 19)**
-- ✅ Executed pre-registered analysis plan
-- ✅ Primary outcome: d=0.68, p<0.001 (significant)
-- ✅ All secondary outcomes significant
-- ✅ Sensitivity analyses confirmed robustness
+- Executed pre-registered analysis plan
+- Primary outcome: d=0.68, p<0.001 (significant)
+- All secondary outcomes significant
+- Sensitivity analyses confirmed robustness
 
 **Phase 6: Meta-Analysis Update (Month 20)**
-- ✅ Added our RCT to systematic review data
-- ✅ Updated meta-analysis (9 online studies)
-- ✅ Changed conclusion: online delivery NOW effective
-- ✅ Filled identified gap
+- Added our RCT to systematic review data
+- Updated meta-analysis (9 online studies)
+- Changed conclusion: online delivery NOW effective
+- Filled identified gap
 
 **Phase 7: Manuscript Writing (Months 21-22)**
-- ✅ Drafted CONSORT-compliant manuscript
-- ✅ AI-checked for human quality (8% confidence)
-- ✅ Verified 25/25 CONSORT items addressed
+- Drafted CONSORT-compliant manuscript
+- AI-checked for human quality (8% confidence)
+- Verified 25/25 CONSORT items addressed
 
 **Phase 8: Data Sharing & Publication (Month 23)**
-- ✅ De-identified and shared data on OSF
-- ✅ Minted DOI for permanent archival
-- ✅ Submitted to JAMA Psychiatry
+- De-identified and shared data on OSF
+- Minted DOI for permanent archival
+- Submitted to JAMA Psychiatry
 
 **Total Timeline**: 23 months from idea to submission
 

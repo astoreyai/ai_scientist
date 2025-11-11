@@ -1,8 +1,8 @@
 # Tutorial 1: Getting Started with Research Assistant
 
-**Duration**: 15 minutes  
-**Prerequisites**: Claude Code installed, Research Assistant plugin installed  
-**What you'll learn**: Basic plugin usage, invoking agents, using skills
+**Duration**: 15 minutes
+**Prerequisites**: Claude Code installed
+**What you'll learn**: Installation, basic plugin usage, invoking agents, using skills
 
 ---
 
@@ -10,12 +10,58 @@
 
 This tutorial introduces the Research Assistant plugin for Claude Code. You'll learn how to:
 
-1. Verify installation
-2. Invoke your first agent
-3. Use a research skill
-4. Understand outputs
+1. Install the plugin
+2. Verify installation
+3. Invoke your first agent
+4. Use a research skill
+5. Understand outputs
 
 By the end, you'll be comfortable with the basic workflow.
+
+---
+
+## Prerequisites
+
+Before starting this tutorial, ensure you have:
+
+**Required:**
+- Claude Code installed and running
+- Git installed (for cloning the repository)
+
+**Optional:**
+- Python 3.8+ (for MCP servers and advanced features)
+- R 4.0+ (for meta-analysis tutorials)
+
+---
+
+## Installation
+
+### Step 1: Clone the Repository
+
+```bash
+# Clone from GitHub
+git clone https://github.com/astoreyai/ai_scientist.git
+cd ai_scientist
+```
+
+### Step 2: Install Python Dependencies (Optional)
+
+For MCP servers and advanced features:
+
+```bash
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Step 3: Configure Claude Code
+
+The plugin should auto-load from the `.claude/settings.json` configuration. No additional setup required for basic usage.
+
+For MCP servers (optional), see `mcp-servers/README.md`.
 
 ---
 
@@ -37,7 +83,7 @@ First, let's confirm the plugin is properly installed.
 - prisma-diagram
 - ... and 17 more
 
-**✓ Checkpoint**: If you see the skill list, the plugin is installed correctly.
+**Checkpoint**: If you see the skill list, the plugin is installed correctly.
 
 **Troubleshooting**: If skills don't appear:
 1. Check plugin installation: `/plugin list`
@@ -74,7 +120,7 @@ Can you help me get started?
 - What outcomes?
 - What study designs to include?
 
-**✓ Checkpoint**: The agent should respond with PRISMA-specific guidance.
+**Checkpoint**: The agent should respond with PRISMA-specific guidance.
 
 **Example Agent Response**:
 ```
@@ -135,7 +181,7 @@ To detect a medium effect (d = 0.50) with 80% power and alpha = 0.05, we require
 we will recruit 160 participants.
 ```
 
-**✓ Checkpoint**: You should receive a complete sample size calculation with justification.
+**Checkpoint**: You should receive a complete sample size calculation with justification.
 
 ---
 
@@ -216,7 +262,7 @@ Suggestions:
    - "Moreover" → use simpler transitions
 ```
 
-**✓ Checkpoint**: The ai-check should flag the obviously AI-generated text.
+**Checkpoint**: The ai-check should flag the obviously AI-generated text.
 
 **Try with Human Text**: Create a file with natural writing and compare results.
 
@@ -239,11 +285,11 @@ Now that you understand the basics, explore the full documentation:
 ## Next Steps
 
 You've completed the Getting Started tutorial! You now know how to:
-- ✅ Verify plugin installation
-- ✅ Invoke agents
-- ✅ Use research skills
-- ✅ Run AI-check
-- ✅ Access documentation
+- Verify plugin installation
+- Invoke agents
+- Use research skills
+- Run AI-check
+- Access documentation
 
 **Continue Learning**:
 - [Tutorial 2: Literature Review](../02_literature_review/README.md) - Complete PRISMA workflow

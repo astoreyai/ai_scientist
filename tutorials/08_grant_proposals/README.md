@@ -68,7 +68,7 @@ Fundable range: Usually 10-30th percentile (varies by institute)
 - 5 sites, 400 participants
 - Aims: Test CBT efficacy + implementation strategies
 
-**✓ Checkpoint**: Understand R01 structure and evaluation criteria.
+**Checkpoint**: Understand R01 structure and evaluation criteria.
 
 ---
 
@@ -120,7 +120,7 @@ PART V: APPENDICES (if allowed)
 - Other sections: ~40 pages
 - **Total**: ~80 pages
 
-**✓ Checkpoint**: Daunting but doable - focus on Research Plan first.
+**Checkpoint**: Daunting but doable - focus on Research Plan first.
 
 ---
 
@@ -243,7 +243,7 @@ Word count: 526 words (fits on 1 page with standard formatting) ✓
 ═══════════════════════════════════════════════
 ```
 
-**✓ Checkpoint**: First draft complete - now refine for maximum impact.
+**Checkpoint**: First draft complete - now refine for maximum impact.
 
 ---
 
@@ -264,7 +264,7 @@ python tools/ai_check.py \
         AI-CHECK REPORT - SPECIFIC AIMS
 ═══════════════════════════════════════════════
 
-Overall AI Confidence: 24% (MODERATE - some AI-typical patterns) ⚠️
+Overall AI Confidence: 24% (MODERATE - some AI-typical patterns) 
 
 Flagged Issues:
 ─────────────────────────────────────────────────
@@ -305,13 +305,13 @@ while identifying implementation strategies that maximize reach and fidelity.
 Our central hypothesis: Integrated CBT outperforms usual care, and enhanced 
 implementation strategies increase adoption.
 
-Although CBT effectively reduces depression in specialty mental health, its 
-effectiveness in real-world primary care remains unclear. Existing trials 
-occurred in well-resourced academic centers with limited generalizability. 
-Moreover, even when effective treatments exist, implementation barriers—lack 
-of trained clinicians, time constraints, workflow disruption—prevent 
-widespread adoption. We urgently need pragmatic trials testing both clinical 
-effectiveness and implementation strategies across diverse primary care 
+Although CBT effectively reduces depression in specialty mental health, its
+effectiveness in real-world primary care remains unclear. Existing trials
+occurred in well-resourced academic centers with limited generalizability.
+Even when effective treatments exist, implementation barriers—lack
+of trained clinicians, time constraints, workflow disruption—prevent
+widespread adoption. We urgently need pragmatic trials testing both clinical
+effectiveness and implementation strategies across diverse primary care
 settings.
 
 Our pilot RCT (n=60) demonstrated feasibility: Primary care behavioral 
@@ -357,14 +357,14 @@ AI-Check: 12% (human-written quality) ✓
 ```
 
 **Key Improvements**:
-- ✅ Stronger opening (specific percentages, clear problem)
-- ✅ More active voice ("tests" vs. "will test")
-- ✅ Varied sentence structure (not all "We will...")
-- ✅ Stronger verbs ("evaluates," "identifies," "compares")
-- ✅ Clearer expected outcomes (quantitative where possible)
-- ✅ Tighter connection to funding priorities
+- Stronger opening (specific percentages, clear problem)
+- More active voice ("tests" vs. "will test")
+- Varied sentence structure (not all "We will...")
+- Stronger verbs ("evaluates," "identifies," "compares")
+- Clearer expected outcomes (quantitative where possible)
+- Tighter connection to funding priorities
 
-**✓ Checkpoint**: Compelling Specific Aims page ready.
+**Checkpoint**: Compelling Specific Aims page ready.
 
 ---
 
@@ -424,7 +424,7 @@ Racial and ethnic minorities face particularly poor access...
 
 **Reviewer Thinking**: "Does this problem matter enough to fund $2.25M for 5 years?"
 
-**✓ Checkpoint**: Significance section demonstrates public health importance.
+**Checkpoint**: Significance section demonstrates public health importance.
 
 ---
 
@@ -470,7 +470,7 @@ approaches.
 
 **Reviewer Thinking**: "Is this just another CBT trial, or does it advance the field?"
 
-**✓ Checkpoint**: Innovation section shows your approach pushes boundaries.
+**Checkpoint**: Innovation section shows your approach pushes boundaries.
 
 ---
 
@@ -550,7 +550,7 @@ Sensitivity:
 
 **Reviewer Thinking**: "Can they actually pull this off? Is the plan rigorous?"
 
-**✓ Checkpoint**: Approach section is detailed, rigorous, and feasible.
+**Checkpoint**: Approach section is detailed, rigorous, and feasible.
 
 ---
 
@@ -611,7 +611,7 @@ Serious Adverse Event (SAE) Reporting:
   - Annual safety report to NIMH
 ```
 
-**✓ Checkpoint**: Protection of Human Subjects demonstrates ethical rigor.
+**Checkpoint**: Protection of Human Subjects demonstrates ethical rigor.
 
 ---
 
@@ -700,7 +700,7 @@ Notes:
 **Modular Budget** (NIH allows simplified budget if <$250K direct costs/year):
 - Our budget exceeds $250K → Must submit detailed budget
 
-**✓ Checkpoint**: Realistic budget covering all study costs.
+**Checkpoint**: Realistic budget covering all study costs.
 
 ---
 
@@ -757,7 +757,7 @@ structure.
 [Continue for remaining budget categories...]
 ```
 
-**✓ Checkpoint**: Every dollar justified with scientific rationale.
+**Checkpoint**: Every dollar justified with scientific rationale.
 
 ---
 
@@ -818,7 +818,7 @@ R01 MH115432 (Chen, PI) 09/2020-08/2025 "Digital Mental Health Interventions"
   No scientific overlap with proposed project
 ```
 
-**✓ Checkpoint**: Biosketch demonstrates productivity and qualifications.
+**Checkpoint**: Biosketch demonstrates productivity and qualifications.
 
 ---
 
@@ -864,7 +864,7 @@ Dr. Robert Thompson
 Chair, Department of Psychiatry
 ```
 
-**✓ Checkpoint**: Strong letters document institutional support.
+**Checkpoint**: Strong letters document institutional support.
 
 ---
 
@@ -923,7 +923,7 @@ SOLUTION:
 - Document training plan to acquire skills
 ```
 
-**✓ Checkpoint**: Anticipate critiques and address proactively in application.
+**Checkpoint**: Anticipate critiques and address proactively in application.
 
 ---
 
@@ -948,9 +948,9 @@ Step 2: Analyze Critiques
 
 Step 3: Decide: Resubmit or Start Fresh?
   RESUBMIT if:
-    ✓ Score was close to payline (e.g., 35th percentile, payline 28th)
-    ✓ Critiques are addressable
-    ✓ Reviewers saw merit in the project
+    Score was close to payline (e.g., 35th percentile, payline 28th)
+    Critiques are addressable
+    Reviewers saw merit in the project
   
   START FRESH if:
     ✗ Score was far from payline (e.g., >50th percentile)
@@ -1005,7 +1005,7 @@ data. We are confident these revisions substantially strengthen the scientific
 rigor and impact of this project.
 ```
 
-**✓ Checkpoint**: Resubmission systematically addresses every critique.
+**Checkpoint**: Resubmission systematically addresses every critique.
 
 ---
 
@@ -1014,14 +1014,14 @@ rigor and impact of this project.
 ### What You've Learned
 
 **Grant Writing Essentials**:
-- ✅ NIH R01 structure (Specific Aims, Research Strategy, Budget)
-- ✅ Writing compelling Specific Aims (1 page that sells the project)
-- ✅ Significance section (why it matters)
-- ✅ Innovation section (what's new)
-- ✅ Approach section (how you'll do it rigorously)
-- ✅ Realistic budget with justifications
-- ✅ Strong biosketches showcasing productivity
-- ✅ Protection of human subjects (safety protocols)
+- NIH R01 structure (Specific Aims, Research Strategy, Budget)
+- Writing compelling Specific Aims (1 page that sells the project)
+- Significance section (why it matters)
+- Innovation section (what's new)
+- Approach section (how you'll do it rigorously)
+- Realistic budget with justifications
+- Strong biosketches showcasing productivity
+- Protection of human subjects (safety protocols)
 
 **Key Lessons**:
 - **Specific Aims is make-or-break** (nail this first)

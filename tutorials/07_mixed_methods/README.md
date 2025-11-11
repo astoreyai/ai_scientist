@@ -93,7 +93,7 @@ Purpose: Develop survey/intervention from qualitative insights
 Example: Interviews identify themes → survey measures prevalence
 ```
 
-**✓ Checkpoint**: Select design based on research question.
+**Checkpoint**: Select design based on research question.
 
 ---
 
@@ -115,7 +115,7 @@ Example: Interviews identify themes → survey measures prevalence
 - Phase 1 (complete): Quantitative RCT showing efficacy
 - Phase 2 (new): Qualitative interviews explaining results
 
-**✓ Checkpoint**: Explanatory design chosen because quan results need explanation.
+**Checkpoint**: Explanatory design chosen because quan results need explanation.
 
 ---
 
@@ -172,7 +172,7 @@ Saturation Plan:
 - Stop when saturation reached (no new themes in 3 consecutive interviews)
 ```
 
-**✓ Checkpoint**: Purposive sampling ensures rich, diverse perspectives.
+**Checkpoint**: Purposive sampling ensures rich, diverse perspectives.
 
 ---
 
@@ -285,7 +285,7 @@ Saturation Plan:
 [Stop recording]
 ```
 
-**✓ Checkpoint**: Interview guide balances structure (key topics) with flexibility (open-ended).
+**Checkpoint**: Interview guide balances structure (key topics) with flexibility (open-ended).
 
 ---
 
@@ -323,7 +323,7 @@ Final Guide: Version 2.0 (after pilot revisions)
 Average interview length: 52 minutes ✓
 ```
 
-**✓ Checkpoint**: Pilot testing refined interview guide.
+**Checkpoint**: Pilot testing refined interview guide.
 
 ---
 
@@ -354,7 +354,7 @@ Field Notes: Interviewer documents:
   - Emerging themes
 ```
 
-**✓ Checkpoint**: All 30 interviews completed in 3 months.
+**Checkpoint**: All 30 interviews completed in 3 months.
 
 ---
 
@@ -398,7 +398,7 @@ De-identification:
 Quality Check:
   - Research team member reviews 10% of transcripts against audio
   - If error rate >5%, send back to transcriptionist
-  - Our QC: 2.1% error rate ✓ (within acceptable range)
+  - Our QC: 2.1% error rate (within acceptable range)
 ```
 
 **Transcripts Received**:
@@ -406,7 +406,7 @@ Quality Check:
 - Total: 285,000 words
 - 950 pages of qualitative data
 
-**✓ Checkpoint**: High-quality transcripts ready for analysis.
+**Checkpoint**: High-quality transcripts ready for analysis.
 
 ---
 
@@ -435,7 +435,7 @@ Team Discussion:
   - "Some differentiate between 'formal practice' vs 'informal mindfulness'"
 ```
 
-**✓ Checkpoint**: Immersed in data, ready for systematic coding.
+**Checkpoint**: Immersed in data, ready for systematic coding.
 
 ---
 
@@ -483,7 +483,7 @@ After coding all 30 transcripts:
   → 487 unique codes generated
 ```
 
-**✓ Checkpoint**: All transcripts systematically coded.
+**Checkpoint**: All transcripts systematically coded.
 
 ---
 
@@ -533,7 +533,7 @@ Initial Themes (12):
   12. Dosage and engagement
 ```
 
-**✓ Checkpoint**: 12 candidate themes identified.
+**Checkpoint**: 12 candidate themes identified.
 
 ---
 
@@ -570,7 +570,7 @@ Theme 12: Standalone theme "Engagement Matters"
 FINAL THEMATIC STRUCTURE (4 main themes, 13 subthemes)
 ```
 
-**✓ Checkpoint**: Coherent, non-overlapping themes with rich data support.
+**Checkpoint**: Coherent, non-overlapping themes with rich data support.
 
 ---
 
@@ -626,7 +626,7 @@ THEME 2: BARRIERS AND FACILITATORS
 [Similar detailed definition and quotes...]
 ```
 
-**✓ Checkpoint**: Themes richly defined with participant voice foregrounded.
+**Checkpoint**: Themes richly defined with participant voice foregrounded.
 
 ---
 
@@ -701,7 +701,7 @@ in this trial                 • Flexibility: "I could do it    future
 - **Complementarity**: Qual nuances quan findings
 - **Discordance**: Qual contradicts quan (explore why)
 
-**✓ Checkpoint**: Integrated findings provide fuller understanding than either alone.
+**Checkpoint**: Integrated findings provide fuller understanding than either alone.
 
 ---
 
@@ -757,7 +757,7 @@ Key Insights from Integration:
 • Online features (qual) increase access but reduce accountability
 ```
 
-**✓ Checkpoint**: Conceptual model synthesizes quan + qual into coherent theory.
+**Checkpoint**: Conceptual model synthesizes quan + qual into coherent theory.
 
 ---
 
@@ -772,32 +772,32 @@ Key Insights from Integration:
        GRAMMS REPORTING CHECKLIST
 ═══════════════════════════════════════════════
 
-✅ 1. Describe justification for using mixed methods
+1. Describe justification for using mixed methods
    In manuscript: "Quantitative RCT establishes efficacy (what works), 
                    but qualitative interviews explain mechanisms (why/how). 
                    Integration provides richer understanding."
 
-✅ 2. Describe design (convergent/explanatory/exploratory)
+2. Describe design (convergent/explanatory/exploratory)
    In manuscript Methods: "Explanatory sequential design. Phase 1: RCT 
                            (n=214). Phase 2: Interviews with purposive 
                            sample (n=30) to explain quantitative results."
 
-✅ 3. Describe sampling strategy for each component
+3. Describe sampling strategy for each component
    Quan: "Random allocation to MBCT vs control (n=268 randomized)"
    Qual: "Purposive sampling stratified by response level and engagement 
           (n=30 from MBCT group only)"
 
-✅ 4. Describe data collection and analysis separately for each component
+4. Describe data collection and analysis separately for each component
    Quan: "PHQ-9 at baseline, 8 weeks, 6 months. ANCOVA adjusted for baseline."
    Qual: "Semi-structured interviews (45-60 min). Thematic analysis per 
           Braun & Clarke (2006). NVivo 12 for coding."
 
-✅ 5. Describe integration techniques
+5. Describe integration techniques
    In manuscript: "Joint display (Table 3) integrating quantitative results 
                    with qualitative themes. Meta-inferences identify 
                    convergence, expansion, and explanation."
 
-✅ 6. Describe limitations of integration
+6. Describe limitations of integration
    In manuscript: "Qualitative sample (n=30) may not fully represent all 
                    RCT participants (n=214). Participants self-selected 
                    into interviews (potential bias toward positive 
@@ -806,7 +806,7 @@ Key Insights from Integration:
 GRAMMS Compliance: 6/6 items ✓
 ```
 
-**✓ Checkpoint**: GRAMMS checklist ensures transparent reporting.
+**Checkpoint**: GRAMMS checklist ensures transparent reporting.
 
 ---
 
@@ -879,7 +879,7 @@ Target Journal: Journal of Mixed Methods Research or
                 Qualitative Health Research
 ```
 
-**✓ Checkpoint**: Manuscript structure follows GRAMMS and showcases integration.
+**Checkpoint**: Manuscript structure follows GRAMMS and showcases integration.
 
 ---
 
@@ -888,23 +888,23 @@ Target Journal: Journal of Mixed Methods Research or
 ### What You've Learned
 
 **Mixed Methods Design**:
-- ✅ Chose explanatory sequential design (quan → qual)
-- ✅ Embedded qualitative component in RCT
-- ✅ Used purposive sampling (n=30 stratified by response)
-- ✅ Developed semi-structured interview guide
-- ✅ Conducted and transcribed 30 interviews
+- Chose explanatory sequential design (quan → qual)
+- Embedded qualitative component in RCT
+- Used purposive sampling (n=30 stratified by response)
+- Developed semi-structured interview guide
+- Conducted and transcribed 30 interviews
 
 **Qualitative Analysis**:
-- ✅ Performed thematic analysis (Braun & Clarke framework)
-- ✅ Generated 487 initial codes → 4 main themes
-- ✅ Defined themes with rich participant quotes
-- ✅ Used NVivo software for systematic coding
+- Performed thematic analysis (Braun & Clarke framework)
+- Generated 487 initial codes → 4 main themes
+- Defined themes with rich participant quotes
+- Used NVivo software for systematic coding
 
 **Integration**:
-- ✅ Created joint display linking quan and qual findings
-- ✅ Developed conceptual model synthesizing results
-- ✅ Identified meta-inferences (convergence, expansion, explanation)
-- ✅ Reported per GRAMMS guidelines (6/6 items)
+- Created joint display linking quan and qual findings
+- Developed conceptual model synthesizing results
+- Identified meta-inferences (convergence, expansion, explanation)
+- Reported per GRAMMS guidelines (6/6 items)
 
 **Key Insights from Integration**:
 - Quan showed **WHAT** works (MBCT reduces depression, d=0.68)
