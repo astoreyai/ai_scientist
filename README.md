@@ -371,6 +371,30 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 \`\`\`
 
+### Option 3: From Release Archive
+
+**Step 1: Download Release**
+\`\`\`bash
+# Download latest release
+wget https://github.com/astoreyai/ai_scientist/archive/refs/tags/v1.2.0-beta3.tar.gz
+tar -xzf v1.2.0-beta3.tar.gz
+cd ai_scientist-1.2.0-beta3
+\`\`\`
+
+**Step 2: Verify Structure**
+\`\`\`bash
+# Check directory structure
+ls -la .claude-plugin/  # Should show plugin.json, marketplace.json
+ls skills/ | wc -l      # Should show 22 directories
+ls .claude/agents/ | wc -l  # Should show 10 files
+\`\`\`
+
+**Step 3: Open in Claude Code**
+Navigate to the directory in Claude Code or run:
+\`\`\`bash
+claude-code .
+\`\`\`
+
 ### MCP Servers (Optional)
 
 Three MCP servers are included for enhanced functionality:
@@ -382,26 +406,88 @@ See \`mcp-servers/README.md\` for installation instructions.
 
 ### Troubleshooting
 
+**Plugin not loading:**
+\`\`\`bash
+# Enable debug mode to see detailed loading info
+claude --debug
+
+# Check Claude Code logs
+tail -f ~/.claude/logs/$(date +%Y-%m-%d).log
+\`\`\`
+
 **Skills not appearing:**
-1. Verify `.claude/settings.json` has plugin configuration
-2. Restart Claude Code
+1. Verify `.claude/settings.json` has plugin configuration:
+   \`\`\`bash
+   cat .claude/settings.json | grep -A 5 "plugins"
+   \`\`\`
+2. Verify all SKILL.md files exist:
+   \`\`\`bash
+   find skills/ -name "SKILL.md" | wc -l  # Should show 22
+   \`\`\`
 3. Check plugin path is correct (use `./` for current directory)
+4. Restart Claude Code
 
 **Agents not appearing:**
-1. Check `.claude/agents/` directory exists
-2. Verify agent files have proper YAML frontmatter
+1. Check `.claude/agents/` directory exists and has 10 files:
+   \`\`\`bash
+   ls -1 .claude/agents/*.md | wc -l  # Should show 10
+   \`\`\`
+2. Verify agent frontmatter:
+   \`\`\`bash
+   head -10 .claude/agents/literature-reviewer.md  # Should show YAML
+   \`\`\`
 3. Restart Claude Code
 
 **MCP servers not working:**
-1. Ensure Python dependencies installed: `pip install -r requirements.txt`
+1. Ensure Python dependencies installed:
+   \`\`\`bash
+   pip install -r requirements.txt
+   pip list | grep -E '(semanticscholar|biopython|sqlalchemy)'
+   \`\`\`
 2. Check MCP server configuration in Claude Code settings
-3. See `mcp-servers/README.md` for detailed setup
+3. Test MCP server individually:
+   \`\`\`bash
+   cd mcp-servers/literature && python server.py --test
+   \`\`\`
+4. See `mcp-servers/README.md` for detailed setup
 
 **Permission errors:**
-1. Ensure you have read/write access to the directory
-2. Check file permissions: `chmod -R u+rw .`
+\`\`\`bash
+# Fix permissions
+chmod -R u+rw .
+chmod +x .claude/hooks/*.sh .claude/hooks/*.py
+\`\`\`
 
 For additional help, see [GitHub Issues](https://github.com/astoreyai/ai_scientist/issues).
+
+### Uninstalling
+
+To remove the plugin:
+
+\`\`\`bash
+# If installed via marketplace (future)
+/plugin uninstall research-assistant
+
+# If manually linked
+rm ~/.claude/plugins/research-assistant
+
+# Clean up (optional)
+rm -rf ~/path/to/ai_scientist
+\`\`\`
+
+### Updating
+
+To update to a newer version:
+
+\`\`\`bash
+# If installed via marketplace (future)
+/plugin update research-assistant
+
+# If manually installed
+cd ~/path/to/ai_scientist
+git pull origin main
+# Restart Claude Code
+\`\`\`
 
 ---
 

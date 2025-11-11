@@ -171,11 +171,61 @@ First, let's confirm the plugin is properly installed.
 ```bash
 # Fix permissions
 chmod -R u+rw .
+chmod +x .claude/hooks/*.sh .claude/hooks/*.py
 ```
+
+**Plugin not loading at all:**
+
+1. **Enable debug mode:**
+   ```bash
+   claude --debug
+   ```
+   Look for messages about "research-assistant" in the output.
+
+2. **Check Claude Code logs:**
+   ```bash
+   tail -f ~/.claude/logs/$(date +%Y-%m-%d).log
+   ```
+   Watch for error messages during plugin loading.
+
+3. **Validate JSON files:**
+   ```bash
+   cat .claude-plugin/plugin.json | python3 -m json.tool
+   cat .claude-plugin/marketplace.json | python3 -m json.tool
+   ```
+   Any syntax errors will be shown.
+
+**MCP servers not working (Advanced):**
+
+If you're trying to use literature search or citation features:
+
+1. **Check Python installation:**
+   ```bash
+   python3 --version  # Should be 3.8+
+   pip --version
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Test MCP server:**
+   ```bash
+   cd mcp-servers/literature
+   python server.py --test
+   ```
 
 **Still having issues?**
 
 Open an issue on GitHub: https://github.com/astoreyai/ai_scientist/issues
+
+Include in your report:
+- Operating system and version
+- Claude Code version (`claude --version`)
+- Output from `ls -la .claude-plugin/`
+- Output from `find skills/ -name "SKILL.md" | wc -l`
+- Any error messages from debug mode
 
 ---
 
