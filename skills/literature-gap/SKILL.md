@@ -1,6 +1,8 @@
 ---
 name: literature-gap
 description: "Identify research gaps from systematic literature reviews. Use when: (1) Completing literature reviews, (2) Justifying new studies, (3) Grant proposal development, (4) Dissertation planning, (5) Identifying future research directions."
+allowed-tools: Read, Grep
+version: 1.0.0
 ---
 
 # Literature Gap Identification Skill

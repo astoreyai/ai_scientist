@@ -1,6 +1,8 @@
 ---
 name: power-analysis
 description: "Calculate statistical power and required sample sizes for research studies. Use when: (1) Designing experiments to determine sample size, (2) Justifying sample size for grant proposals or protocols, (3) Evaluating adequacy of existing studies, (4) Meeting NIH rigor standards for pre-registration, (5) Conducting retrospective power analysis to interpret null results."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Statistical Power Analysis Skill

@@ -1,6 +1,8 @@
 ---
 name: risk-of-bias
 description: "Assess risk of bias in research studies for systematic reviews. Use when: (1) Conducting systematic reviews, (2) Evaluating study quality, (3) GRADE assessments, (4) Meta-analysis planning."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Risk of Bias Assessment Skill

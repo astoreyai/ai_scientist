@@ -1,6 +1,8 @@
 ---
 name: inclusion-criteria
 description: "Apply inclusion/exclusion criteria systematically in literature reviews. Use when: (1) Screening abstracts, (2) Reviewing full texts, (3) Documenting screening decisions, (4) Ensuring PRISMA compliance."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Inclusion Criteria Application Skill

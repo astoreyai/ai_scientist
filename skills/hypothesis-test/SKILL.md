@@ -1,6 +1,8 @@
 ---
 name: hypothesis-test
 description: "Guide selection and interpretation of statistical hypothesis tests. Use when: (1) Choosing appropriate test for research data, (2) Checking assumptions before analysis, (3) Interpreting test results correctly, (4) Reporting statistical findings, (5) Troubleshooting assumption violations."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Hypothesis Testing Skill

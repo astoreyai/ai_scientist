@@ -1,6 +1,8 @@
 ---
 name: data-visualization
 description: "Create publication-quality data visualizations. Use when: (1) Presenting results, (2) Exploratory data analysis, (3) Manuscript preparation, (4) Grant proposals, (5) Presentations."
+allowed-tools: Read, Write, Bash
+version: 1.0.0
 ---
 
 # Data Visualization Skill

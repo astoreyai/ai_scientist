@@ -1,6 +1,8 @@
 ---
 name: synthesis-matrix
 description: "Create evidence synthesis matrices for systematic reviews. Use when: (1) Organizing extracted data, (2) Comparing study characteristics, (3) Identifying patterns across studies, (4) Preparing synthesis for manuscripts."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Evidence Synthesis Matrix Skill

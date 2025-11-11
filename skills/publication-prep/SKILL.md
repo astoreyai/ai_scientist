@@ -1,6 +1,8 @@
 ---
 name: publication-prep
 description: "Prepare manuscripts for journal submission. Use when: (1) Writing research papers, (2) Selecting target journals, (3) Formatting manuscripts, (4) Ensuring reporting guideline compliance, (5) Preparing submission materials."
+allowed-tools: Read, Write, Grep
+version: 1.0.0
 ---
 
 # Publication Preparation Skill

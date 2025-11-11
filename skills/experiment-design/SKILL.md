@@ -1,6 +1,8 @@
 ---
 name: experiment-design
 description: "Design rigorous experiments following best practices. Use when: (1) Planning research studies, (2) Grant proposal development, (3) Pre-registration, (4) Ensuring internal validity, (5) Meeting NIH rigor standards."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Experiment Design Skill

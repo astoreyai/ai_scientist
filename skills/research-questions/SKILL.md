@@ -1,6 +1,8 @@
 ---
 name: research-questions
 description: "Formulate research questions using FINER criteria (Feasible, Interesting, Novel, Ethical, Relevant). Use when: (1) Starting new research projects, (2) Refining study scope, (3) Grant proposal development, (4) Ensuring research question quality."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Research Question Formulation Skill

@@ -1,6 +1,8 @@
 ---
 name: subgroup-analysis
 description: "Conduct subgroup analyses to examine effect moderation. Use when: (1) Testing pre-specified moderators, (2) Exploring heterogeneity, (3) Identifying differential effects, (4) Meta-analysis synthesis."
+allowed-tools: Read, Write, Bash
+version: 1.0.0
 ---
 
 # Subgroup Analysis Skill

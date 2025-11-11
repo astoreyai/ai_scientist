@@ -1,6 +1,8 @@
 ---
 name: meta-analysis
 description: "Conduct quantitative synthesis through meta-analysis. Use when: (1) Combining effect sizes across studies, (2) Systematic review synthesis, (3) Calculating summary effects, (4) Assessing heterogeneity."
+allowed-tools: Read, Write, Bash
+version: 1.0.0
 ---
 
 # Meta-Analysis Skill

@@ -1,6 +1,8 @@
 ---
 name: ai-check
 description: "Detect AI/LLM-generated text patterns in research writing. Use when: (1) Reviewing manuscript drafts before submission, (2) Pre-commit validation of documentation, (3) Quality assurance checks on research artifacts, (4) Ensuring natural academic writing style, (5) Tracking writing authenticity over time. Analyzes grammar perfection, sentence uniformity, paragraph structure, word frequency (AI-typical words like 'delve', 'leverage', 'robust'), punctuation patterns, and transition word overuse."
+allowed-tools: Read, Grep, Bash
+version: 1.0.0
 ---
 
 # AI-Generated Text Detection Skill

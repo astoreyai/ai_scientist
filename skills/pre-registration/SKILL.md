@@ -1,6 +1,8 @@
 ---
 name: pre-registration
 description: "Create pre-registration documents for research transparency. Use when: (1) Before data collection, (2) Grant submissions, (3) Ensuring reproducibility, (4) Meeting open science standards, (5) Preventing HARKing."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Pre-Registration Skill

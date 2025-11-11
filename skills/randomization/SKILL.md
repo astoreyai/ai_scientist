@@ -1,6 +1,8 @@
 ---
 name: randomization
 description: "Implement proper randomization procedures for experiments. Use when: (1) Assigning participants to conditions, (2) Ensuring unbiased allocation, (3) Meeting CONSORT standards, (4) Pre-registration."
+allowed-tools: Read, Write, Bash
+version: 1.0.0
 ---
 
 # Randomization Skill

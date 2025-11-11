@@ -1,6 +1,8 @@
 ---
 name: results-interpretation
 description: "Interpret statistical results correctly and comprehensively. Use when: (1) Writing results sections, (2) Discussing findings, (3) Avoiding common misinterpretations, (4) Reporting effect sizes and confidence intervals."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Results Interpretation Skill

@@ -1,6 +1,8 @@
 ---
 name: sensitivity-analysis
 description: "Conduct sensitivity analyses to test robustness of findings. Use when: (1) Testing assumption violations, (2) Meta-analysis robustness, (3) Handling missing data, (4) Examining outliers."
+allowed-tools: Read, Write, Bash
+version: 1.0.0
 ---
 
 # Sensitivity Analysis Skill

@@ -1,6 +1,8 @@
 ---
 name: blinding
 description: "Implement blinding procedures to reduce bias in experimental studies. Use when: (1) Designing RCTs, (2) Ensuring objectivity, (3) Meeting CONSORT standards, (4) Minimizing performance and detection bias."
+allowed-tools: Read, Write
+version: 1.0.0
 ---
 
 # Blinding Procedures Skill
