@@ -5,7 +5,131 @@ All notable changes to the Research Assistant plugin will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.0] - 2025-11-10
+## [1.2.0-beta1] - 2025-11-10
+
+### Added
+
+#### Advanced Research Templates (Sprint 1-2)
+- **Systematic Review Template** - Complete PRISMA 2020 compliant workflow with:
+  - Protocol registration automation (PROSPERO/OSF integration)
+  - Multi-database search strategy development
+  - Cross-database search translation tool (PubMed ↔ Embase ↔ Web of Science ↔ Scopus)
+  - Automated deduplication with fuzzy matching
+  - Two-reviewer screening workflow with inter-rater reliability (Cohen's κ)
+  - Risk of bias assessment (Cochrane RoB 2 tool)
+  - PRISMA flow diagram auto-generation (publication-ready PNG/SVG)
+  - 27/27 PRISMA items compliance verification
+  - Complete working Python scripts (1,130+ lines)
+
+- **Observational Study Template** - STROBE-compliant cohort/case-control/cross-sectional studies:
+  - Interactive study design selector (helps choose appropriate design)
+  - DAG-based confounding analysis (directed acyclic graphs)
+  - Complete variable definitions system
+  - Statistical analysis plan builder
+  - 22/22 STROBE items addressed
+
+- **Computational Methods Template** - Algorithm development and reproducibility:
+  - Benchmark evaluation framework
+  - Ablation study structure
+  - Docker-based reproducibility
+  - arXiv/ACM/IEEE compliance
+
+- **PhD Dissertation Template** - 8-chapter dissertation framework:
+  - 80,000-100,000 word structure
+  - Defense preparation guide
+  - Milestone tracking system
+  - Timeline management
+
+Template files (2,400+ lines documentation):
+- `templates/systematic_review/` (complete PRISMA workflow)
+  - `README.md` (800+ lines)
+  - `code/register_protocol.py` (500 lines - protocol registration automation)
+  - `code/search_translation.py` (350 lines - cross-database syntax translation)
+  - `code/prisma_diagram.py` (280 lines - publication-ready diagrams)
+- `templates/observational_study/README.md` (400 lines)
+- `templates/computational_methods/README.md` (100 lines)
+- `templates/phd_dissertation/README.md` (250 lines)
+
+#### Interactive Tutorials (Sprint 5)
+- **Tutorial 2: Literature Review** - Complete PRISMA 2020 workflow walkthrough:
+  - Protocol registration with PICOS framework
+  - Multi-database search strategy development
+  - Automated search translation across databases
+  - Systematic deduplication (1,116 → 774 records example)
+  - Two-reviewer screening with inter-rater reliability (κ=0.82)
+  - Full-text screening (131 → 43 studies example)
+  - Structured data extraction (43 studies)
+  - Risk of bias assessment (RoB 2 tool)
+  - PRISMA flow diagram generation
+  - Using literature-reviewer agent effectively
+  - Real example: Mindfulness interventions for adolescent anxiety
+
+- **Tutorial 3: Experimental Design** - Complete RCT design from research question to registration:
+  - FINER criteria for research questions
+  - PICOS framework for experimental design
+  - NIH-compliant power analysis (n=250 example)
+  - Randomization strategies (simple, block, stratified)
+  - Allocation concealment methods (SNOSE, central randomization, pharmacy-controlled)
+  - Blinding procedures (when possible, risk mitigation when not)
+  - CONSORT-compliant protocol writing (30-page template)
+  - Sex as biological variable (SABV) compliance
+  - Pre-registration on ClinicalTrials.gov and OSF
+  - Using experiment-designer agent for rigor review
+  - CONSORT flow diagram planning
+  - Real example: Online MBCT for college student depression
+
+- **Tutorial 5: Complete Workflow** - End-to-end research project (idea → publication):
+  - Gap identification from systematic review
+  - RCT design and pre-registration
+  - Data collection and quality monitoring
+  - Statistical analysis with pre-registered plan
+  - Meta-analysis update (forest plots, heterogeneity)
+  - Manuscript writing with manuscript-writer agent
+  - CONSORT-compliant reporting (25/25 items verified)
+  - Data/code sharing on OSF with DOI
+  - Journal submission preparation
+  - Real example: Complete 23-month research lifecycle
+
+Tutorial files (89KB total content):
+- `tutorials/02_literature_review/README.md` (28KB, 45 minutes)
+- `tutorials/03_experimental_design/README.md` (29KB, 40 minutes)
+- `tutorials/05_complete_workflow/README.md` (32KB, 60 minutes)
+
+#### ML Classifier Design (Sprint 3 - Design Only)
+- **Architecture Design Document** - 10th AI-detection method specification:
+  - Ensemble classifier (Random Forest + XGBoost + LSTM + Transformer)
+  - 200+ feature engineering pipeline (linguistic, statistical, stylometric, semantic)
+  - 25,000-sample training corpus plan (10K human, 10K AI, 5K mixed)
+  - Target accuracy: >95% with <3% false positive rate
+  - Integration plan with existing 9 detection methods (25% weight in ensemble)
+
+Design documentation:
+- `support/ai_detection/ml_classifier/README.md` (1,600+ lines)
+
+### Changed
+
+- **v1.2.0 Roadmap**: Updated implementation plan with 5 sprints
+  - Sprint 1-2: Templates (completed)
+  - Sprint 3-4: ML Classifier (design complete, implementation pending)
+  - Sprint 5: Tutorials (completed)
+
+Documentation:
+- `docs/V1.2.0_PLAN.md` (12KB detailed roadmap)
+
+### Development Notes
+
+**Implementation Status**: Sprint 5 complete (tutorials)
+- ✅ Tutorial 2: Literature Review
+- ✅ Tutorial 3: Experimental Design
+- ✅ Tutorial 5: Complete Workflow
+- ⏸️ ML Classifier implementation (deferred to focus on tutorials per user request)
+
+**Next Steps**:
+- Sprint 3-4: Implement ML classifier training pipeline
+- Final release: v1.2.0 (when ML classifier training complete)
+
+---
+
 
 ### Added
 
