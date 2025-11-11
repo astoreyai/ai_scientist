@@ -84,6 +84,8 @@ mlruns/
 output.json
 results/*.json
 qa_reports/
+pytest_html_report.html
+coverage.json
 
 # Documentation builds
 docs/_build/
