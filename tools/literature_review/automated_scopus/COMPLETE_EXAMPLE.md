@@ -315,7 +315,7 @@ searches:
 ### Step 2.1: Validate Queries
 
 ```bash
-cd /home/aaron/projects/xai/PHD_PIPELINE/tools/literature_review/automated_scopus/scripts
+cd tools/literature_review/automated_scopus/scripts
 
 # Dry run to validate
 python scopus_search.py --dry-run

@@ -141,7 +141,7 @@ project/
 import mlflow
 from pathlib import Path
 
-MLFLOW_TRACKING_URI = "file:///home/aaron/Desktop/ai_scientist/mlruns"
+MLFLOW_TRACKING_URI = "file://./mlruns"
 EXPERIMENT_NAME = "research_experiment"
 
 def setup_mlflow():

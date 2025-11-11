@@ -40,7 +40,7 @@
 
 ### **Core Search Configuration**
 ```
-/home/aaron/projects/xai/PHD_PIPELINE/tools/literature_review/
+tools/literature_review/
 ├── automated_scopus/
 │   ├── config/
 │   │   ├── scopus_config.yaml           ← ADD YOUR API KEY HERE
@@ -89,7 +89,7 @@
 
 **Execute:**
 ```bash
-cd /home/aaron/projects/xai/PHD_PIPELINE/tools/literature_review/automated_scopus
+cd tools/literature_review/automated_scopus
 
 # 1. Add your API key
 nano config/scopus_config.yaml
@@ -346,7 +346,7 @@ This package ensures:
 
 **To begin:**
 ```bash
-cd /home/aaron/projects/xai/PHD_PIPELINE/tools/literature_review/automated_scopus
+cd tools/literature_review/automated_scopus
 nano config/scopus_config.yaml  # Add API key
 python scripts/scopus_search.py  # Execute all searches
 ```

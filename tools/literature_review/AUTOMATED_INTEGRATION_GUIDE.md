@@ -85,7 +85,7 @@ The automated Scopus pipeline **replaces manual search execution** but **integra
 
 1. **Install dependencies**
    ```bash
-   cd /home/aaron/projects/xai/PHD_PIPELINE/tools/literature_review/automated_scopus
+   cd tools/literature_review/automated_scopus
    pip install -r requirements.txt
    ```
 
