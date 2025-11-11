@@ -12,7 +12,7 @@
       "description": "Complete research workflow assistant with PRISMA 2020, NIH rigor standards, statistical analysis, and AI-detection capabilities",
       "version": "1.2.0-beta3",
       "source": "./",
-      "strict": false,
+      "strict": true,
       "author": {
         "name": "Aaron Storey",
         "email": "aaron@astoreyai.com",
