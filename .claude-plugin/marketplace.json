@@ -33,7 +33,31 @@
         "systematic-review",
         "experimental-design"
       ],
-      "category": "productivity"
+      "category": "productivity",
+      "skills": [
+        "./skills/ai-check",
+        "./skills/citation-format",
+        "./skills/power-analysis",
+        "./skills/effect-size",
+        "./skills/prisma-diagram",
+        "./skills/hypothesis-test",
+        "./skills/research-questions",
+        "./skills/literature-gap",
+        "./skills/synthesis-matrix",
+        "./skills/inclusion-criteria",
+        "./skills/experiment-design",
+        "./skills/data-visualization",
+        "./skills/results-interpretation",
+        "./skills/irb-protocol",
+        "./skills/pre-registration",
+        "./skills/randomization",
+        "./skills/blinding",
+        "./skills/risk-of-bias",
+        "./skills/meta-analysis",
+        "./skills/sensitivity-analysis",
+        "./skills/subgroup-analysis",
+        "./skills/publication-prep"
+      ]
     }
   ]
 }
