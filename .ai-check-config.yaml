@@ -1,0 +1,48 @@
+# AI-Check Configuration
+
+# Pre-Commit Hook Settings
+pre_commit:
+  enabled: true
+  check_files: [".md", ".tex", ".rst", ".txt"]
+  check_docstrings: true
+  block_threshold: 0.70
+  warn_threshold: 0.30
+  exclude_patterns:
+    - "*/examples/*"
+    - "*/tests/*"
+    - "*/node_modules/*"
+    - "*/.venv/*"
+
+# Quality Assurance Integration
+qa_integration:
+  enabled: true
+  max_confidence_threshold: 0.40
+  check_manuscripts: true
+  check_documentation: true
+  generate_detailed_reports: true
+  track_history: true
+
+# Detection Parameters
+detection:
+  weights:
+    grammar_perfection: 0.20
+    sentence_uniformity: 0.25
+    paragraph_structure: 0.20
+    ai_word_frequency: 0.25
+    punctuation_patterns: 0.10
+  
+  ai_words_per_1000_threshold: 3.0
+  human_baseline_per_1000: 1.5
+
+# Report Generation
+reporting:
+  default_format: "markdown"
+  include_suggestions: true
+  include_word_frequency: true
+  include_flagged_sections: true
+  max_flagged_sections: 10
+
+# Tracking
+tracking:
+  enabled: true
+  retention_days: 365

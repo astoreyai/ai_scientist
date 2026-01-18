@@ -1,0 +1,63 @@
+{
+  "name": "research-assistant-marketplace",
+  "owner": {
+    "name": "Aaron Storey",
+    "email": "astoreyai@gmail.com"
+  },
+  "description": "Professional research tools for PhD students and academics",
+  "version": "1.2.0-beta3",
+  "plugins": [
+    {
+      "name": "research-assistant",
+      "description": "Complete research workflow assistant with PRISMA 2020, NIH rigor standards, statistical analysis, and AI-detection capabilities",
+      "version": "1.2.0-beta3",
+      "source": "./",
+      "strict": true,
+      "author": {
+        "name": "Aaron Storey",
+        "email": "astoreyai@gmail.com",
+        "url": "https://github.com/astoreyai"
+      },
+      "homepage": "https://github.com/astoreyai/ai_scientist",
+      "repository": "https://github.com/astoreyai/ai_scientist",
+      "license": "MIT",
+      "keywords": [
+        "research",
+        "phd",
+        "prisma",
+        "nih",
+        "statistics",
+        "literature-review",
+        "ai-detection",
+        "academic-writing",
+        "systematic-review",
+        "experimental-design"
+      ],
+      "category": "productivity",
+      "skills": [
+        "./skills/ai-check",
+        "./skills/citation-format",
+        "./skills/power-analysis",
+        "./skills/effect-size",
+        "./skills/prisma-diagram",
+        "./skills/hypothesis-test",
+        "./skills/research-questions",
+        "./skills/literature-gap",
+        "./skills/synthesis-matrix",
+        "./skills/inclusion-criteria",
+        "./skills/experiment-design",
+        "./skills/data-visualization",
+        "./skills/results-interpretation",
+        "./skills/irb-protocol",
+        "./skills/pre-registration",
+        "./skills/randomization",
+        "./skills/blinding",
+        "./skills/risk-of-bias",
+        "./skills/meta-analysis",
+        "./skills/sensitivity-analysis",
+        "./skills/subgroup-analysis",
+        "./skills/publication-prep"
+      ]
+    }
+  ]
+}

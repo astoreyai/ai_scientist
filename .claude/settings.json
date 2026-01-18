@@ -1,0 +1,220 @@
+{
+  "plugins": [
+    {
+      "source": "./",
+      "name": "research-assistant"
+    }
+  ],
+  "skills": {
+    "ai-check": {
+      "path": "skills/ai-check/SKILL.md",
+      "description": "Detect AI-generated text patterns in research writing"
+    },
+    "blinding": {
+      "path": "skills/blinding/SKILL.md",
+      "description": "Implement blinding procedures for experimental studies"
+    },
+    "citation-format": {
+      "path": "skills/citation-format/SKILL.md",
+      "description": "Format citations in APA, IEEE, Chicago, Harvard, MLA, Nature, Science styles"
+    },
+    "data-visualization": {
+      "path": "skills/data-visualization/SKILL.md",
+      "description": "Create publication-quality data visualizations"
+    },
+    "effect-size": {
+      "path": "skills/effect-size/SKILL.md",
+      "description": "Calculate and interpret effect sizes for statistical analyses"
+    },
+    "experiment-design": {
+      "path": "skills/experiment-design/SKILL.md",
+      "description": "Design rigorous experiments following NIH rigor standards"
+    },
+    "hypothesis-test": {
+      "path": "skills/hypothesis-test/SKILL.md",
+      "description": "Guide selection and interpretation of statistical hypothesis tests"
+    },
+    "inclusion-criteria": {
+      "path": "skills/inclusion-criteria/SKILL.md",
+      "description": "Apply inclusion/exclusion criteria systematically in literature reviews"
+    },
+    "irb-protocol": {
+      "path": "skills/irb-protocol/SKILL.md",
+      "description": "Develop IRB/ethics protocols for human subjects research"
+    },
+    "literature-gap": {
+      "path": "skills/literature-gap/SKILL.md",
+      "description": "Identify research gaps from systematic literature reviews"
+    },
+    "meta-analysis": {
+      "path": "skills/meta-analysis/SKILL.md",
+      "description": "Conduct quantitative synthesis through meta-analysis"
+    },
+    "power-analysis": {
+      "path": "skills/power-analysis/SKILL.md",
+      "description": "Calculate statistical power and required sample sizes"
+    },
+    "pre-registration": {
+      "path": "skills/pre-registration/SKILL.md",
+      "description": "Create pre-registration documents for research transparency"
+    },
+    "prisma-diagram": {
+      "path": "skills/prisma-diagram/SKILL.md",
+      "description": "Generate PRISMA 2020 flow diagrams for systematic reviews"
+    },
+    "publication-prep": {
+      "path": "skills/publication-prep/SKILL.md",
+      "description": "Prepare manuscripts for journal submission"
+    },
+    "randomization": {
+      "path": "skills/randomization/SKILL.md",
+      "description": "Implement proper randomization procedures for experiments"
+    },
+    "research-questions": {
+      "path": "skills/research-questions/SKILL.md",
+      "description": "Formulate research questions using FINER criteria"
+    },
+    "results-interpretation": {
+      "path": "skills/results-interpretation/SKILL.md",
+      "description": "Interpret statistical results correctly and comprehensively"
+    },
+    "risk-of-bias": {
+      "path": "skills/risk-of-bias/SKILL.md",
+      "description": "Assess risk of bias in research studies using RoB 2 and ROBINS-I"
+    },
+    "sensitivity-analysis": {
+      "path": "skills/sensitivity-analysis/SKILL.md",
+      "description": "Conduct sensitivity analyses for robustness testing"
+    },
+    "subgroup-analysis": {
+      "path": "skills/subgroup-analysis/SKILL.md",
+      "description": "Perform subgroup and moderator analyses"
+    },
+    "synthesis-matrix": {
+      "path": "skills/synthesis-matrix/SKILL.md",
+      "description": "Create evidence synthesis tables for literature reviews"
+    }
+  },
+  "agents": {
+    "literature-reviewer": {
+      "path": ".claude/agents/literature-reviewer.md",
+      "description": "PRISMA 2020 systematic literature reviews"
+    },
+    "gap-analyst": {
+      "path": ".claude/agents/gap-analyst.md",
+      "description": "Research gap identification and prioritization"
+    },
+    "hypothesis-generator": {
+      "path": ".claude/agents/hypothesis-generator.md",
+      "description": "Generate testable hypotheses using Tree-of-Thought"
+    },
+    "experiment-designer": {
+      "path": ".claude/agents/experiment-designer.md",
+      "description": "NIH-rigorous experimental design"
+    },
+    "data-analyst": {
+      "path": ".claude/agents/data-analyst.md",
+      "description": "Reproducible statistical analysis"
+    },
+    "manuscript-writer": {
+      "path": ".claude/agents/manuscript-writer.md",
+      "description": "CONSORT/PRISMA-compliant manuscript writing"
+    },
+    "citation-manager": {
+      "path": ".claude/agents/citation-manager.md",
+      "description": "Citation management and verification"
+    },
+    "quality-assurance": {
+      "path": ".claude/agents/quality-assurance.md",
+      "description": "Research quality validation and audits"
+    },
+    "meta-reviewer": {
+      "path": ".claude/agents/meta-reviewer.md",
+      "description": "AMSTAR 2 quality assessment for systematic reviews"
+    },
+    "code-reviewer": {
+      "path": ".claude/agents/code-reviewer.md",
+      "description": "Statistical code verification for reproducibility"
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/session-start.sh",
+            "description": "Load research protocols and mode configuration"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/prompt-validate.py",
+            "description": "Validate research scope and check mode compatibility"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/pre-tool-security.py",
+            "timeout": 5,
+            "description": "Security validation for bash commands"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/post-tool-log.py",
+            "description": "Log tool usage and auto-track large files with DVC"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/pre-compact-backup.py",
+            "description": "Backup research state before context compression"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/stop-validate-completion.py",
+            "description": "Validate research phase completion and archive artifacts"
+          }
+        ]
+      }
+    ],
+    "gitPreCommit": {
+      "command": "python3 hooks/pre-commit-ai-check.py",
+      "enabled": true,
+      "description": "Check for AI-generated text patterns before commit"
+    }
+  }
+}

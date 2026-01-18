@@ -1,0 +1,566 @@
+# Scopus Search Queries for Systematic Literature Review
+# Dissertation: "Falsifiable Attribution for Face Verification"
+# Generated: 2025-10-16
+# Total Searches: 7
+
+# RESEARCH CONTEXT:
+# - Topic: Testing falsifiability of XAI methods in face verification systems
+# - Core Problem: Current XAI lacks falsifiability - no way to test if explanations are faithful
+# - Proposed Solution: Counterfactual score prediction framework
+# - Models: ArcFace, CosFace (hypersphere embeddings)
+# - Datasets: VGGFace2, LFW, CFP-FP, AgeDB-30, CelebA
+# - Context: Forensic/legal deployment (wrongful arrests, GDPR, EU AI Act, Daubert)
+
+# RESEARCH QUESTIONS:
+# RQ1: Can attribution techniques satisfy formal falsifiability criteria?
+# RQ2: What are theoretical/empirical limits of attribution faithfulness in face verification?
+# RQ3: How do current methods (Grad-CAM, IG, SHAP, LIME) perform under falsifiability testing?
+# RQ4: What constitutes sufficient faithfulness for legal/forensic deployment?
+
+searches:
+  # ============================================================================
+  # SEARCH 1: PRIMARY - XAI in Face Recognition/Verification
+  # ============================================================================
+  - id: "search_001_xai_face_verification"
+    name: "Explainable AI Methods in Face Recognition and Verification Systems"
+    description: >
+      Core literature on explainability, interpretability, and attribution methods
+      applied to face recognition, face verification, and facial analysis systems.
+      This is the primary search covering the intersection of XAI and face biometrics.
+
+    keywords:
+      concept_1_xai_methods:
+        - "explainable AI"
+        - "explainability"
+        - "XAI"
+        - "interpretable AI"
+        - "interpretability"
+        - "transparent AI"
+        - "attribution method"
+        - "attribution technique"
+        - "saliency map"
+        - "attention map"
+        - "feature attribution"
+        - "explanation method"
+        - "visual explanation"
+        - "heatmap explanation"
+
+      concept_2_face_systems:
+        - "face recognition"
+        - "face verification"
+        - "face identification"
+        - "facial recognition"
+        - "facial verification"
+        - "face matching"
+        - "face biometric"
+        - "facial biometric"
+        - "face authentication"
+        - "facial analysis"
+        - "face comparison"
+        - "one-to-one face matching"
+        - "face-based authentication"
+
+    query: >
+      TITLE-ABS-KEY("explainable AI" OR "explainability" OR "XAI" OR "interpretable AI" OR "interpretability" OR "transparent AI" OR "attribution method" OR "attribution technique" OR "saliency map" OR "attention map" OR "feature attribution" OR "explanation method" OR "visual explanation" OR "heatmap explanation")
+      AND TITLE-ABS-KEY("face recognition" OR "face verification" OR "face identification" OR "facial recognition" OR "facial verification" OR "face matching" OR "face biometric" OR "facial biometric" OR "face authentication" OR "facial analysis" OR "face comparison")
+
+    date_range:
+      start: 2016
+      end: 2025
+
+    subject_areas:
+      - COMP  # Computer Science
+      - ENGI  # Engineering
+      - MATH  # Mathematics (for theoretical work)
+      - MULT  # Multidisciplinary
+
+    document_types:
+      - "ar"  # Article
+      - "cp"  # Conference Paper
+      - "re"  # Review
+
+    research_questions:
+      - "RQ1: Can attribution techniques satisfy formal falsifiability criteria?"
+      - "RQ2: What are theoretical/empirical limits of attribution faithfulness?"
+      - "RQ3: How do current methods perform under falsifiability testing?"
+      - "RQ4: What constitutes sufficient faithfulness for legal/forensic deployment?"
+
+    expected_results: "100-300 papers"
+    priority: "high"
+    notes: >
+      This is the primary search. Start date 2016 chosen because modern deep learning
+      face verification (DeepFace, FaceNet) emerged around 2014-2015, and XAI methods
+      (Grad-CAM, LIME) became prominent around 2016-2017. This search should capture
+      the core literature at the intersection of XAI and face verification.
+
+  # ============================================================================
+  # SEARCH 2: SPECIFIC XAI TECHNIQUES - Grad-CAM, SHAP, LIME, Integrated Gradients
+  # ============================================================================
+  - id: "search_002_specific_xai_techniques"
+    name: "Specific XAI Techniques (Grad-CAM, SHAP, LIME, Integrated Gradients) in Computer Vision"
+    description: >
+      Literature on the specific XAI methods being evaluated in the dissertation:
+      Grad-CAM, SHAP, LIME, Integrated Gradients, and related gradient-based and
+      perturbation-based attribution methods in computer vision tasks.
+
+    keywords:
+      concept_1_specific_methods:
+        - "Grad-CAM"
+        - "GradCAM"
+        - "Gradient-weighted Class Activation Mapping"
+        - "Class Activation Map"
+        - "CAM"
+        - "SHAP"
+        - "Shapley"
+        - "Shapley value"
+        - "SHapley Additive exPlanations"
+        - "LIME"
+        - "Local Interpretable Model-agnostic Explanations"
+        - "Integrated Gradients"
+        - "integrated gradient"
+        - "gradient-based attribution"
+        - "saliency method"
+        - "DeepLIFT"
+        - "Layer-wise Relevance Propagation"
+        - "LRP"
+        - "SmoothGrad"
+        - "GradCAM++"
+
+      concept_2_computer_vision:
+        - "computer vision"
+        - "image classification"
+        - "image recognition"
+        - "visual recognition"
+        - "deep learning"
+        - "convolutional neural network"
+        - "CNN"
+        - "neural network"
+        - "image analysis"
+        - "visual task"
+
+    query: >
+      TITLE-ABS-KEY("Grad-CAM" OR "GradCAM" OR "Gradient-weighted Class Activation Mapping" OR "Class Activation Map" OR "SHAP" OR "Shapley" OR "Shapley value" OR "SHapley Additive exPlanations" OR "LIME" OR "Local Interpretable Model-agnostic Explanations" OR "Integrated Gradients" OR "integrated gradient" OR "gradient-based attribution" OR "DeepLIFT" OR "Layer-wise Relevance Propagation" OR "LRP" OR "SmoothGrad")
+      AND TITLE-ABS-KEY("computer vision" OR "image classification" OR "image recognition" OR "visual recognition" OR "deep learning" OR "convolutional neural network" OR "CNN" OR "neural network")
+
+    date_range:
+      start: 2016
+      end: 2025
+
+    subject_areas:
+      - COMP
+      - ENGI
+      - MATH
+
+    document_types:
+      - "ar"
+      - "cp"
+      - "re"
+
+    research_questions:
+      - "RQ3: How do current methods (Grad-CAM, IG, SHAP, LIME) perform under falsifiability testing?"
+      - "RQ2: What are theoretical/empirical limits of attribution faithfulness?"
+
+    expected_results: "200-500 papers"
+    priority: "high"
+    notes: >
+      This search focuses on the specific XAI methods being tested. Grad-CAM was
+      published in 2017, LIME in 2016, SHAP in 2017, Integrated Gradients in 2017.
+      This search is broader than face-specific to capture foundational literature
+      on these methods and their evaluation across computer vision tasks.
+
+  # ============================================================================
+  # SEARCH 3: EVALUATION - Faithfulness, Fidelity, and Counterfactual Explanations
+  # ============================================================================
+  - id: "search_003_faithfulness_evaluation"
+    name: "Faithfulness and Fidelity Evaluation of XAI Methods"
+    description: >
+      Literature on evaluating the faithfulness, fidelity, and trustworthiness of
+      attribution methods. Includes counterfactual explanations, sanity checks,
+      sensitivity analysis, and quantitative evaluation metrics for XAI.
+
+    keywords:
+      concept_1_evaluation_metrics:
+        - "faithfulness"
+        - "fidelity"
+        - "attribution faithfulness"
+        - "explanation faithfulness"
+        - "sanity check"
+        - "sensitivity analysis"
+        - "perturbation-based evaluation"
+        - "counterfactual"
+        - "counterfactual explanation"
+        - "contrastive explanation"
+        - "attribution evaluation"
+        - "explanation evaluation"
+        - "ground truth attribution"
+        - "insertion deletion"
+        - "deletion metric"
+        - "insertion metric"
+        - "infidelity"
+        - "sensitivity-n"
+        - "ROAR"
+        - "Remove And Retrain"
+
+      concept_2_xai_context:
+        - "explainable AI"
+        - "interpretability"
+        - "attribution method"
+        - "saliency map"
+        - "feature importance"
+        - "explanation method"
+        - "neural network explanation"
+        - "deep learning explanation"
+
+    query: >
+      TITLE-ABS-KEY("faithfulness" OR "fidelity" OR "attribution faithfulness" OR "explanation faithfulness" OR "sanity check" OR "sensitivity analysis" OR "perturbation-based evaluation" OR "counterfactual" OR "counterfactual explanation" OR "contrastive explanation" OR "attribution evaluation" OR "explanation evaluation" OR "insertion deletion" OR "deletion metric" OR "infidelity" OR "ROAR")
+      AND TITLE-ABS-KEY("explainable AI" OR "interpretability" OR "attribution method" OR "saliency map" OR "feature importance" OR "explanation method" OR "neural network explanation" OR "deep learning explanation")
+
+    date_range:
+      start: 2018
+      end: 2025
+
+    subject_areas:
+      - COMP
+      - ENGI
+      - MATH
+      - MULT
+
+    document_types:
+      - "ar"
+      - "cp"
+      - "re"
+
+    research_questions:
+      - "RQ1: Can attribution techniques satisfy formal falsifiability criteria?"
+      - "RQ2: What are theoretical/empirical limits of attribution faithfulness?"
+      - "RQ3: How do current methods perform under falsifiability testing?"
+
+    expected_results: "100-250 papers"
+    priority: "high"
+    notes: >
+      Start date 2018 chosen because systematic evaluation of XAI faithfulness
+      emerged after initial XAI methods were published (2016-2017). Key papers:
+      "Sanity Checks for Saliency Maps" (2018), "The (Un)reliability of saliency
+      methods" (2019). This search captures the growing literature on XAI evaluation.
+
+  # ============================================================================
+  # SEARCH 4: FACE VERIFICATION ARCHITECTURES - ArcFace, CosFace, Metric Learning
+  # ============================================================================
+  - id: "search_004_face_verification_architectures"
+    name: "Face Verification Architectures: ArcFace, CosFace, and Metric Learning"
+    description: >
+      Technical literature on face verification model architectures, particularly
+      ArcFace, CosFace, and other metric learning approaches with hypersphere
+      embeddings. Includes deep metric learning, embedding spaces, and angular loss.
+
+    keywords:
+      concept_1_architectures:
+        - "ArcFace"
+        - "CosFace"
+        - "SphereFace"
+        - "FaceNet"
+        - "DeepFace"
+        - "metric learning"
+        - "deep metric learning"
+        - "angular margin"
+        - "additive margin"
+        - "triplet loss"
+        - "contrastive loss"
+        - "angular softmax"
+        - "cosine margin"
+        - "hypersphere embedding"
+        - "face embedding"
+        - "facial embedding"
+        - "feature embedding"
+
+      concept_2_face_task:
+        - "face verification"
+        - "face recognition"
+        - "face identification"
+        - "facial recognition"
+        - "one-shot learning"
+        - "few-shot learning"
+        - "face matching"
+        - "face similarity"
+        - "facial similarity"
+
+    query: >
+      TITLE-ABS-KEY("ArcFace" OR "CosFace" OR "SphereFace" OR "FaceNet" OR "DeepFace" OR "metric learning" OR "deep metric learning" OR "angular margin" OR "additive margin" OR "triplet loss" OR "contrastive loss" OR "angular softmax" OR "cosine margin" OR "hypersphere embedding" OR "face embedding" OR "facial embedding")
+      AND TITLE-ABS-KEY("face verification" OR "face recognition" OR "face identification" OR "facial recognition" OR "one-shot learning" OR "few-shot learning" OR "face matching" OR "face similarity")
+
+    date_range:
+      start: 2014
+      end: 2025
+
+    subject_areas:
+      - COMP
+      - ENGI
+      - MATH
+
+    document_types:
+      - "ar"
+      - "cp"
+      - "re"
+
+    research_questions:
+      - "RQ2: What are theoretical/empirical limits of attribution faithfulness in face verification?"
+      - "RQ3: How do current methods perform under falsifiability testing?"
+
+    expected_results: "150-400 papers"
+    priority: "high"
+    notes: >
+      Start date 2014 chosen to capture DeepFace (2014), FaceNet (2015), and
+      subsequent development of angular margin methods (SphereFace 2017, CosFace 2018,
+      ArcFace 2019). This search provides technical background on the specific
+      face verification architectures being used in the dissertation.
+
+  # ============================================================================
+  # SEARCH 5: LEGAL/FORENSIC - Wrongful Arrests, GDPR, EU AI Act, Forensic FR
+  # ============================================================================
+  - id: "search_005_legal_forensic_context"
+    name: "Legal and Forensic Context: Face Recognition in Law Enforcement and Regulation"
+    description: >
+      Literature on legal, ethical, and forensic aspects of face recognition systems.
+      Includes wrongful arrests, GDPR compliance, EU AI Act, algorithmic accountability,
+      forensic face recognition, Daubert standard, and bias/fairness issues.
+
+    keywords:
+      concept_1_legal_regulatory:
+        - "GDPR"
+        - "General Data Protection Regulation"
+        - "EU AI Act"
+        - "AI Act"
+        - "algorithmic accountability"
+        - "algorithmic transparency"
+        - "right to explanation"
+        - "explainability requirement"
+        - "Daubert standard"
+        - "forensic standard"
+        - "legal standard"
+        - "evidentiary standard"
+        - "admissibility"
+        - "wrongful arrest"
+        - "false identification"
+        - "misidentification"
+
+      concept_2_face_recognition_context:
+        - "face recognition"
+        - "facial recognition"
+        - "biometric"
+        - "face identification"
+        - "facial identification"
+        - "face matching"
+        - "biometric identification"
+        - "biometric surveillance"
+
+      concept_3_application_domain:
+        - "law enforcement"
+        - "forensic"
+        - "criminal justice"
+        - "police"
+        - "surveillance"
+        - "border control"
+        - "security"
+        - "investigative"
+
+    query: >
+      TITLE-ABS-KEY("GDPR" OR "General Data Protection Regulation" OR "EU AI Act" OR "AI Act" OR "algorithmic accountability" OR "algorithmic transparency" OR "right to explanation" OR "Daubert standard" OR "wrongful arrest" OR "false identification" OR "misidentification" OR "forensic standard" OR "legal standard" OR "evidentiary standard")
+      AND TITLE-ABS-KEY("face recognition" OR "facial recognition" OR "biometric" OR "face identification" OR "facial identification" OR "face matching" OR "biometric identification")
+      AND TITLE-ABS-KEY("law enforcement" OR "forensic" OR "criminal justice" OR "police" OR "surveillance" OR "border control" OR "security" OR "investigative")
+
+    date_range:
+      start: 2016
+      end: 2025
+
+    subject_areas:
+      - COMP
+      - SOCI  # Social Sciences (for legal/policy papers)
+      - DECI  # Decision Sciences
+      - MULT
+      - ENGI
+
+    document_types:
+      - "ar"
+      - "cp"
+      - "re"
+
+    research_questions:
+      - "RQ4: What constitutes sufficient faithfulness for legal/forensic deployment?"
+
+    expected_results: "80-200 papers"
+    priority: "medium"
+    notes: >
+      Start date 2016 chosen to capture GDPR (enforced 2018), growing concerns
+      about face recognition bias and wrongful arrests (Rekognition issues 2018-2020),
+      and EU AI Act development (2021-2024). This search establishes the legal and
+      forensic context motivating the need for falsifiable explanations.
+
+  # ============================================================================
+  # SEARCH 6: THEORETICAL - Manifold Learning, Hypersphere, Attribution Theory
+  # ============================================================================
+  - id: "search_006_theoretical_foundations"
+    name: "Theoretical Foundations: Manifold Learning and Attribution Theory"
+    description: >
+      Theoretical literature on manifold learning, hypersphere embeddings,
+      representation learning, and the mathematical/theoretical foundations of
+      attribution methods and neural network interpretability.
+
+    keywords:
+      concept_1_theory:
+        - "manifold learning"
+        - "hypersphere"
+        - "unit hypersphere"
+        - "embedding space"
+        - "representation learning"
+        - "feature space"
+        - "latent space"
+        - "metric space"
+        - "angular distance"
+        - "cosine similarity"
+        - "euclidean distance"
+        - "embedding geometry"
+
+      concept_2_attribution_theory:
+        - "attribution theory"
+        - "gradient analysis"
+        - "sensitivity analysis"
+        - "influence function"
+        - "feature importance"
+        - "neural network theory"
+        - "deep learning theory"
+        - "interpretability"
+        - "explainability"
+        - "attribution method"
+
+    query: >
+      TITLE-ABS-KEY("manifold learning" OR "hypersphere" OR "unit hypersphere" OR "embedding space" OR "representation learning" OR "feature space" OR "latent space" OR "metric space" OR "angular distance" OR "cosine similarity" OR "embedding geometry")
+      AND TITLE-ABS-KEY("attribution theory" OR "gradient analysis" OR "sensitivity analysis" OR "influence function" OR "feature importance" OR "neural network theory" OR "interpretability" OR "explainability" OR "attribution method")
+
+    date_range:
+      start: 2014
+      end: 2025
+
+    subject_areas:
+      - COMP
+      - MATH
+      - ENGI
+      - MULT
+
+    document_types:
+      - "ar"
+      - "cp"
+      - "re"
+
+    research_questions:
+      - "RQ2: What are theoretical/empirical limits of attribution faithfulness in face verification?"
+      - "RQ1: Can attribution techniques satisfy formal falsifiability criteria?"
+
+    expected_results: "50-150 papers"
+    priority: "medium"
+    notes: >
+      This search captures theoretical foundations needed to understand how
+      attribution methods interact with hypersphere embeddings in face verification.
+      Important for understanding why standard attribution methods may fail in
+      metric learning contexts with angular margins.
+
+  # ============================================================================
+  # SEARCH 7: GAP ANALYSIS - Falsifiability in XAI
+  # ============================================================================
+  - id: "search_007_falsifiability_gap"
+    name: "Gap Analysis: Falsifiability and Scientific Validity in XAI"
+    description: >
+      Highly specific search for falsifiability concepts applied to XAI and machine
+      learning. Expected to return few papers, which establishes the novelty gap
+      that this dissertation fills. Includes Popperian falsifiability, demarcation
+      criteria, testability, and scientific validity of explanations.
+
+    keywords:
+      concept_1_falsifiability:
+        - "falsifiability"
+        - "falsifiable"
+        - "Popper"
+        - "Popperian"
+        - "demarcation criterion"
+        - "demarcation problem"
+        - "testability"
+        - "refutability"
+        - "scientific validity"
+        - "empirical testability"
+        - "hypothesis testing"
+        - "verification principle"
+
+      concept_2_xai_ml:
+        - "explainable AI"
+        - "XAI"
+        - "interpretability"
+        - "machine learning explanation"
+        - "neural network explanation"
+        - "attribution method"
+        - "saliency map"
+        - "feature attribution"
+        - "model explanation"
+        - "AI explanation"
+
+    query: >
+      TITLE-ABS-KEY("falsifiability" OR "falsifiable" OR "Popper" OR "Popperian" OR "demarcation criterion" OR "demarcation problem" OR "testability" OR "refutability" OR "empirical testability")
+      AND TITLE-ABS-KEY("explainable AI" OR "XAI" OR "interpretability" OR "machine learning explanation" OR "neural network explanation" OR "attribution method" OR "saliency map" OR "feature attribution" OR "model explanation")
+
+    date_range:
+      start: 2016
+      end: 2025
+
+    subject_areas:
+      - COMP
+      - MULT
+      - DECI
+      - MATH
+
+    document_types:
+      - "ar"
+      - "cp"
+      - "re"
+
+    research_questions:
+      - "RQ1: Can attribution techniques satisfy formal falsifiability criteria?"
+
+    expected_results: "5-30 papers"
+    priority: "high"
+    notes: >
+      This is a GAP ANALYSIS search - expected to return very few papers, which
+      demonstrates the novelty of applying falsifiability criteria to XAI evaluation.
+      Few results prove that this dissertation addresses an unexplored area. This
+      establishes the research contribution and novelty claim in the literature review.
+
+# ============================================================================
+# EXECUTION NOTES
+# ============================================================================
+
+# PRIORITY ORDER FOR EXECUTION:
+# 1. search_001 (primary - XAI in face verification)
+# 2. search_007 (gap analysis - falsifiability, establishes novelty)
+# 3. search_002 (specific XAI techniques)
+# 4. search_003 (faithfulness evaluation)
+# 5. search_004 (face verification architectures)
+# 6. search_005 (legal/forensic context)
+# 7. search_006 (theoretical foundations)
+
+# EXPECTED TOTAL RESULTS: 685-1530 papers before deduplication
+# AFTER DEDUPLICATION: Approximately 400-800 unique papers
+# AFTER TITLE/ABSTRACT SCREENING: Approximately 150-300 papers
+# AFTER FULL-TEXT SCREENING: Approximately 80-150 papers for final review
+
+# VALIDATION CHECKLIST:
+# - All searches tested in Scopus web interface? [ ]
+# - Result counts within expected ranges? [ ]
+# - First 20 results from each search are relevant? [ ]
+# - No syntax errors in Boolean queries? [ ]
+# - Date ranges appropriate for each search? [ ]
+# - Subject areas cover all relevant disciplines? [ ]
+# - All RQs covered by at least one search? [ ]
+
+# QUALITY ASSURANCE:
+# - Use PRISMA flow diagram to track screening process
+# - Export results to reference manager (Zotero/Mendeley)
+# - Track search dates and result counts
+# - Document any query modifications
+# - Calculate inter-rater reliability for screening (if applicable)
