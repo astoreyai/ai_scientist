@@ -212,8 +212,8 @@ restore_from_backup() {
 load_session_state() {
     local state_file="$CLAUDE_DIR/session_state.json"
 
-    # First, try to restore from backup if needed
-    restore_from_backup
+    # First, try to restore from backup if needed (|| true to prevent set -e exit)
+    restore_from_backup || true
 
     if [[ -f "$state_file" ]]; then
         local last_phase
