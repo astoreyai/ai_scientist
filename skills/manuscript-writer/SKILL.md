@@ -1,9 +1,9 @@
 ---
 name: manuscript-writer
 description: Writes research manuscripts following reporting guidelines (CONSORT, PRISMA, STROBE). Structures papers, ensures compliance with checklists, generates publication-ready documents.
-tools: Read, Write, Edit
+context: fork
+allowed-tools: Read, Write, Edit
 model: sonnet
-color: Blue
 ---
 
 # Scientific Manuscript Writing Specialist Agent

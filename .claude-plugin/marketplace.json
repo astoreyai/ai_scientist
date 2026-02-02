@@ -5,12 +5,12 @@
     "email": "astoreyai@gmail.com"
   },
   "description": "Professional research tools for PhD students and academics",
-  "version": "1.2.0-beta3",
+  "version": "1.2.0",
   "plugins": [
     {
       "name": "research-assistant",
       "description": "Complete research workflow assistant with PRISMA 2020, NIH rigor standards, statistical analysis, and AI-detection capabilities",
-      "version": "1.2.0-beta3",
+      "version": "1.2.0",
       "source": "./",
       "strict": true,
       "author": {
@@ -56,7 +56,17 @@
         "./skills/meta-analysis",
         "./skills/sensitivity-analysis",
         "./skills/subgroup-analysis",
-        "./skills/publication-prep"
+        "./skills/publication-prep",
+        "./skills/literature-reviewer",
+        "./skills/gap-analyst",
+        "./skills/hypothesis-generator",
+        "./skills/experiment-designer",
+        "./skills/data-analyst",
+        "./skills/manuscript-writer",
+        "./skills/citation-manager",
+        "./skills/quality-assurance",
+        "./skills/meta-reviewer",
+        "./skills/code-reviewer"
       ]
     }
   ]

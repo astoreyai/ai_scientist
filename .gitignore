@@ -52,6 +52,7 @@ coverage.xml
 # Research data (keep tracked with DVC)
 data/raw/
 data/processed/
+data/literature/
 !data/.gitkeep
 
 # Temporary files
@@ -156,6 +157,7 @@ $RECYCLE.BIN/
 .Trash-*
 
 # MCP Server artifacts
+mcp_server_integration_test_results.json
 mcp-servers/**/*.log
 mcp-servers/**/node_modules/
 mcp-servers/**/__pycache__/

@@ -1,6 +1,6 @@
 {
   "name": "research-assistant",
-  "version": "1.2.0-beta3",
+  "version": "1.2.0",
   "description": "Production research assistant for PhD students and academics. PRISMA 2020, NIH rigor, statistical analysis, literature reviews, and AI-detection capabilities.",
   "author": {
     "name": "Aaron Storey",

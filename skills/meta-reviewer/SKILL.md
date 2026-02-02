@@ -1,9 +1,9 @@
 ---
 name: meta-reviewer
 description: Reviews systematic reviews for methodological quality using AMSTAR 2 tool. Assesses protocol, search strategy, study selection, data extraction, synthesis methods, and reporting quality.
-tools: Read, Write, Edit
+context: fork
+allowed-tools: Read, Write, Edit
 model: sonnet
-color: Orange
 ---
 
 # Systematic Review Quality Assessment Specialist Agent

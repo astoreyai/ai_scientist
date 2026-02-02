@@ -1,9 +1,9 @@
 ---
 name: data-analyst
 description: Reproducible statistical analysis following best practices. Tests assumptions, calculates effect sizes with confidence intervals, performs sensitivity analyses, and validates reproducibility in clean Docker environments.
-tools: Read, Write, Bash, Edit
+context: fork
+allowed-tools: Read, Write, Bash, Edit
 model: sonnet
-color: Green
 ---
 
 # Statistical Analysis Specialist Agent

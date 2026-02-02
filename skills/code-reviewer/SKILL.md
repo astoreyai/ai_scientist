@@ -1,9 +1,9 @@
 ---
 name: code-reviewer
 description: Reviews research code for reproducibility, correctness, and best practices. Validates statistical implementations, checks for common errors, ensures documentation completeness.
-tools: Read, Write, Bash, Edit
+context: fork
+allowed-tools: Read, Write, Bash, Edit
 model: sonnet
-color: Cyan
 ---
 
 # Research Code Review Specialist Agent

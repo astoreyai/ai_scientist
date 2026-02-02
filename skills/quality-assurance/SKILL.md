@@ -1,9 +1,9 @@
 ---
 name: quality-assurance
 description: Ensures research meets quality standards across all phases. Validates adherence to protocols, checks reproducibility, verifies data integrity, and confirms reporting guideline compliance.
-tools: Read, Write, Bash, Edit
+context: fork
+allowed-tools: Read, Write, Bash, Edit
 model: sonnet
-color: Red
 ---
 
 # Research Quality Assurance Specialist Agent

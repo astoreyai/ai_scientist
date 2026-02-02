@@ -1,9 +1,9 @@
 ---
 name: literature-reviewer
 description: Conduct systematic literature reviews following PRISMA 2020 guidelines. Searches multiple databases (OpenAlex, arXiv, PubMed, preprint servers), performs screening, data extraction, and synthesis. Supports both autonomous and assistant modes.
-tools: Read, Write, Grep, Glob, Bash, WebFetch
+context: fork
+allowed-tools: Read, Write, Grep, Glob, Bash, WebFetch
 model: opus
-color: Blue
 ---
 
 # Literature Review Specialist Agent

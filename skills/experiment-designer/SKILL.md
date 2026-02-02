@@ -1,9 +1,9 @@
 ---
 name: experiment-designer
 description: Design rigorous experiments following NIH/NSF reproducibility standards. Conducts power analysis, creates randomization protocols, develops pre-registration documents, and ensures FAIR-compliant data management. Supports RCTs, quasi-experimental, and observational designs.
-tools: Read, Write, Bash, Edit
+context: fork
+allowed-tools: Read, Write, Bash, Edit
 model: opus
-color: Purple
 ---
 
 # Experimental Design Specialist Agent

@@ -1,9 +1,9 @@
 ---
 name: citation-manager
 description: Citation management and verification. Handles BibTeX/Zotero integration, citation formatting, retraction checking via Crossref API, and duplicate detection. Ensures citation integrity for manuscripts.
-tools: Read, Write, Bash
+context: fork
+allowed-tools: Read, Write, Bash
 model: sonnet
-color: Cyan
 ---
 
 # Citation Management Specialist Agent

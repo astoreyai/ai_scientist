@@ -93,47 +93,45 @@
     "synthesis-matrix": {
       "path": "skills/synthesis-matrix/SKILL.md",
       "description": "Create evidence synthesis tables for literature reviews"
-    }
-  },
-  "agents": {
+    },
     "literature-reviewer": {
-      "path": ".claude/agents/literature-reviewer.md",
+      "path": "skills/literature-reviewer/SKILL.md",
       "description": "PRISMA 2020 systematic literature reviews"
     },
     "gap-analyst": {
-      "path": ".claude/agents/gap-analyst.md",
+      "path": "skills/gap-analyst/SKILL.md",
       "description": "Research gap identification and prioritization"
     },
     "hypothesis-generator": {
-      "path": ".claude/agents/hypothesis-generator.md",
+      "path": "skills/hypothesis-generator/SKILL.md",
       "description": "Generate testable hypotheses using Tree-of-Thought"
     },
     "experiment-designer": {
-      "path": ".claude/agents/experiment-designer.md",
+      "path": "skills/experiment-designer/SKILL.md",
       "description": "NIH-rigorous experimental design"
     },
     "data-analyst": {
-      "path": ".claude/agents/data-analyst.md",
+      "path": "skills/data-analyst/SKILL.md",
       "description": "Reproducible statistical analysis"
     },
     "manuscript-writer": {
-      "path": ".claude/agents/manuscript-writer.md",
+      "path": "skills/manuscript-writer/SKILL.md",
       "description": "CONSORT/PRISMA-compliant manuscript writing"
     },
     "citation-manager": {
-      "path": ".claude/agents/citation-manager.md",
+      "path": "skills/citation-manager/SKILL.md",
       "description": "Citation management and verification"
     },
     "quality-assurance": {
-      "path": ".claude/agents/quality-assurance.md",
+      "path": "skills/quality-assurance/SKILL.md",
       "description": "Research quality validation and audits"
     },
     "meta-reviewer": {
-      "path": ".claude/agents/meta-reviewer.md",
+      "path": "skills/meta-reviewer/SKILL.md",
       "description": "AMSTAR 2 quality assessment for systematic reviews"
     },
     "code-reviewer": {
-      "path": ".claude/agents/code-reviewer.md",
+      "path": "skills/code-reviewer/SKILL.md",
       "description": "Statistical code verification for reproducibility"
     }
   },

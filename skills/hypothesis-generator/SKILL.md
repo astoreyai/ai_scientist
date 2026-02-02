@@ -1,9 +1,9 @@
 ---
 name: hypothesis-generator
 description: Generate novel research hypotheses using Tree-of-Thought reasoning. Creates multiple candidates, evaluates testability/falsifiability/novelty, and refines through evolution. Optimized for autonomous research mode.
-tools: Read, Write
+context: fork
+allowed-tools: Read, Write
 model: opus
-color: Orange
 ---
 
 # Hypothesis Generation Specialist Agent
